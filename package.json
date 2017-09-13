@@ -1,0 +1,19 @@
+{
+  "name": "generator-itarverne-landing-page",
+  "version": "0.1.0",
+  "description": "ITArverne provide an automatic tool in order to generate your own landing page.",
+  "license": "MIT",
+  "author": "RIGAUDIE David",
+  "homepage": "http://rigaudie.fr",
+  "files": [
+    "app",
+    "router"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "chalk": "^2.0.1",
+    "yeoman-generator": "^1.0.0"
+  }
+}

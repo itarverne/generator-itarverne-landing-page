@@ -1,0 +1,21 @@
+@import 'settings';
+@import 'foundation';
+
+$path-header-img: '../images/entete.png';
+
+.header{
+  margin:0;
+  background: url($path-header-img) no-repeat;
+  background-size: 100vw 100vh;
+  height: 100vh;
+  padding-top: 2%;
+  vertical-align: middle;
+}
+
+.footer {
+	background-color: gray;
+}
+
+.footer__item{
+	@include xy-gutters($gutters:200px, $gutter-type:padding, $gutter-position: top bottom);
+}
