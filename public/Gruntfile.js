@@ -6,7 +6,10 @@ module.exports = function (grunt) {
   require('time-grunt')(grunt);
 
   // Automatically load required grunt tasks
-  require('jit-grunt')(grunt);
+  require('jit-grunt')(grunt, {
+    // Static mapping, unabled to resolve automaticly
+    i18n: 'grunt-i18n-static'
+  });
 
   // Configurable paths
   let config = {
@@ -311,13 +314,31 @@ module.exports = function (grunt) {
       }
     },
 
+    // Translate the application
+    i18n: {
+      dist: {
+        options: {
+          baseDir: '<%= config.app %>',
+          outputDir: '.',
+        }
+      },
+      options: {
+        fileFormat: 'json',
+        exclude: ['.sass-cache/', 'build', 'images', 'node_modules', 'scripts', 'styles', 'tmp', 'fr', 'en'],
+        locales: ['fr', 'en'],
+        locale: 'fr',
+        localesPath: 'locales'
+      }
+    },
+
     // Run some tasks in parallel to speed up build process
     concurrent: {
       app: [
         'babel',
         'sass',
         'imagemin',
-        'babel:jsx'
+        'babel:jsx',
+        'i18n'
       ]
     }
 
