@@ -1,5 +1,14 @@
 {
-  "content": {
-    "header": "article header h1 FR"
+  "cookie": {
+    "header": "Usage des cookies",
+    "content": "Ce site utilise des cookies afin d'améliorer l'expérience utilisateur. En aucun cas les données récoltées ne sont revendues à des tiers.",
+    "bt-valid": "Je comprend"
+  },
+  "header": {
+    "link-activity": "Activités",
+    "link-techno": "Technologies"
+  },
+  "footer": {
+    "copyright": "Build with ❤ by "
   }
 }
