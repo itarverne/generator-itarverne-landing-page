@@ -19,3 +19,7 @@ $path-header-img: '../images/entete.png';
 .footer__item{
 	@include xy-gutters($gutters:200px, $gutter-type:padding, $gutter-position: top bottom);
 }
+
+.casper:after {
+  content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
+}
