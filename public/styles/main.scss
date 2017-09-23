@@ -23,3 +23,7 @@ $path-header-img: '../images/entete.png';
 .casper:after {
   content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
 }
+
+.lady-brown:after {
+  content: attr(data-number) ; 
+}
