@@ -6,7 +6,11 @@
   },
   "header": {
     "link-activity": "Activities",
-    "link-techno": "Technologies"
+    "link-references": "References",
+    "link-values": "Values",
+    "link-labs": "LABS",
+    "link-contact": "Get in touch",
+    "link-blog": "Blog"
   },
   "footer": {
     "copyright": "Build with ❤ by "

@@ -5,8 +5,12 @@
     "bt-valid": "Je comprend"
   },
   "header": {
-    "link-activity": "Activités",
-    "link-techno": "Technologies"
+    "link-activities": "Activités",
+    "link-references": "Références",
+    "link-values": "Valeurs",
+    "link-labs": "LABS",
+    "link-contact": "Contact",
+    "link-blog": "Blog"
   },
   "footer": {
     "copyright": "Build with ❤ by "
