@@ -1,4 +1,4 @@
-#generator-itarverne-landing-page https://travis-ci.org/itarverne/generator-itarverne-landing-page.svg?branch=master
+# generator-itarverne-landing-page ![Build](https://travis-ci.org/itarverne/generator-itarverne-landing-page.svg?branch=master)
 
 The generator push by ITArverne company for the landing page website
 
