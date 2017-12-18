@@ -18,4 +18,4 @@ before_script:
   - npm link
 
 script:
-  - true
+  - npm test

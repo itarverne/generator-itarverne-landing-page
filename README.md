@@ -1,6 +1,6 @@
-The generator push by ITArverne company for the landing page website
+#generator-itarverne-landing-page https://travis-ci.org/itarverne/generator-itarverne-landing-page.svg?branch=master
 
-https://travis-ci.org/itarverne/generator-itarverne-landing-page.svg?branch=master
+The generator push by ITArverne company for the landing page website
 
 # Required
 
@@ -27,4 +27,11 @@ yo itarverne-landing-page
 cd path/generator-itarverne-landing-page/public
 npm intall
 grunt build/serve
+```
+
+# Test
+
+```
+cd path/generator-itarverne-landing-page
+npm test
 ```
