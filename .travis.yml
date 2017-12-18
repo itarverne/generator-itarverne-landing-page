@@ -15,6 +15,7 @@ before_script:
   - npm install grunt-cli -g
   - gem install sass
   - npm install -g yo
+  - npm link
 
 script:
   - grunt build
