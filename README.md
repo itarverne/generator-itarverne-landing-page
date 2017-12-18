@@ -1,5 +1,7 @@
 The generator push by ITArverne company for the landing page website
 
+https://travis-ci.org/itarverne/generator-itarverne-landing-page.svg?branch=master
+
 # Required
 
 The libraries below have to be present on your machine :
