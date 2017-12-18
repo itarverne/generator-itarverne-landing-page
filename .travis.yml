@@ -1,8 +1,20 @@
-language: javascript
+language: node_js
 
-install:
-  - npm install
+node_js:
+  - "8"
 
 branches:
   except:
   - experimental
+
+cache:
+  directories:
+  - "node_modules"
+
+before_script:
+  - npm install grunt-cli -g
+  - gem install sass
+  - npm install -g yo
+
+script:
+  - grunt build
