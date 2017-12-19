@@ -1,5 +1,9 @@
 language: node_js
 
+env:
+  global:
+    - CC_TEST_REPORTER_ID=90f4e3ba4c68ea1853e07f9eb2d52a5000a0ff691cc3cd58a65da9cec2a0b9bd
+
 node_js:
   - "8"
 
@@ -12,6 +16,9 @@ cache:
   - "node_modules"
 
 before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
   - npm install -g grunt-cli
   - gem install sass
   - npm install -g yo
@@ -19,3 +26,6 @@ before_script:
 
 script:
   - npm test
+
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT

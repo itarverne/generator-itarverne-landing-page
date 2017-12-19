@@ -1,4 +1,5 @@
-# generator-itarverne-landing-page ![Build](https://travis-ci.org/itarverne/generator-itarverne-landing-page.svg?branch=master) ![maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability) ![test_coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)
+# generator-itarverne-landing-page ![Build](https://travis-ci.org/itarverne/generator-itarverne-landing-page.svg?branch=master) 
+![maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability) ![test_coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)
 
 
 The generator push by ITArverne company for the landing page website
