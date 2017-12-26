@@ -42,7 +42,7 @@ describe('Check file for yo', function () {
     });
   });
 
-  it('check prompts', function () {
+  it('check prompts appName', function () {
       const question = {
         name: 'appName',
         store: true
@@ -53,5 +53,21 @@ describe('Check file for yo', function () {
       promptSuggestion.prefillQuestions(this.store, question);
       promptSuggestion.storeAnswers(this.store, question, answer);
       assert.equal(this.store.get('promptValues').appName, answer.appName);
-    });
+  });
+
+  it('check prompts appUrl', function () {
+      const question = {
+        name: 'appUrl',
+        store: true
+      };
+      const answer = {
+        appUrl: 'test.itarverne.com'
+      };
+      promptSuggestion.prefillQuestions(this.store, question);
+      promptSuggestion.storeAnswers(this.store, question, answer);
+      if(this.store.get('promptValues').appUrl.includes('.itarverne.com'))
+        assert.ok(true);
+      else
+        assert.fail('Wrong url for appUrl prompt');
+  });
 });
