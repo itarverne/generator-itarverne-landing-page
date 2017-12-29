@@ -3,10 +3,15 @@
 
 /** Set CSS variables **/
 $path-header-img: '../images/entete.png';
-$color-bloc-dark: rgb(130, 175, 196);
-$color-bloc-light: rgba(130, 175, 196, 0.68);
-$color-title: rgb(0, 101, 146);
+$path-header-moutain: '../images/white-mountain.png';
+$color-greenblue-dark: rgb(130, 175, 196);
+$color-greenblue-light: rgba(130, 175, 196, 0.68);
+$color-blue-dark: rgb(0, 101, 146);
 
+@mixin style-title{
+  font-family: 'quicksand-bold';
+  color: $color-blue-dark;
+}
 /***************/
 /** Font-face **/
 /***************/
@@ -43,13 +48,43 @@ $color-title: rgb(0, 101, 146);
   vertical-align: middle;
 }
 
-.header__title { 
-  font-family: 'quicksand-bold';
-  color: $color-title;
+.header__title {
+  @include style-title;
 }
 
 .menu li a {
   line-height: 100px;
+}
+
+/***************/
+/**  Content  **/
+/***************/
+.content{
+  background-color: $color-greenblue-light;
+}
+.content__title{
+  background: url($path-header-moutain) no-repeat;
+  background-size: 180px 60px;
+  padding-left: 200px;
+  @include style-title;
+}
+.content__quote-euro{
+  font-family: 'quicksand-bold';
+  color: white;
+  background-color: $color-greenblue-light;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.content__quote{
+  font-family: 'quicksand-bold';
+  color: white;
+  background-color: $color-blue-dark;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .footer {

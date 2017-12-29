@@ -38,18 +38,18 @@
     <div class="content">
       <article>
           <header>
-              <h1 class="header__title">article header</h1>
+              <h1 class="content__title">nos Activites</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
-              <a data-name="contact" data-domain="domain" data-tld="com" href="#" class="casper" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld"></a>
-              <a data-number="0123456789" href="#" class="lady-brown" onclick="window.location.href = 'tel:' + this.dataset.number"></a>
           </header>
           <section id="activities" data-magellan-target="activities">
               <h2>article section h2</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
           </section>
           <footer>
-              <h3>article footer h3</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
+              <div>
+                <span class="content__quote-euro">€</span>
+                <span class="content__quote"> Demandez votre devis</span>
+              </div>
           </footer>
       </article>
 
@@ -77,9 +77,12 @@
         </div>
       </div>
     </footer>
+
+    <a data-name="contact" data-domain="domain" data-tld="com" href="#" class="casper" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld"></a>
+    <a data-number="0123456789" href="#" class="lady-brown" onclick="window.location.href = 'tel:' + this.dataset.number"></a>
     
     <!-- include: "type": "js", "basePath": "build", "files": "scripts/**/*.js" -->
-    
+    <script src="scripts/ITArverne.min.6f1b0455.js" async></script>
     <!-- /include -->
 
     <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
