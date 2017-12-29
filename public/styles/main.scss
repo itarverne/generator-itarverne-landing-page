@@ -1,8 +1,15 @@
 @import 'settings';
 @import 'foundation';
 
+/** Set CSS variables **/
 $path-header-img: '../images/entete.png';
+$color-bloc-dark: rgb(130, 175, 196);
+$color-bloc-light: rgba(130, 175, 196, 0.68);
+$color-title: rgb(0, 101, 146);
 
+/***************/
+/** Font-face **/
+/***************/
 @font-face {
   font-family: 'consola';
   src: url('../fonts/onsola.ttf');
@@ -24,8 +31,9 @@ $path-header-img: '../images/entete.png';
   font-style: normal;
 }
 
-.g-font-title { font-family: 'quicksand-bold'; }
-
+/************/
+/** Header **/
+/************/
 .header{
   margin:0;
   background: url($path-header-img) no-repeat;
@@ -33,6 +41,11 @@ $path-header-img: '../images/entete.png';
   height: 100vh;
   padding-top: 2%;
   vertical-align: middle;
+}
+
+.header__title { 
+  font-family: 'quicksand-bold';
+  color: $color-title;
 }
 
 .menu li a {
