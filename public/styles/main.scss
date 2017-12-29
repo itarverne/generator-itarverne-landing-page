@@ -3,6 +3,29 @@
 
 $path-header-img: '../images/entete.png';
 
+@font-face {
+  font-family: 'consola';
+  src: url('../fonts/onsola.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'quicksand-bold';
+  src: url('../fonts/quicksand-bold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'quicksand-book';
+  src: url('../fonts/quicksand-book.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.g-font-title { font-family: 'quicksand-bold'; }
+
 .header{
   margin:0;
   background: url($path-header-img) no-repeat;

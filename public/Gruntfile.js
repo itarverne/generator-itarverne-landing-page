@@ -289,6 +289,14 @@ module.exports = function (grunt) {
       }
     },
 
+    copy: {
+      build: {
+        expand: true,
+        src: 'fonts/*',
+        dest: '<%= config.build %>/'
+      }
+    },
+
     // Task to include files into index.html
     includeSource: {
       options: {
@@ -319,7 +327,7 @@ module.exports = function (grunt) {
       dist: {
         options: {
           baseDir: '<%= config.app %>',
-          outputDir: '.',
+          outputDir: '.'
         }
       },
       options: {
@@ -367,7 +375,8 @@ module.exports = function (grunt) {
     'uglify',
     'filerev',
     'includeSource',
-    'htmlmin'
+    'htmlmin',
+    'copy'
   ]);
 
   // grunt
