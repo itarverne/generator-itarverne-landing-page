@@ -12,6 +12,9 @@
     "link-contact": "Get in touch",
     "link-blog": "Blog"
   },
+  "content-bloc-1": {
+    "title": "our Activities",
+  },
   "footer": {
     "copyright": "Build with ❤ by "
   }
