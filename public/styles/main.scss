@@ -8,8 +8,18 @@ $color-greenblue-dark: rgb(130, 175, 196);
 $color-greenblue-light: rgba(130, 175, 196, 0.68);
 $color-blue-dark: rgb(0, 101, 146);
 
-@mixin style-title{
+@mixin style-title-bold{
   font-family: 'quicksand-bold';
+  color: $color-blue-dark;
+}
+
+@mixin style-title-std{
+  font-family: 'quicksand-book';
+  color: $color-blue-dark;
+}
+
+@mixin style-text{
+  font-family: 'consola';
   color: $color-blue-dark;
 }
 /***************/
@@ -17,7 +27,7 @@ $color-blue-dark: rgb(0, 101, 146);
 /***************/
 @font-face {
   font-family: 'consola';
-  src: url('../fonts/onsola.ttf');
+  src: url('../fonts/consola.ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -49,7 +59,7 @@ $color-blue-dark: rgb(0, 101, 146);
 }
 
 .header__title {
-  @include style-title;
+  @include style-title-bold;
 }
 
 .menu li a {
@@ -66,7 +76,19 @@ $color-blue-dark: rgb(0, 101, 146);
   background: url($path-header-moutain) no-repeat;
   background-size: 180px 60px;
   padding-left: 200px;
-  @include style-title;
+  @include style-title-bold;
+}
+.content__data-title{
+  @include style-title-bold;
+  color: white;
+}
+.content__data-subtitle{
+  @include style-title-std;
+  color: white;
+}
+.content__data{
+  @include style-text;
+  color: white;
 }
 .content__quote-euro{
   font-family: 'quicksand-bold';
