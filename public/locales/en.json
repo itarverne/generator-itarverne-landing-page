@@ -13,7 +13,11 @@
     "link-blog": "Blog"
   },
   "content-bloc-1": {
-    "title": "our Activities"
+    "title": "our Activities",
+    "activity-title": "Réalisation application métier",
+    "activity-desc": "JAVA, Python and React, AngularJs",
+    "activity-content": "Réalisation d’une nouvelle application web correspondant à votre business.",
+    "bt-content": "Ask your quote"
   },
   "footer": {
     "copyright": "Build with ❤ by "
