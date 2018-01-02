@@ -52,7 +52,7 @@ $color-blue-dark: rgb(0, 101, 146);
   height: 25px;
   border-top: 10px solid $color-greenblue-dark;
   border-left: 20px solid transparent;
-  margin-left: -25px;
+  margin-left: -24px;
 }
 /************/
 /** Header **/
@@ -115,6 +115,10 @@ $color-blue-dark: rgb(0, 101, 146);
   padding-right: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.content__footer{
+  margin-top: 20px;
 }
 
 .footer {
