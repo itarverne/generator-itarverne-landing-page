@@ -52,7 +52,7 @@ $color-blue-dark: rgb(0, 101, 146);
   height: 25px;
   border-top: 10px solid $color-greenblue-dark;
   border-left: 20px solid transparent;
-  margin-left: -24px;
+  margin-left: -20px;
 }
 /************/
 /** Header **/
@@ -119,6 +119,9 @@ $color-blue-dark: rgb(0, 101, 146);
 
 .content__footer{
   margin-top: 20px;
+}
+.content__footer-bt{
+  display: flex; /* To delete whitespace beetween 2 span inside */
 }
 
 .footer {
