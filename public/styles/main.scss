@@ -45,7 +45,15 @@ $color-blue-dark: rgb(0, 101, 146);
   font-weight: normal;
   font-style: normal;
 }
-
+/*************/
+/** General **/
+/*************/
+.g-corner{
+  height: 25px;
+  border-top: 10px solid $color-greenblue-dark;
+  border-left: 20px solid transparent;
+  margin-left: -25px;
+}
 /************/
 /** Header **/
 /************/
