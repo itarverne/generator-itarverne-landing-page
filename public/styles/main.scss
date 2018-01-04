@@ -107,15 +107,24 @@ $color-blue-dark: rgb(0, 101, 146);
   padding-left: 200px;
   @include style-title-bold;
 }
-.activities__app-title, .activities__site-title, .activities__pack-title{
+.activities__app-title, 
+.activities__site-title, 
+.activities__pack-title, 
+.activities__training-title{
   @include style-title-bold;
   color: white;
 }
-.activities__app-subtitle, .activities__site-subtitle, .activities__pack-subtitle{
+.activities__app-subtitle, 
+.activities__site-subtitle, 
+.activities__pack-subtitle, 
+.activities__training-subtitle{
   @include style-title-std;
   color: white;
 }
-.activities__app, .activities__site, .activities__pack{
+.activities__app, 
+.activities__site, 
+.activities__pack, 
+.activities__training{
   @include style-text;
   color: white;
 }
