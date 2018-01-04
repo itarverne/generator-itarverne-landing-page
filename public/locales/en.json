@@ -14,9 +14,14 @@
   },
   "content-bloc-1": {
     "title": "our Activities",
-    "activity-title": "Réalisation application métier",
-    "activity-desc": "JAVA, Python and React, AngularJs",
-    "activity-content": "Réalisation d’une nouvelle application web correspondant à votre business.",
+    "app-title": "Réalisation application métier",
+    "app-desc": "JAVA, Python and React, AngularJs",
+    "app-content": "Réalisation d’une nouvelle application web correspondant à votre business.",
+    "site-title": "Création site",
+    "site-desc": "CMS / Landing page",
+    "site-content": "Mise en place d’un site web pour vous apporter de la visibilité sur internet",
+    "pack-title": "Pack STartupe",
+    "pack-content": "Mise en place d’un kit de démarrage : mail, site vitrine, partage document, CRM...",
     "bt-content": "Ask your quote"
   },
   "footer": {

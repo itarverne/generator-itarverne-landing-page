@@ -60,6 +60,21 @@ $color-blue-dark: rgb(0, 101, 146);
   right: 0;
   margin-top: 120px;
 }
+.activities__wheel2{
+  position: absolute;
+  right: 0;
+  margin-top: 120px;
+}
+.activities__wheel3{
+  position: absolute;
+  left: 0;
+  margin-top: 120px;
+}
+.activities__wheel4{
+  position: absolute;
+  left: 0;
+  margin-top: 120px;
+}
 /************/
 /** Header **/
 /************/
@@ -92,15 +107,15 @@ $color-blue-dark: rgb(0, 101, 146);
   padding-left: 200px;
   @include style-title-bold;
 }
-.activities__app-title, .activities__site-title{
+.activities__app-title, .activities__site-title, .activities__pack-title{
   @include style-title-bold;
   color: white;
 }
-.activities__app-subtitle, .activities__site-subtitle{
+.activities__app-subtitle, .activities__site-subtitle, .activities__pack-subtitle{
   @include style-title-std;
   color: white;
 }
-.activities__app, .activities__site{
+.activities__app, .activities__site, .activities__pack{
   @include style-text;
   color: white;
 }
