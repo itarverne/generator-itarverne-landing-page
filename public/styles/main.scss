@@ -92,15 +92,15 @@ $color-blue-dark: rgb(0, 101, 146);
   padding-left: 200px;
   @include style-title-bold;
 }
-.content__data-title{
+.activities__app-title, .activities__site-title{
   @include style-title-bold;
   color: white;
 }
-.content__data-subtitle{
+.activities__app-subtitle, .activities__site-subtitle{
   @include style-title-std;
   color: white;
 }
-.content__data{
+.activities__app, .activities__site{
   @include style-text;
   color: white;
 }
