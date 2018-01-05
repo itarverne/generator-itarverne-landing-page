@@ -98,8 +98,13 @@ $color-blue-dark: rgb(0, 101, 146);
 /***************/
 /**  Content  **/
 /***************/
-.content{
+.activities{
   background-color: $color-greenblue-light;
+  margin-top: 5px;
+}
+.references{
+  background-color: $color-greenblue-dark;
+  margin-top: 5px;
 }
 .content__title{
   background: url($path-header-moutain) no-repeat;

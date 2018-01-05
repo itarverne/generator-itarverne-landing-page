@@ -1,0 +1,402 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cons",
+				"console"
+			],
+			[
+				"pay",
+				"paypal"
+			],
+			[
+				"S",
+				"SUPPORT_EMAIL"
+			],
+			[
+				"Fres",
+				"FreshNotAvailable"
+			],
+			[
+				"MAR",
+				"margin-top"
+			],
+			[
+				"Order",
+				"Order"
+			],
+			[
+				"deli",
+				"deliveries_date"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"reu",
+				"return"
+			],
+			[
+				"tag",
+				"tagFilter"
+			],
+			[
+				"lal",
+				"lalocalerie"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"margi",
+				"margin-left"
+			],
+			[
+				"get",
+				"getDeliveryPrice"
+			],
+			[
+				"pro",
+				"products"
+			],
+			[
+				"prod",
+				"products"
+			],
+			[
+				"or",
+				"order_line"
+			],
+			[
+				"sk",
+				"skybillParamsValue"
+			],
+			[
+				"Sk",
+				"SkipValue"
+			],
+			[
+				"dat",
+				"datetime"
+			],
+			[
+				"fres",
+				"fresh_delivery"
+			],
+			[
+				"fe",
+				"fresh_cost"
+			],
+			[
+				"es",
+				"eslint-disable-line"
+			],
+			[
+				"fresh",
+				"freshCost"
+			],
+			[
+				"cooler",
+				"cooler_cost"
+			],
+			[
+				"line",
+				"lines"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 299.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 653.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/workspace/localerie-auv/scripts/stayingAlive.sh",
+		"/C/Users/utilisateur/Documents/Informatique/Projects/qrcodify/README.md",
+		"/C/Users/utilisateur/.unison/david.prf",
+		"/C/Users/utilisateur/Documents/Informatique/Projects/qrcodify/.gitignore",
+		"/C/Users/utilisateur/Documents/Informatique/Projects/qrcodify/bin/com/itarverne/qrcode/test.class",
+		"/C/Users/utilisateur/Documents/Informatique/Projects/.git/description",
+		"/C/Users/utilisateur/Documents/Informatique/Projects/.git/HEAD",
+		"/C/Users/utilisateur/Documents/Informatique/Projects/.git/config",
+		"/C/Users/utilisateur/Documents/before_change_format",
+		"//partage/samba-partage/Logiciels/applications_win10/README.md",
+		"/C/workspace/localerie-auv/server/taste/api/management/commands/create_deliveries.py",
+		"/C/workspace/localerie-auv/web/pages/order.js",
+		"/C/workspace/localerie-auv/web/components/ui/DeliveryDatePickerDetail.js",
+		"/C/workspace/localerie-auv/web/actions/auth.js",
+		"/C/workspace/localerie-auv/web/config/index.js",
+		"/C/workspace/localerie-auv/web/actions/cart.js",
+		"/C/Users/utilisateur/Documents/Informatique/Projects/generator-itarverne-landing-page/README.md",
+		"/C/Users/utilisateur/Documents/Informatique/chocolatey/packages.config",
+		"/C/Users/utilisateur/Downloads/test.reg",
+		"/C/Users/utilisateur/Documents/Informatique/chocolatey/install-app-server.bat",
+		"/C/workspace/localerie-auv/server/taste/api/payment/methods.py",
+		"/C/workspace/localerie-auv/server/taste/api/order/views.py",
+		"/C/workspace/localerie-auv/server/taste/api/invoice/views.py",
+		"/C/Users/utilisateur/Documents/Informatique/Projects/generator-itarverne-landing-page/README",
+		"/C/Users/utilisateur/Documents/Informatique/Projects/generator-itarverne-landing-page/.gitignore",
+		"/C/Users/utilisateur/Documents/Informatique/Projects/generator-itarverne-landing-page/package.json",
+		"/C/workspace/localerie-auv/web/components/cart/Cart.js",
+		"/C/workspace/localerie-auv/server/taste/api/cart/models.py",
+		"/C/workspace/localerie-auv/server/taste/api/delivery/models.py",
+		"/C/workspace/localerie-auv/server/taste/api/cart/views.py",
+		"/C/workspace/localerie-auv/web/selectors/auth.js",
+		"/C/workspace/localerie-auv/web/actions/order.js",
+		"/C/workspace/localerie-auv/web/components/order/OrderPage.js",
+		"/C/workspace/localerie-auv/web/pages/thanks.js",
+		"/C/Users/utilisateur/contacts.csv",
+		"/C/workspace/localerie-auv/web/components/account/sections/Orders.js",
+		"/C/workspace/localerie-auv/server/taste/api/order/models.py",
+		"/C/workspace/localerie-auv/server/taste/api/order/serializers.py",
+		"/C/workspace/localerie-auv/server/taste/api/order/admin.py",
+		"/C/workspace/localerie-auv/web/components/products/ProductCard.js",
+		"/C/workspace/localerie-auv/web/components/products/ProductDetailsPage.js",
+		"/C/workspace/localerie-auv/web/pages/index.js",
+		"/C/workspace/localerie-auv/web/components/products/ProductSlider.js",
+		"/C/workspace/localerie-auv/scripts/stayAlive.sh",
+		"/C/workspace/localerie-auv/server/taste/api/delivery/views.py",
+		"/C/workspace/localerie-auv/server/taste/api/cart/serializers.py",
+		"/C/workspace/localerie-auv/server/taste/settings/prod.py",
+		"/C/workspace/localerie-auv/server/taste/settings/dev.py",
+		"/C/workspace/localerie-auv/server/taste/api/delivery/serializers.py",
+		"/C/workspace/localerie-auv/server/taste/api/delivery/admin.py",
+		"/C/workspace/localerie-auv/web/lib/init.js",
+		"/C/workspace/localerie-auv/server/taste/settings/base.py",
+		"/C/workspace/localerie-auv/web/components/products/ProductSearch.js",
+		"/C/workspace/localerie-auv/server/taste/api/catalog/models.py",
+		"/C/workspace/localerie-auv/server/taste/api/catalog/serializers.py",
+		"/C/workspace/localerie-auv/web/components/products/ProductRating.js",
+		"/C/workspace/localerie-auv/web/components/products/AllProductsPage.js",
+		"/C/workspace/localerie-auv/server/taste/api/catalog/views.py",
+		"/C/workspace/localerie-auv/web/components/tribus/TribuDetailsPage.js",
+		"/C/workspace/localerie-auv/web/components/home/HomeSlider.js",
+		"/C/workspace/localerie-auv/server/taste/api/localerie/serializers.py",
+		"/C/workspace/localerie-auv/web/actions/localerie.js",
+		"/C/workspace/localerie-auv/web/.eslintrc",
+		"/C/Users/utilisateur/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/utilisateur/Downloads/Packages/User/Preferences.sublime-settings",
+		"/C/Users/utilisateur/Downloads/Packages/User/Package Control.sublime-settings",
+		"/C/Users/utilisateur/AppData/Roaming/Sublime Text 3/Installed Packages/0_package_control_loader.sublime-package",
+		"/C/workspace/localerie-auv/web/components/header/NavBar.js",
+		"/C/workspace/localerie-auv/web/components/producers/AllProducersPage.js",
+		"/C/workspace/localerie-auv/web/pages/_document.js",
+		"/C/workspace/localerie-auv/web/components/Layout.js",
+		"/C/workspace/localerie-auv/web/pages/_error.js",
+		"/C/workspace/localerie-auv/web/routes.js",
+		"/C/workspace/localerie-auv/server/taste/api/catalog/admin.py",
+		"/C/workspace/localerie-auv/web/package.json",
+		"/C/workspace/localerie-auv/nginx/nginx.conf",
+		"/C/workspace/localerie-auv/docker-compose.yml",
+		"/C/workspace/localerie-auv/docker-compose.prod.yml",
+		"/C/workspace/localerie-auv/server/taste/settings/__init__.py",
+		"/C/workspace/localerie-auv/server/taste/api/auth/serializers.py",
+		"/C/workspace/localerie-auv/web/lib/analytics.js",
+		"/C/workspace/localerie-auv/web/static/css/day_picker.css",
+		"/C/workspace/localerie-auv/server/taste/api/urls.py",
+		"/C/workspace/localerie-auv/server/taste/api/address/models.py",
+		"/C/workspace/localerie-auv/server/taste/api/payment/status.py",
+		"/C/workspace/localerie-auv/server/requirements.txt",
+		"/C/workspace/localerie-auv/server/taste/api/tribu/serializers.py",
+		"/C/workspace/localerie-auv/server/taste/api/migrations/0017_auto_20171029_2033.py",
+		"/C/workspace/localerie-auv/server/taste/api/migrations/__init__.py",
+		"/C/Users/utilisateur/Desktop/install-app-server.bat",
+		"/C/workspace/localerie-auv/server/taste/fixtures/freshcost.json",
+		"/C/workspace/localerie-auv/server/taste/api/management/commands/spellcheck.py",
+		"/C/workspace/localerie-auv/server/taste/api/management/commands/new_db.py",
+		"/C/workspace/localerie-auv/server/taste/api/management/commands/schedule_deliveries.py",
+		"/C/workspace/localerie-auv/web/lib/displayNumber.js",
+		"/C/workspace/localerie-auv/web/lib/withGlobalLoading.js",
+		"/C/workspace/localerie-auv/web/actions/products.js",
+		"/C/workspace/localerie-auv/web/static/css/style.css",
+		"/C/workspace/localerie-auv/web/.babelrc",
+		"/C/workspace/localerie-auv/web/server.js",
+		"/C/workspace/localerie-auv/web/next.config.js",
+		"/C/Users/utilisateur/AppData/Roaming/Sublime Text 3/Packages/ESLint/ESLint.sublime-settings",
+		"/C/workspace/localerie-auv/web/node_modules/react-day-picker/lib/src/DayPickerInput.js",
+		"/C/workspace/localerie-auv/web/node_modules/react-day-picker/lib/style.css",
+		"/C/workspace/localerie-auv/web/node_modules/react-day-picker/DayPickerInput.js",
+		"/C/workspace/localerie-auv/web/containers/Layout.js",
+		"/C/workspace/localerie-auv/web/pages/pages/index.js",
+		"/C/Users/utilisateur/Downloads/result.txt",
+		"/C/Users/utilisateur/Downloads/packages.config",
+		"/C/Users/utilisateur/.unison/default.prf"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 134.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 51.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "package-lock.sublime-project",
+	"replace":
+	{
+		"height": 55.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"web\\actions\\order.js"
+			],
+			[
+				"prod.p",
+				"server\\taste\\settings\\prod.py"
+			],
+			[
+				"dev",
+				"server\\taste\\settings\\dev.py"
+			],
+			[
+				"base",
+				"server\\taste\\settings\\base.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 490.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 1005.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 387.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
