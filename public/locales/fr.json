@@ -24,6 +24,9 @@
     "pack-content": "Mise en place d’un kit de démarrage : mail, site vitrine, partage document, CRM...",
     "bt-content": "Demandez votre devis"
   },
+  "content-bloc-2": {
+    "title": "nos Références"
+  },
   "footer": {
     "copyright": "Build with ❤ by "
   }

@@ -24,6 +24,9 @@
     "pack-content": "Mise en place d’un kit de démarrage : mail, site vitrine, partage document, CRM...",
     "bt-content": "Ask your quote"
   },
+  "content-bloc-2": {
+    "title": "our References"
+  },
   "footer": {
     "copyright": "Build with ❤ by "
   }
