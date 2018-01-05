@@ -103,7 +103,7 @@ $color-blue-dark: rgb(0, 101, 146);
   margin-top: 5px;
 }
 .references__logo{
-  background-color: $color-greenblue-dark;
+  background: linear-gradient(0deg, white 50%, $color-greenblue-dark 50%);
 }
 .references__title{
   background-color: $color-greenblue-dark;
@@ -140,6 +140,15 @@ $color-blue-dark: rgb(0, 101, 146);
 
 .references__customer{
   background-color: white;
+}
+
+.references__logo-customer{
+  overflow: hidden;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  width: 200px;
+  height: 200px;
 }
 
 .content__quote-euro{
