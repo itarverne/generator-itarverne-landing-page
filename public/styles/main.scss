@@ -102,14 +102,18 @@ $color-blue-dark: rgb(0, 101, 146);
   background-color: $color-greenblue-light;
   margin-top: 5px;
 }
-.references{
+.references__logo{
+  background-color: $color-greenblue-dark;
+}
+.references__title{
   background-color: $color-greenblue-dark;
   margin-top: 5px;
-}
+} 
 .content__title{
   background: url($path-header-moutain) no-repeat;
   background-size: 180px 60px;
   padding-left: 200px;
+  margin-bottom: 0;
   @include style-title-bold;
 }
 .activities__app-title, 
@@ -133,6 +137,11 @@ $color-blue-dark: rgb(0, 101, 146);
   @include style-text;
   color: white;
 }
+
+.references__customer{
+  background-color: white;
+}
+
 .content__quote-euro{
   font-family: 'quicksand-bold';
   color: white;
