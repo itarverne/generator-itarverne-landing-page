@@ -22,6 +22,25 @@ $color-blue-dark: rgb(0, 101, 146);
   font-family: 'consola';
   color: $color-blue-dark;
 }
+
+@mixin anim-photo-left{
+  animation-name: translate-image-left;
+  animation-duration: 2s;
+}
+
+@mixin anim-photo-right{
+  animation-name: translate-image-right;
+  animation-duration: 2s;
+}
+
+@mixin transform-all-browser($transformName){
+  -webkit-transform: $transformName;
+  -moz-transform: $transformName;
+  -o-transform: $transformName;
+  -ms-transform: $transformName;
+  transform: $transformName;
+}
+
 /***************/
 /** Font-face **/
 /***************/
@@ -140,6 +159,13 @@ $color-blue-dark: rgb(0, 101, 146);
   color: white;
 }
 
+.activities__image-left{
+  @include anim-photo-left;
+}
+.activities__image-right{
+  @include anim-photo-right;
+}
+
 .references__customer{
   background-color: white;
 }
@@ -193,4 +219,26 @@ $color-blue-dark: rgb(0, 101, 146);
 
 .lady-brown:after {
   content: attr(data-number) ; 
+}
+
+
+/***************/
+/** Animation **/
+/***************/
+@keyframes translate-image-left {
+    from { 
+      @include transform-all-browser(translateX(-500px));
+    }
+    to { 
+      @include transform-all-browser('translateX(0px)'); 
+    }
+}
+
+@keyframes translate-image-right {
+    from { 
+      @include transform-all-browser(translateX(500px));
+    }
+    to { 
+      @include transform-all-browser('translateX(0px)'); 
+    }
 }
