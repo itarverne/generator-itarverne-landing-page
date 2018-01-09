@@ -33,12 +33,12 @@ $color-blue-dark: rgb(0, 101, 146);
   animation-duration: 2s;
 }
 
-@mixin transform-all-browser($transformName){
-  -webkit-transform: $transformName;
-  -moz-transform: $transformName;
-  -o-transform: $transformName;
-  -ms-transform: $transformName;
-  transform: $transformName;
+@mixin transform($val) {
+  -webkit-transform: $val;
+  -moz-transform: $val;
+  -o-transform: $val;
+  -ms-transform: $val;
+  transform: $val;
 }
 
 /***************/
@@ -227,18 +227,18 @@ $color-blue-dark: rgb(0, 101, 146);
 /***************/
 @keyframes translate-image-left {
     from { 
-      @include transform-all-browser(translateX(-500px));
+      @include transform(translateX(-500px));
     }
     to { 
-      @include transform-all-browser('translateX(0px)'); 
+      @include transform('translateX(0px)'); 
     }
 }
 
 @keyframes translate-image-right {
     from { 
-      @include transform-all-browser(translateX(500px));
+      @include transform(translateX(500px));
     }
     to { 
-      @include transform-all-browser('translateX(0px)'); 
+      @include transform('translateX(0px)'); 
     }
 }
