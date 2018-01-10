@@ -8,6 +8,11 @@ $color-greenblue-dark: rgb(130, 175, 196);
 $color-greenblue-light: rgba(130, 175, 196, 0.68);
 $color-blue-dark: rgb(0, 101, 146);
 
+@mixin style-header{
+  font-family: 'quicksand-bold';
+  color: white;
+}
+
 @mixin style-title-bold{
   font-family: 'quicksand-bold';
   color: $color-blue-dark;
@@ -107,7 +112,7 @@ $color-blue-dark: rgb(0, 101, 146);
 }
 
 .header__title {
-  @include style-title-bold;
+  @include style-header;
 }
 
 .menu li a {
