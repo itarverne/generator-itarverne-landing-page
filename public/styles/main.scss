@@ -128,6 +128,16 @@ $color-blue-dark: rgb(0, 101, 146);
 }
 .references__logo{
   background: linear-gradient(0deg, white 50%, $color-greenblue-dark 50%);
+  text-align: center;
+}
+.references__customer{
+  text-align: center;
+}
+.references__customer_name{
+  margin-top: 20px;
+}
+.references__customer_url{
+  margin-top: 20px;
 }
 .references__title{
   background-color: $color-greenblue-dark;
