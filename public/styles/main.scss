@@ -79,6 +79,11 @@ $color-blue-dark: rgb(0, 101, 146);
   margin-left: -15px;
 }
 
+.g-responsive-image-prio{
+  max-width: 100% !important;
+  height: auto !important;
+}
+
 .activities__wheel1{
   position: absolute;
   right: 0;
