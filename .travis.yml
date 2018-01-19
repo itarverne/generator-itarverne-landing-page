@@ -8,7 +8,7 @@ env:
     - GH_EMAIL=$GH_EMAIL
     - NAME_REPO=$NAME_REPO
     - GH_REPO="github.com/${GH_COMPANY}/${NAME_REPO}.git"
-    - ADD_FILES="public/"
+    - ADD_FILES="public/*"
 
 node_js:
   - "8"
@@ -40,6 +40,7 @@ after_success:
   - git remote
   - git config user.email ${GH_EMAIL}
   - git config user.name ${GH_USER}
+  - git pull
   - git add ${ADD_FILES}
   - git commit -m "Push auto from generator-itarverne-landing-page github repo"
   - git push "https://${GH_USER}:${GH_PWD}@${GH_REPO}"
