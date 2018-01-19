@@ -44,5 +44,5 @@ after_success:
   - git config user.email ${GH_EMAIL}
   - git config user.name ${GH_USER}
   - git add ${ADD_FILES}
-  - git commit -m "$(git log --format=%B -n 1 $TRAVIS_COMMIT)"
+  - git commit -m "Push auto from generator-itarverne-landing-page github repo"
   - git push "https://${TRAVIS_SECURE_TOKEN_NAME}@${GH_REPO}" master > /dev/null 2>&1
