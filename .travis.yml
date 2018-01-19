@@ -35,7 +35,7 @@ script:
 
 after_success:
   - git clone git://${GH_REPO}
-  - mv -f ${ADD_FILES} ${NAME_REPO}
+  - mv -f ${ADD_FILES} ${NAME_REPO}/
   - cd ${NAME_REPO}
   - git remote
   - git config user.email ${GH_EMAIL}
