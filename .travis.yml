@@ -42,7 +42,7 @@ after_success:
   - git config user.name ${GH_USER}
   - git add ${ADD_FILES}
   - git commit -m "Push auto from generator-itarverne-landing-page github repo"
-  - git push "https://${GH_USER}:${GH_PWD}@${GH_REPO}" origin master
+  - git push "https://${GH_USER}:${GH_PWD}@${GH_REPO}"
 
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
