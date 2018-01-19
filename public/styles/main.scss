@@ -9,8 +9,9 @@ $color-greenblue-light: rgba(130, 175, 196, 0.68);
 $color-blue-dark: rgb(0, 101, 146);
 
 @mixin style-header{
-  font-family: 'quicksand-bold';
+  font-family: 'quicksand';
   color: white;
+  font-size: 25px;
 }
 
 @mixin style-title-bold{
@@ -44,6 +45,21 @@ $color-blue-dark: rgb(0, 101, 146);
   -o-transform: $val;
   -ms-transform: $val;
   transform: $val;
+}
+
+@mixin link-pseudo-color ($visited, $active, $hover, $focus) {
+    &:visited {
+      color: $visited;
+    }
+    &:active {
+      color: $active;
+    }
+    &:hover {
+      color: $hover;   
+    }
+    &:focus {
+      color: $hover;   
+    }
 }
 
 /***************/
@@ -84,6 +100,14 @@ $color-blue-dark: rgb(0, 101, 146);
   height: auto !important;
 }
 
+.g-pipe{
+  width: 2px;
+  height: 60px;
+  background: white;
+  position: absolute;
+  top: 30px;
+}
+
 .activities__wheel1{
   position: absolute;
   right: 0;
@@ -118,6 +142,8 @@ $color-blue-dark: rgb(0, 101, 146);
 
 .header__title {
   @include style-header;
+  @include link-pseudo-color(white, white, white, white);
+  margin: auto 25px;
 }
 
 .menu li a {
