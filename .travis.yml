@@ -33,9 +33,6 @@ before_script:
 script:
   - npm test
 
-after_script:
-  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
-
 after_success:
   - git clone git://${GH_REPO}
   - mv -f ${ADD_FILES} ${NAME_REPO}
@@ -45,4 +42,7 @@ after_success:
   - git config user.name ${GH_USER}
   - git add ${ADD_FILES}
   - git commit -m "Push auto from generator-itarverne-landing-page github repo"
-  - git push "https://${TRAVIS_SECURE_TOKEN_NAME}@${GH_REPO}" master > /dev/null 2>&1
+  - git push "https://${GH_REPO}" master > /dev/null 2>&1
+  
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
