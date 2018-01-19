@@ -3,10 +3,11 @@ language: node_js
 env:
   global:
     - CC_TEST_REPORTER_ID=$CODECLIMATE_REPORTER_ID
+    - GH_COMPANY=$GH_COMPANY
     - GH_USER=$GH_USER
     - GH_EMAIL=$GH_EMAIL
     - NAME_REPO=$NAME_REPO
-    - GH_REPO="github.com/${GH_USER}/${NAME_REPO}.git"
+    - GH_REPO="github.com/${GH_COMPANY}/${NAME_REPO}.git"
     - ADD_FILES="public/"
 
 node_js:
