@@ -8,6 +8,10 @@ $color-greenblue-dark: rgb(130, 175, 196);
 $color-greenblue-light: rgba(130, 175, 196, 0.68);
 $color-blue-dark: rgb(0, 101, 146);
 
+$big-font-size: 30px;
+$medium-font-size: 26px;
+$little-font-size: 24px;
+
 @mixin style-header{
   font-family: 'quicksand';
   color: white;
@@ -17,19 +21,19 @@ $color-blue-dark: rgb(0, 101, 146);
 @mixin style-title-bold{
   font-family: 'quicksand-bold';
   color: $color-blue-dark;
-  font-size: 30px;
+  font-size: $big-font-size;
 }
 
 @mixin style-title-std{
   font-family: 'quicksand-book';
   color: $color-blue-dark;
-  font-size: 26px;
+  font-size: $medium-font-size;
 }
 
 @mixin style-text{
   font-family: 'consola';
   color: $color-blue-dark;
-  font-size: 24px;
+  font-size: $little-font-size;
 }
 
 @mixin anim-photo-left{
@@ -93,7 +97,7 @@ $color-blue-dark: rgb(0, 101, 146);
 /*************/
 .g-corner{
   height: 25px;
-  border-top: 10px solid $color-greenblue-light;
+  border-top: 10px solid #aac9d7;
   border-left: 15px solid transparent;
   margin-left: -15px;
 }
@@ -269,6 +273,7 @@ $color-blue-dark: rgb(0, 101, 146);
   padding-right: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-size: $medium-font-size;
 }
 .content__quote{
   font-family: 'quicksand-bold';
@@ -278,10 +283,12 @@ $color-blue-dark: rgb(0, 101, 146);
   padding-right: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-size: $medium-font-size;
 }
 
 .content__footer{
   margin-top: 20px;
+  padding: 20px;
 }
 .content__footer-bt{
   display: flex; /* To delete whitespace beetween 2 span inside */
