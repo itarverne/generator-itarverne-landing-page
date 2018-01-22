@@ -17,16 +17,19 @@ $color-blue-dark: rgb(0, 101, 146);
 @mixin style-title-bold{
   font-family: 'quicksand-bold';
   color: $color-blue-dark;
+  font-size: 30px;
 }
 
 @mixin style-title-std{
   font-family: 'quicksand-book';
   color: $color-blue-dark;
+  font-size: 26px;
 }
 
 @mixin style-text{
   font-family: 'consola';
   color: $color-blue-dark;
+  font-size: 24px;
 }
 
 @mixin anim-photo-left{
@@ -112,21 +115,28 @@ $color-blue-dark: rgb(0, 101, 146);
   position: absolute;
   right: 0;
   margin-top: 120px;
+  opacity: 0.3;
 }
 .activities__wheel2{
   position: absolute;
   right: 0;
   margin-top: 120px;
+  opacity: 0.3;
+  transform: scale(0.7) translate(-300px,-150px);
 }
 .activities__wheel3{
   position: absolute;
   left: 0;
   margin-top: 120px;
+  opacity: 0.3;
+  transform: scale(0.7) translate(250px,-200px);
 }
 .activities__wheel4{
   position: absolute;
   left: 0;
   margin-top: 120px;
+  opacity: 0.3;
+  transform: translate(50px,-200px);
 }
 /************/
 /** Header **/
@@ -188,12 +198,22 @@ $color-blue-dark: rgb(0, 101, 146);
   height: 100px;
   @include style-title-bold;
 }
+.activities__app, 
+.activities__site, 
+.activities__pack, 
+.activities__training{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 .activities__app-title, 
 .activities__site-title, 
 .activities__pack-title, 
 .activities__training-title{
   @include style-title-bold;
   color: white;
+  margin-bottom: 0px;
+  line-height: 28px;
 }
 .activities__app-subtitle, 
 .activities__site-subtitle, 
@@ -203,18 +223,29 @@ $color-blue-dark: rgb(0, 101, 146);
   color: white;
 }
 .activities__app, 
-.activities__site, 
+.activities__site{
+  @include style-text;
+  color: white;
+  width: 60%;
+}
+
 .activities__pack, 
 .activities__training{
   @include style-text;
   color: white;
+  text-align: right;
+  padding-left: 20%;
 }
 
 .activities__image-left{
   @include anim-photo-left;
+  max-height: 300px;
+  max-width: 100%;
 }
 .activities__image-right{
   @include anim-photo-right;
+  max-height: 300px;
+  max-width: 100%;
 }
 
 .references__customer{
