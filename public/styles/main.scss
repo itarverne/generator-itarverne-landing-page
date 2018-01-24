@@ -295,13 +295,15 @@ $little-font-size: 24px;
 }
 
 .footer {
-	background-color: gray;
+	background-color: white;
 }
 
 .footer__item{
 	@include xy-gutters($gutters:200px, $gutter-type:padding, $gutter-position: top bottom);
 }
-
+.footer__contact{
+  margin: 10px; 
+}
 .casper:after {
   content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
 }

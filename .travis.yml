@@ -36,7 +36,7 @@ script:
 after_success:
   - git clone git://${GH_REPO}
   - yes | cp -rf ${ADD_FILES} ${NAME_REPO}/
-  - cd ${NAME_REPO}/public
+  - cd ${NAME_REPO}
   - git remote
   - git config user.email ${GH_EMAIL}
   - git config user.name ${GH_USER}
