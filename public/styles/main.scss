@@ -8,6 +8,7 @@ $color-greenblue-dark: rgb(130, 175, 196);
 $color-greenblue-light: rgba(130, 175, 196, 0.68);
 $color-blue-dark: rgb(0, 101, 146);
 
+$huge-font-size: 40px;
 $big-font-size: 30px;
 $medium-font-size: 26px;
 $little-font-size: 24px;
@@ -201,6 +202,7 @@ $little-font-size: 24px;
   margin-bottom: 0;
   height: 100px;
   @include style-title-bold;
+  font-size: $huge-font-size;
 }
 .activities__app, 
 .activities__site, 
