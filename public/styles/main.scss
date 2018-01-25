@@ -306,6 +306,12 @@ $little-font-size: 24px;
 .footer__contact{
   margin: 10px; 
 }
+.footer__facebook,
+.footer__twitter-follow,
+.footer__twitter-share,
+.footer__linkedin{
+  margin:10px;
+}
 .casper:after {
   content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
 }
