@@ -328,6 +328,11 @@ $little-font-size: 24px;
 /** Media Queries **/
 /*******************/
 @include breakpoint(small only) {
+  .header {
+    background-size: 100vw 50vh;
+    height: 50vh;
+  }
+    
   .activities__image-left,
   .activities__image-right{
     width: 30%;
