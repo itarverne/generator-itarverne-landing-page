@@ -186,9 +186,12 @@ $little-font-size: 24px;
 }
 .references__customer_name{
   margin-top: 20px;
+  font-weight: bold;
+  @include style-title-bold;
 }
 .references__customer_url{
   margin-top: 20px;
+  @include style-text;
 }
 .references__title{
   background-color: $color-greenblue-dark;
