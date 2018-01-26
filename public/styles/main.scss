@@ -358,6 +358,21 @@ $little-font-size: 24px;
   .content__footer-bt{
     justify-content: center;
   }
+
+  .references__logo {
+    background: $color-greenblue-dark;
+    text-align: inherit;
+    padding-left: 20px;
+  }
+  .references__logo-customer {
+    width: 100px;
+    margin-top: 10px;
+  }
+  .references__customer_name{
+    display: inline;
+    margin-left: 10px;
+    color: white;
+  }
 }
 
 /***************/
