@@ -324,6 +324,37 @@ $little-font-size: 24px;
 }
 
 
+/*******************/
+/** Media Queries **/
+/*******************/
+@include breakpoint(small only) {
+  .activities__image-left,
+  .activities__image-right{
+    width: 30%;
+    margin: 15px;
+  }
+  .activities__image{
+    text-align: center;
+    order: 0;
+  }
+  .activities__app,
+  .activities__site{
+    text-align: center;
+    width: 100%;      
+  }
+  .activities__pack,
+  .activities__training{
+    text-align: center;
+    width: 100%;  
+    order: 1;
+    padding-left: 0;
+  }
+
+  .content__footer-bt{
+    justify-content: center;
+  }
+}
+
 /***************/
 /** Animation **/
 /***************/
