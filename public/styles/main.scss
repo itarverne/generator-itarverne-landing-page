@@ -82,14 +82,14 @@ $little-font-size: 24px;
 
 @font-face {
   font-family: 'quicksand-bold';
-  src: url('../fonts/quicksand-bold.ttf');
+  src: url('../fonts/quicksand-bold.otf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'quicksand-book';
-  src: url('../fonts/quicksand-book.ttf');
+  src: url('../fonts/quicksand-book.otf');
   font-weight: normal;
   font-style: normal;
 }
@@ -332,7 +332,12 @@ $little-font-size: 24px;
     background-size: 100vw 50vh;
     height: 50vh;
   }
-    
+  .header__mobile{
+    margin-left: 30%;
+    max-width: 100%;
+    height: auto;
+  }  
+
   .activities__image-left,
   .activities__image-right{
     width: 30%;
@@ -355,6 +360,12 @@ $little-font-size: 24px;
     padding-left: 0;
   }
 
+  .content__title{
+    font-size: $big-font-size;
+  }
+  .content__quote{
+    font-size: $little-font-size;
+  }
   .content__footer-bt{
     justify-content: center;
   }
@@ -372,6 +383,7 @@ $little-font-size: 24px;
     display: inline;
     margin-left: 10px;
     color: white;
+    font-size: $medium-font-size;
   }
 
   .footer__item {
