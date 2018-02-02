@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import FacebookProvider, { Like, ShareButton } from 'react-facebook';
+import FacebookProvider, { Like, Share as ShareFb} from 'react-facebook';
 
 class SocialFbLike extends React.Component {
   render() {
@@ -20,7 +20,9 @@ class SocialFbShare extends React.Component {
   render() {
     return (
       <FacebookProvider appId="474812546226673">
-        <ShareButton href="http://www.itarverne.com" />
+        <ShareFb href="http://www.itarverne.com">
+          <button type="button">Share</button>
+        </ShareFb>
       </FacebookProvider>
     );
   }
