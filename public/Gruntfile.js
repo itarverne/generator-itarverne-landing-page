@@ -42,7 +42,7 @@ module.exports = function (grunt) {
       },
       babelJsx: {
         files: ['<%= config.app %>/scripts/{,*/}*.jsx'],
-        tasks: ['browserify']
+        tasks: ['babel:jsx', 'browserify']
       },
       gruntfile: {
         files: ['Gruntfile.js']

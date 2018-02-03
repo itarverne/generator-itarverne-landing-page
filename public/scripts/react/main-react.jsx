@@ -1,5 +1,21 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 import FacebookProvider, { Like, Share as ShareFb} from 'react-facebook';
+
+const ButtonFb = styled.button`
+  border-radius: 3px;
+  font-size: 11px;
+  height: 20px;
+  padding: 0 5px 0 5px;
+  background-color: rgb(66, 103, 178);
+  color: white;
+  font-weight: bold;
+
+  &:hover {
+    background: #365899;
+    cursor: pointer;
+  }
+`;
 
 class SocialFbLike extends React.Component {
   render() {
@@ -21,7 +37,7 @@ class SocialFbShare extends React.Component {
     return (
       <FacebookProvider appId="474812546226673">
         <ShareFb href="http://www.itarverne.com">
-          <button type="button">Share</button>
+          <ButtonFb>Share</ButtonFb>
         </ShareFb>
       </FacebookProvider>
     );

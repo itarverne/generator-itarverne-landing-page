@@ -315,6 +315,7 @@ $little-font-size: 24px;
 .footer__linkedin{
   margin:10px;
 }
+
 .casper:after {
   content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
 }
