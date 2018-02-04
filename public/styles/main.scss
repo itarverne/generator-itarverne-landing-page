@@ -2,7 +2,9 @@
 @import 'foundation';
 
 /** Set CSS variables **/
-$path-header-img: '../images/entete.png';
+$path-header-img-small: '../images/entete-small.png';
+$path-header-img-medium: '../images/entete-medium.png';
+$path-header-img-large: '../images/entete-large.png';
 $path-header-moutain: '../images/white-mountain.png';
 $color-greenblue-dark: rgb(130, 175, 196);
 $color-greenblue-light: rgba(130, 175, 196, 0.68);
@@ -148,11 +150,22 @@ $little-font-size: 24px;
 /************/
 .header{
   margin:0;
-  background: url($path-header-img) no-repeat;
-  background-size: 100vw 100vh;
   height: 100vh;
   padding-top: 2%;
   vertical-align: middle;
+  background: url($path-header-img-large) no-repeat;
+  background-size: 100vw 100vh;
+
+  @include breakpoint(small only) {
+    background-size: 100vw 50vh;
+    height: 50vh;
+    background: url($path-header-img-small) no-repeat;
+  }
+
+  @include breakpoint(medium only) {
+    background: url($path-header-img-medium) no-repeat;
+  }
+
 }
 
 .header__title {
@@ -329,10 +342,6 @@ $little-font-size: 24px;
 /** Media Queries **/
 /*******************/
 @include breakpoint(small only) {
-  .header {
-    background-size: 100vw 50vh;
-    height: 50vh;
-  }
   .header__mobile{
     margin-left: 30%;
     max-width: 100%;
