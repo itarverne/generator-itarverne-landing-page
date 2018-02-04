@@ -157,13 +157,15 @@ $little-font-size: 24px;
   background-size: 100vw 100vh;
 
   @include breakpoint(small only) {
+    background: url($path-header-img-small) no-repeat;
     background-size: 100vw 50vh;
     height: 50vh;
-    background: url($path-header-img-small) no-repeat;
   }
 
   @include breakpoint(medium only) {
     background: url($path-header-img-medium) no-repeat;
+    background-size: 100vw 100vh;
+    height: 100vh;
   }
 
 }
