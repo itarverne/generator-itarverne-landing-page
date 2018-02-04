@@ -14,6 +14,7 @@ $huge-font-size: 40px;
 $big-font-size: 30px;
 $medium-font-size: 26px;
 $little-font-size: 24px;
+$micro-font-size: 20px;
 
 @mixin style-header{
   font-family: 'quicksand';
@@ -171,6 +172,9 @@ $little-font-size: 24px;
 }
 .header__cookies{
   position: fixed;
+  font-family: 'consola';
+  font-size: $micro-font-size;
+  color: white;
   background-color: $color-greenblue-dark;
   width: 100%;
   z-index: 2;
@@ -178,6 +182,8 @@ $little-font-size: 24px;
 }
 .header__cookies--validate{
   background-color: $color-blue-dark;
+  font-family: 'quicksand-bold';
+  font-size: $small-font-size;
 }
 .header__title {
   @include style-header;
