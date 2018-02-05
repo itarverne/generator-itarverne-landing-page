@@ -54,6 +54,11 @@ import { Share } from 'react-twitter-widgets'
 ReactDOM.render((
   <Share
     url="itarverne.com"
+    options={{
+      text: '@itarverne est une société auvergnate spécialisée dans le développement web Python et Java',
+      lang: 'fr',
+      count: 'horizontal'
+    }}
     onLoad={() => console.log('Share twitter is loaded!')}
   />
 ), document.getElementById('twitter-share'));
