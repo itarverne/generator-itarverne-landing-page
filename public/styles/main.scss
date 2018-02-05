@@ -319,6 +319,11 @@ $micro-font-size: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: $medium-font-size;
+
+  &:hover{
+    text-decoration: none;
+    color: white;
+  }
 }
 
 .content__footer{
