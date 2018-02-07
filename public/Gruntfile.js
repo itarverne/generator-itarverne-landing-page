@@ -285,12 +285,11 @@ module.exports = function (grunt) {
       generated: {
         files: [{
           dest : '<%= config.build %>/scripts/<%= config.nameApp %>.min.js',
-          //src : ['<%= concat.assets_js.dest %>', '<%= concat.basic.dest %>']
           src : [
             'node_modules/jquery/dist/jquery.js', 
             'node_modules/foundation-sites/dist/js/foundation.js',
-            'node_modules/react/dist/react.js',
-            'node_modules/react-dom/dist/react-dom.js',
+            'node_modules/react/dist/react.min.js',
+            'node_modules/react-dom/dist/react-dom.min.js',
             '<%= config.tmp %>/scripts/bundle-require.js',
             '<%= config.app %>/scripts/main.js'
           ]
