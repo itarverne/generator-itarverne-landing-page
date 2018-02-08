@@ -10,16 +10,17 @@ $color-greenblue-dark: rgb(130, 175, 196);
 $color-greenblue-light: rgba(130, 175, 196, 0.68);
 $color-blue-dark: rgb(0, 101, 146);
 
-$huge-font-size: 40px;
-$big-font-size: 30px;
-$medium-font-size: 26px;
-$little-font-size: 24px;
-$micro-font-size: 20px;
+/** 1 rem = 16px **/
+$huge-font-size:  2.5rem; /* 40px; */
+$big-font-size:  1.875rem; /* 30px; */
+$medium-font-size: 1.625rem; /* 26px; */
+$little-font-size:  1.5rem; /* 24px; */
+$micro-font-size:  1.25rem; /* 20px; */
 
 @mixin style-header{
-  font-family: 'quicksand';
+  font-family: 'Quicksand';
   color: white;
-  font-size: 25px;
+  font-size: $little-font-size;
 }
 
 @mixin style-title-bold{
@@ -266,6 +267,7 @@ $micro-font-size: 20px;
   @include style-text;
   color: white;
   width: 60%;
+  padding-left: 10px;
 }
 
 .activities__pack, 
