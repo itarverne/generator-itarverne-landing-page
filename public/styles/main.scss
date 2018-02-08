@@ -120,6 +120,15 @@ $micro-font-size:  1.25rem; /* 20px; */
   top: 30px;
 }
 
+::selection{
+  background-color: white;
+  color: $color-blue-dark;
+}
+.references div::selection, footer a::selection{
+  background-color: $color-blue-dark;
+  color: white;
+}
+
 .activities__wheel1{
   position: absolute;
   right: 0;
