@@ -282,9 +282,9 @@ module.exports = function (grunt) {
       options: {
         banner: '<%= config.banner %>'
       },
-      generated: {
+      prod: {
         files: [{
-          dest : '<%= config.build %>/scripts/<%= config.nameApp %>.min.js',
+          dest : '<%= config.tmp %>/scripts/<%= config.nameApp %>.min.js',
           src : [
             'node_modules/jquery/dist/jquery.js', 
             'node_modules/foundation-sites/dist/js/foundation.js',
@@ -294,6 +294,30 @@ module.exports = function (grunt) {
             '<%= config.app %>/scripts/main.js'
           ]
         }]
+      },
+      dev: {
+        files: [{
+          dest : '<%= config.build %>/scripts/<%= config.nameApp %>.min.js',
+          src : [
+            'node_modules/jquery/dist/jquery.js', 
+            'node_modules/foundation-sites/dist/js/foundation.js',
+            'node_modules/react/dist/react.js',
+            'node_modules/react-dom/dist/react-dom.js',
+            '<%= config.tmp %>/scripts/bundle-require.js',
+            '<%= config.app %>/scripts/main.js'
+          ]
+        }]
+      }
+    },
+
+    // Strip console, alert, and debugger statements from JavaScript 
+    stripDebug: {
+      prod: {
+        files: {
+          '<%= config.build %>/scripts/<%= config.nameApp %>.min.js': '<%= config.tmp %>/scripts/<%= config.nameApp %>.min.js'
+        }
+      },
+      dev: {        
       }
     },
 
@@ -352,13 +376,18 @@ module.exports = function (grunt) {
       app: [
         'babel',
         'sass',
-        'imagemin',
+        //'imagemin',
         'babel:jsx',
         'i18n'
       ]
     }
 
   });
+
+  // Option to strip log, usage grunt build --target=prod
+  var target = grunt.option('target') || 'dev';
+  if(target != 'dev' || target != 'dev')
+    grunt.fail.fatal( `Only value 'prod' or 'dev' is available for 'target' option`);
 
   // grunt serve
   grunt.registerTask('serve', 'Start the server and preview your app', function () {
@@ -380,7 +409,8 @@ module.exports = function (grunt) {
     'postcss',
     'browserify',
     'cssmin',
-    'uglify',
+    'uglify:' + target,
+    'stripDebug:' + target,
     'filerev',
     'includeSource',
     'htmlmin',
