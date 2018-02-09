@@ -247,6 +247,20 @@ $micro-font-size:  1.25rem; /* 20px; */
   @include style-title-bold;
   font-size: $huge-font-size;
 }
+.references__content{
+  position: relative; /* Pour la tooltip */
+}
+.references__tooltip{
+  display: none;
+}
+.references a:hover .references__tooltip{
+  display: block; 
+  position: absolute; 
+  background: url(../images/site-lalocalerie.png); 
+  top: 0px; 
+  width: 450px; 
+  height: 210px; 
+}
 .activities__app, 
 .activities__site, 
 .activities__pack, 
