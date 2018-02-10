@@ -386,7 +386,7 @@ module.exports = function (grunt) {
 
   // Option to strip log, usage grunt build --target=prod
   var target = grunt.option('target') || 'dev';
-  if(target != 'dev' || target != 'dev')
+  if(target != 'dev' && target != 'prod')
     grunt.fail.fatal( `Only value 'prod' or 'dev' is available for 'target' option`);
 
   // grunt serve
