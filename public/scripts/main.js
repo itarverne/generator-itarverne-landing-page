@@ -1,3 +1,13 @@
+const device = require('current-device').default;
+
+if(device.ios()) {
+  var meta = document.createElement('meta');
+  meta.setAttribute('rel', 'apple-touch-icon');
+  meta.setAttribute('size', '152x152');
+  meta.setAttribute('href', 'images/favicon/favicon_152x152.png');
+  document.getElementsByTagName('head')[0].appendChild(meta);
+}
+
 $(document).ready(function(){
   $(document).foundation();
 

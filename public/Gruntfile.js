@@ -170,7 +170,8 @@ module.exports = function (grunt) {
             'node_modules/react-facebook/lib/Facebook.js',
             'node_modules/react-facebook/lib/FacebookProvider.js',
             'node_modules/react-facebook/lib/Like.js',
-            '<%= config.tmp %>/scripts/react/main-react.js'
+            '<%= config.tmp %>/scripts/react/main-react.js',
+            '<%= config.tmp %>/scripts/main.js'
           ]
         }
       }
@@ -290,8 +291,7 @@ module.exports = function (grunt) {
             'node_modules/foundation-sites/dist/js/foundation.js',
             'node_modules/react/dist/react.min.js',
             'node_modules/react-dom/dist/react-dom.min.js',
-            '<%= config.tmp %>/scripts/bundle-require.js',
-            '<%= config.app %>/scripts/main.js'
+            '<%= config.tmp %>/scripts/bundle-require.js'
           ]
         }]
       },
@@ -303,8 +303,7 @@ module.exports = function (grunt) {
             'node_modules/foundation-sites/dist/js/foundation.js',
             'node_modules/react/dist/react.js',
             'node_modules/react-dom/dist/react-dom.js',
-            '<%= config.tmp %>/scripts/bundle-require.js',
-            '<%= config.app %>/scripts/main.js'
+            '<%= config.tmp %>/scripts/bundle-require.js'
           ]
         }]
       }
@@ -376,7 +375,7 @@ module.exports = function (grunt) {
       app: [
         'babel',
         'sass',
-        'imagemin',
+        //'imagemin',
         'babel:jsx',
         'i18n'
       ]

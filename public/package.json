@@ -52,7 +52,11 @@
     "env": {
       "node": true,
       "browser": true,
+      "jquery": true,
       "es6": true
+    },
+    "ecmaFeatures": {
+      "modules": true
     },
     "rules": {
       "quotes": [
@@ -69,6 +73,7 @@
     "test": "mocha"
   },
   "dependencies": {
+    "current-device": "^0.7.2",
     "foundation-sites": "^6.4.1",
     "jquery": "^3.2.1",
     "react": "^15.6.1",
