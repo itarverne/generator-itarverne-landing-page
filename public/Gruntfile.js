@@ -132,18 +132,6 @@ module.exports = function (grunt) {
           src: '{,*/}*.js',
           dest: '<%= config.tmp %>/scripts',
           ext: '.js'
-        },{
-          expand: true,
-          cwd: 'node_modules/react-facebook/lib',
-          src: 'index.js',
-          dest: '<%= config.tmp %>/scripts',
-          ext: '.js'
-        },{
-          expand: true,
-          cwd: 'node_modules/react-facebook/src',
-          src: 'index.js',
-          dest: '<%= config.tmp %>/scripts',
-          ext: '.js'
         }]
       },
       jsx: {
