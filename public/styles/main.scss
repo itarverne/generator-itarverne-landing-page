@@ -79,21 +79,27 @@ $micro-font-size:  1.25rem; /* 20px; */
 /***************/
 @font-face {
   font-family: 'consola';
-  src: url('../fonts/consola.ttf');
+  src: url('../fonts/consola.woff2') format('woff2'), /* Super Modern Browsers */
+   url('../fonts/consola.woff') format('woff'), /* Pretty Modern Browsers */
+   url('../fonts/consola.ttf') format('truetype'); /* Safari, Android, iOS */
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'quicksand-bold';
-  src: url('../fonts/quicksand-bold.otf');
+  src: url('../fonts/quicksand-bold.woff2') format('woff2'), /* Super Modern Browsers */
+   url('../fonts/quicksand-bold.woff') format('woff'), /* Pretty Modern Browsers */
+   url('../fonts/quicksand-bold.ttf') format('truetype'); /* Safari, Android, iOS */
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'quicksand-book';
-  src: url('../fonts/quicksand-book.otf');
+  src: url('../fonts/quicksand-book.woff2') format('woff2'), /* Super Modern Browsers */
+   url('../fonts/quicksand-book.woff') format('woff'), /* Pretty Modern Browsers */
+   url('../fonts/quicksand-book.ttf') format('truetype'); /* Safari, Android, iOS */
   font-weight: normal;
   font-style: normal;
 }
