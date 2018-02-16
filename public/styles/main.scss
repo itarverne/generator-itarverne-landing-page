@@ -384,10 +384,15 @@ $micro-font-size:  1.25rem; /* 20px; */
 .content__top-site{
     position: fixed;
     bottom: 50px;
-    right: 20px;
+    left: 20px;
     background-color: $color-greenblue-light;
+    border: 2px $color-greenblue-dark solid;
     padding: 10px;
     cursor: pointer;
+    color: white;
+}
+.content__top-site > a{
+    color: white;
 }
 .content__top-site:before { 
   content:"\0394 \00a0"; 
