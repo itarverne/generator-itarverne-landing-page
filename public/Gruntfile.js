@@ -118,12 +118,15 @@ module.exports = function (grunt) {
       ]
     },
 
-    // Compiles to ES6 
+    // Compiles from ES6 
     babel: {
       options: {
-        sourceMap: true,
         plugins: ['transform-react-jsx'],
-        presets: ['es2015', 'react']
+        presets: ['es2015', 'react'],
+        sourceMap: (target === 'dev') ? true : false,
+        comments: (target === 'dev') ? true : false,
+        compact: (target === 'dev') ? false : true,
+        minified: (target === 'dev') ? false : true
       },
       tmp: {
         files: [{
@@ -149,7 +152,9 @@ module.exports = function (grunt) {
     browserify: {
       app: {
         options: {
-          browserifyOptions: { debug: true },
+          browserifyOptions: { 
+            debug: (target === 'dev') ? true : false
+          },
           // the plugin babelify allow to use babel in order to consert ES5 to ES6
           transform: [['babelify', { 'presets': ['es2015'] }]]
         },
@@ -183,7 +188,7 @@ module.exports = function (grunt) {
     // Transform the CSS with JS plugin
     postcss: {
       options: {
-        map: true,
+        map: (target === 'dev') ? true : false,
         processors: [
           // Vendor to add prefixed styles for browser compatibility
           require('autoprefixer')({
@@ -363,7 +368,7 @@ module.exports = function (grunt) {
       app: [
         'babel',
         'sass',
-        //'imagemin',
+        'imagemin',
         'babel:jsx',
         'i18n'
       ]
