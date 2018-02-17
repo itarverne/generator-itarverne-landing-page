@@ -336,12 +336,18 @@ module.exports = function (grunt) {
         files: [{
           dest : '<%= config.tmp %>/index.html',
           src : ['<%= config.app %>/index.html']
+        },{
+          dest : '<%= config.tmp %>/cgv.html',
+          src : ['<%= config.app %>/cgv.html']
         }]
       },
       app: {
         files: [{
           dest : '<%= config.app %>/index.html',
           src : ['<%= config.app %>/index.html']
+        },{
+          dest : '<%= config.app %>/cgv.html',
+          src : ['<%= config.app %>/cgv.html']
         }]
       }
     },
@@ -368,7 +374,7 @@ module.exports = function (grunt) {
       app: [
         'babel',
         'sass',
-        'imagemin',
+        //'imagemin',
         'babel:jsx',
         'i18n'
       ]

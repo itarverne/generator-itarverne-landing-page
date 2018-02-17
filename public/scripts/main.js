@@ -3,7 +3,7 @@ import device from 'current-device';
 const generateMeta = (rel, size, href) => {
   var meta = document.createElement('meta');
   meta.setAttribute('rel', rel);
-  meta.setAttribute('size', size);
+  meta.setAttribute('sizes', size);
   meta.setAttribute('href', href);
   meta.setAttribute('type', 'image/png');
   document.getElementsByTagName('head')[0].appendChild(meta);
@@ -71,3 +71,4 @@ $(document).ready(() => {
   });
 
 });
+

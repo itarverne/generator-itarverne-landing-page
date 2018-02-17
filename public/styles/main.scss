@@ -381,6 +381,28 @@ $micro-font-size:  1.25rem; /* 20px; */
 .footer__linkedin{
   margin:10px;
 }
+
+.g-parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.g-parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.header__parallax-section {
+  transform: translateZ(0px);
+}
+.header__parallax-section--bck {
+  font-size: 40px;
+  transform: translateZ(-1px) ;
+}
+
 .content__top-site{
     position: fixed;
     bottom: 50px;
@@ -406,6 +428,11 @@ $micro-font-size:  1.25rem; /* 20px; */
   content: attr(data-number) ; 
 }
 
+/** CGV **/
+.content__cgv{
+  text-align: justify;
+  @include style-text;
+}
 
 /*******************/
 /** Media Queries **/
