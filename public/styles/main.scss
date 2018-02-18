@@ -395,12 +395,11 @@ $micro-font-size:  1.25rem; /* 20px; */
   bottom: 0;
   left: 0;
 }
-.header__parallax-section {
-  transform: translateZ(0px);
-}
-.header__parallax-section--bck {
-  font-size: 40px;
+.page__parallax-header {
+  @include style-header;
+  font-size: 2 * $huge-font-size;
   transform: translateZ(-1px) ;
+  text-align: center;
 }
 
 .content__top-site{
