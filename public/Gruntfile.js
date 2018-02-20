@@ -315,9 +315,23 @@ module.exports = function (grunt) {
 
     copy: {
       build: {
-        expand: true,
-        src: 'fonts/*',
-        dest: '<%= config.build %>/'
+        files: [{
+          expand: true,
+          src: 'fonts/*',
+          dest: '<%= config.build %>/'
+        },{
+          expand: true,
+          src: 'sitemap.xml',
+          dest: '<%= config.build %>/'
+        },{
+          expand: true,
+          src: 'robots.txt',
+          dest: '<%= config.build %>/'
+        },{
+          expand: true,
+          src: 'favicon.ico',
+          dest: '<%= config.build %>/'
+        }]
       }
     },
 
@@ -374,7 +388,7 @@ module.exports = function (grunt) {
       app: [
         'babel',
         'sass',
-        //'imagemin',
+        'imagemin',
         'babel:jsx',
         'i18n'
       ]
