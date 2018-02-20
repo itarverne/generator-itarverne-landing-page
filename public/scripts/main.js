@@ -1,5 +1,7 @@
 import device from 'current-device';
-
+/*var sm = require('sitemap')
+    , fs = require('fs');
+*/
 const generateMeta = (rel, size, href) => {
   var meta = document.createElement('meta');
   meta.setAttribute('rel', rel);
@@ -72,3 +74,15 @@ $(document).ready(() => {
 
 });
 
+
+/*
+var sitemap = sm.createSitemap({
+  hostname: 'http://itarverne.com',
+  cacheTime: 600000,
+  urls: [
+    { url: '/' , changefreq: 'weekly', priority: 0.8, lastmodrealtime: true, lastmodfile: '../index.html' },
+    { url: '/cgv.html', changefreq: 'weekly', priority: 0.8, lastmodrealtime: true, lastmodfile: '../cgv.html' }
+  ]
+});
+
+fs.writeFileSync('../assets/sitemap.xml', sitemap.toString());*/
