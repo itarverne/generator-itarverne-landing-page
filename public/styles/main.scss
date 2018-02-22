@@ -11,11 +11,11 @@ $color-greenblue-light: rgba(130, 175, 196, 0.68);
 $color-blue-dark: rgb(0, 101, 146);
 
 /** 1 rem = 16px **/
-$huge-font-size:  3.75rem;
-$big-font-size:  2.8125rem;
-$medium-font-size: 2.4375rem;
-$little-font-size:  2.25rem;
-$micro-font-size:  1.875rem;
+$huge-font-size:  2.5rem; /* 40px; */
+$big-font-size:  1.875rem; /* 30px; */
+$medium-font-size: 1.625rem; /* 26px; */
+$little-font-size:  1.5rem; /* 24px; */
+$micro-font-size:  1.25rem; /* 20px; */
 
 @mixin style-header{
   font-family: 'Quicksand';
