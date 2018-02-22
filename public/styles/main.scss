@@ -11,11 +11,11 @@ $color-greenblue-light: rgba(130, 175, 196, 0.68);
 $color-blue-dark: rgb(0, 101, 146);
 
 /** 1 rem = 16px **/
-$huge-font-size:  2.5rem; /* 40px; */
-$big-font-size:  1.875rem; /* 30px; */
-$medium-font-size: 1.625rem; /* 26px; */
-$little-font-size:  1.5rem; /* 24px; */
-$micro-font-size:  1.25rem; /* 20px; */
+$huge-font-size:  3.75rem;
+$big-font-size:  2.8125rem;
+$medium-font-size: 2.4375rem;
+$little-font-size:  2.25rem;
+$micro-font-size:  1.875rem;
 
 @mixin style-header{
   font-family: 'Quicksand';
@@ -124,6 +124,11 @@ $micro-font-size:  1.25rem; /* 20px; */
   background: white;
   position: absolute;
   top: 30px;
+}
+
+.g-scroll {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 
 ::selection{
@@ -282,7 +287,6 @@ $micro-font-size:  1.25rem; /* 20px; */
   @include style-title-bold;
   color: white;
   margin-bottom: 0px;
-  line-height: 28px;
 }
 .activities__app-subtitle, 
 .activities__site-subtitle, 
@@ -387,10 +391,11 @@ $micro-font-size:  1.25rem; /* 20px; */
   perspective: 1px;
   height: 100vh;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: auto; /* scroll */
 }
+
 .g-parallax__layer {
-  position: absolute;
+  position: absolute; /* fixed */
   top: 0;
   right: 0;
   bottom: 0;
@@ -401,6 +406,10 @@ $micro-font-size:  1.25rem; /* 20px; */
   font-size: 2 * $huge-font-size;
   transform: translateZ(-1px) ;
   text-align: center;
+}
+
+.page__parallax-header--bck{
+  transform: translateZ(0px) ;
 }
 
 .content__top-site{
