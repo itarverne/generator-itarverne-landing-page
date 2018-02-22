@@ -355,10 +355,7 @@ $micro-font-size:  1.25rem; /* 20px; */
   padding-bottom: 10px;
   font-size: $medium-font-size;
 
-  &:hover{
-    text-decoration: none;
-    color: white;
-  }
+  @include link-pseudo-color(white, white, white, white);
 }
 
 .content__footer{
@@ -427,6 +424,9 @@ $micro-font-size:  1.25rem; /* 20px; */
 }
 .content__top-site:before { 
   content:"\0394 \00a0"; 
+}
+.content__top-site--effect{
+  @include link-pseudo-color(white, white, white, white);
 }
 
 .casper:after {
