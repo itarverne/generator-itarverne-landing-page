@@ -334,7 +334,47 @@ $micro-font-size:  1.25rem; /* 20px; */
   width: 200px;
   height: 200px;
 }
+.values{
+  background-color: $color-greenblue-light;
+  margin-top: 5px;
+  @include style-text;
+}
+.values__text{
+  background-image: url('../images/apostrophe_white.png');
+  background-repeat: no-repeat;
+  min-height: 80px;
+  padding-left: 40px;
+  padding-top: 29px;
+  padding-bottom: 20px;
+  text-align: justify;
+}
+.values__list--decor{
+  margin-bottom: 40px;
+}
+.values__list--decor::before{
+  content: '\25A0';
+}
 
+.content__hire-picto{
+  transform: translateX(16px);
+}
+.content__hire-text{
+  font-family: 'quicksand-bold';
+  font-size: $medium-font-size;
+  line-height: 25px;
+  color: white;
+  background-color: $color-blue-dark;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  display: inline-block;
+  @include link-pseudo-color(white, white, white, white);
+}
+
+.content__footer-bt--corner{
+  margin-top: 30px;
+}
 .content__quote-euro{
   font-family: 'quicksand-bold';
   color: white;
@@ -473,6 +513,15 @@ $micro-font-size:  1.25rem; /* 20px; */
     width: 100%;  
     order: 1;
     padding-left: 0;
+  }
+
+  .values{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .values__text{
+    padding-left: 0;
+    text-indent: 30px;
   }
 
   .content__title{
