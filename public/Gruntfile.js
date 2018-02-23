@@ -60,10 +60,11 @@ module.exports = function (grunt) {
     // Reload the server to refressh browser on specific files changed
     browserSync: {
       options: {
-        notify: false,
+        notify: (target === 'dev') ? true : false,
         background: true,
         watchOptions: {
-          ignored: ''
+          ignored: '',
+          awaitWriteFinish : true
         },
         browser: 'chrome'
       },
