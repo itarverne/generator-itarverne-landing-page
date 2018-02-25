@@ -1,261 +1,313 @@
 <!doctype html>
-<html>
-
+<html lang="fr">
   <head>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-KT78XXN');</script>
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})
+      (window,document,'script','dataLayer',<%= gtm %>);</script>
     <!-- End Google Tag Manager -->
 
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITArverne</title>
+    <title><%= title %></title>
+
     <link rel="icon" href="images/favicon/favicon.png">
-    <link rel="icon" href="images/favicon/favicon_24x24.png" type="image/png">
-    <link rel="icon" href="images/favicon/favicon_32x32.png" type="image/png">
-    <link rel="icon" href="images/favicon/favicon_48x48.png" type="image/png">
-    <link rel="icon" href="images/favicon/favicon_57x57.png" type="image/png">
-    <link rel="icon" href="images/favicon/favicon_60x60.png" type="image/png">
-    <link rel="icon" href="images/favicon/favicon_64x64.png" type="image/png">
-    <link rel="icon" href="images/favicon/favicon_72x72.png" type="image/png">
-    <link rel="icon" href="images/favicon/favicon_76x76.png" type="image/png">
-    <link rel="icon" href="images/favicon/favicon_96x96.png" type="image/png">
-    <link rel="icon" href="images/favicon/favicon_114x114.png" type="image/png">
-    <link rel="icon" href="images/favicon/favicon_120x120.png" type="image/png">
-    <link rel="icon" href="images/favicon/favicon_128x128.png" type="image/png">
-    <link rel="icon" href="images/favicon/favicon_144x144.png" type="image/png">
-    <link rel="icon" href="images/favicon/favicon_152x152.png" type="image/png">
-    <link rel="icon" href="images/favicon/favicon_160x160.png" type="image/png">
-    <link rel="icon" href="images/favicon/favicon_167x167.png" type="image/png">
-    <link rel="icon" href="images/favicon/favicon_180x180.png" type="image/png">
-    <link rel="icon" href="images/favicon/favicon_192x192.png" type="image/png">
-    <link rel="icon" href="images/favicon/favicon_195x195.png" type="image/png">
-    <link rel="icon" href="images/favicon/favicon_196x196.png" type="image/png">
-    <link rel="icon" href="images/favicon/favicon_228x228.png" type="image/png">
-    <link rel="icon" href="images/favicon/favicon_270x270.png" type="image/png">
-    <link rel="icon" href="images/favicon/favicon_558x270.png" type="image/png">
-    <link rel="icon" href="images/favicon/favicon_558x558.png" type="image/png">
+    <link rel="icon" sizes="24x24" href="images/favicon/favicon_24x24.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="images/favicon/favicon_32x32.png" type="image/png">
+    <link rel="icon" sizes="48x48" href="images/favicon/favicon_48x48.png" type="image/png">
+    <link rel="icon" sizes="64x64" href="images/favicon/favicon_64x64.png" type="image/png">
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
 
     <meta name="description" content="">
     <meta name="generator" content="generator-itarverne-landing-page 1.0.0">
-
-    <meta property="og:url" content="https://itarverne.com">
+    
+    <!--FACEBOOK-->
     <meta property="og:title" content="Développement, conseil et formation en Informatique">
-    <meta property="og:description" content="Entreprise auvergnate notamment spécialisée dans le développement d'application Web, Python et Java coté back-end">
-    <meta property="og:image" content="http://itarverne.com/logo.png">
-    <meta property="og:type" content="summary">
+    <meta property="og:site_name" content="<%= title %>">
+    <meta property="og:url" content="<%= url %>">
+    <meta property="og:description" content="<%= desc %>">
+    <meta property="og:image" content="<%= url %>/images/logo-social.png">
+    <meta property="fb:app_id" content="<%= appIdFacebook %>">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr">
 
-    <meta name="twitter:site" content="@itarverne">
-    <meta name="twitter:creator" content="@drigaudie">
+    <!--TWITTER-->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="Développement, conseil et formation en Informatique">
+    <meta property="twitter:description" content="<%= desc %>">
+    <meta property="twitter:creator" content="@drigaudie">
+    <meta property="twitter:url" content="<%= url %>">
+    <meta property="twitter:image" content="<%= url %>/images/logo-social.png">
+    <meta property="twitter:image:alt" content="<%= title %>">
+    <meta property="twitter:site" content="@itarverne">
+
+    <!--GOOGLE+-->
+    <link rel="author" href="drigaudie">
+    <link rel="publisher" href="<%= title %>">
 
     <!-- include: "type": "css", "basePath": "build", "files": "styles/*.css" -->
     <link href="styles/assets_css_ITArverne.min.ba62c9bd.css" rel="stylesheet" type="text/css">
     <!-- /include -->
 
   </head>
-  <body>  
+  <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KT78XXN"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=<%= gtm %>" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <header class="header">
-      <div class="header__cookies hide">
-        <h5>Usage des cookies</h5>
-        <p>Ce site utilise des cookies afin d'améliorer l'expérience utilisateur. En aucun cas les données récoltées ne sont revendues à des tiers.</p>
-        <a href="#" class="button header__cookies--validate" id="cookie__validate">Je comprend</a>
+
+    <div class="g-parallax g-scroll">      
+      <div class="g-parallax__layer page__parallax-header--bck">
+
+        <header class="header">
+          <div class="header__cookies hide">
+            <h5>Usage des cookies</h5>
+            <p>Ce site utilise des cookies afin d'améliorer l'expérience utilisateur. En aucun cas les données récoltées ne sont revendues à des tiers.</p>
+            <a href="#" class="button header__cookies--validate" id="cookie__validate">Je comprend</a>
+          </div>
+          
+          <nav id="top">
+            <ul class="menu hide-for-small-only">
+                <li><a href="#" class="is-active"><img src="../images/logo_white.png" alt="ITArverne"></a></li>
+                <li>
+                  <a href="#activities" class="header__title" data-t>header.link-activities</a>
+                </li>
+                <li>
+                  <a href="#references" class="header__title" data-t>header.link-references</a>
+                  <div class="g-pipe"></div>
+                </li>
+                <li>
+                  <a href="#values" class="header__title" data-t>header.link-values</a>
+                  <div class="g-pipe"></div>
+                </li>
+                <!--<li>
+                  <a href="#labs" class="header__title">LABS</a>
+                  <div class="g-pipe"></div>
+                </li>-->
+                <li>
+                  <a href="http://rigaudie.fr" target="_blank" class="header__title" data-t>header.link-blog</a>
+                  <div class="g-pipe"></div>
+                </li>
+            </ul>
+            <img src="../images/logo_white.png" class="show-for-small-only header__mobile" alt="ITArverne">
+          </nav>
+            
+        </header>
+
+        <div class="content">
+          <article id="activities" class="activities">
+              <header>
+                  <h1 class="content__title" data-t>content-bloc-1.title</h1>
+              </header>
+              <section class="grid-x">
+                <div class="medium-4 medium-offset-1 activities__image cell">
+                  <img src="images/appli-metier.png" alt="Application métier" class="activities__image-left">
+                </div>
+                <div class="medium-7 cell activities__app">
+                  <h2 class="activities__app-title" data-t>content-bloc-1.app-title</h2>
+                  <h3 class="activities__app-subtitle" data-t>content-bloc-1.app-desc</h3>
+                  <p data-t>content-bloc-1.app-content</p>
+                </div>
+                <img src="images/wheel.png" class="activities__wheel1" alt="wheel">
+              </section>
+              <section id="site" class="grid-x">
+                <div class="medium-4 medium-offset-1 activities__image cell">
+                  <img src="images/site.png" alt="site" class="activities__image-left">
+                </div>
+                <div class="medium-7 cell activities__site">
+                  <h2 class="activities__site-title" data-t>content-bloc-1.site-title</h2>
+                  <h3 class="activities__site-subtitle" data-t>content-bloc-1.site-desc</h3>
+                  <p data-t>content-bloc-1.site-content</p>
+                </div>
+                <img src="images/wheel.png" class="activities__wheel2" alt="wheel">
+              </section>
+              <section id="pack" class="grid-x">
+                <img src="images/wheel.png" class="activities__wheel3" alt="wheel">
+                <div class="medium-7 cell activities__pack">
+                  <h2 class="activities__pack-title" data-t>content-bloc-1.pack-title</h2>
+                  <p class="activities__pack" data-t>content-bloc-1.pack-content</p>
+                </div>
+                <div class="medium-4 medium-offset-1 activities__image cell">
+                  <img src="images/pack.png" alt="pack" class="activities__image-right">
+                </div>
+              </section>
+              <section id="training" class="grid-x">
+                <img src="images/wheel.png" class="activities__wheel4" alt="wheel">
+                <div class="medium-7 cell activities__training">
+                  <h2 class="activities__training-title" data-t>content-bloc-1.training-title</h2>
+                  <p class="activities__training" data-t>content-bloc-1.training-content</p>
+                </div>
+                <div class="medium-4 medium-offset-1 activities__image cell">
+                  <img src="images/training.png" alt="Formation" class="activities__image-right">
+                </div>
+              </section>
+              <footer class="grid-x content__footer">
+                <div class="medium-11 medium-offset-1 cell content__footer-bt">
+                  <span class="content__quote-euro">€</span>
+                  <a data-name="david.rigaudie" data-domain="itarverne" data-tld="com" href="#" class="content__quote" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld" data-t> content-bloc-1.bt-content</a>
+                  <span class="g-corner"></span>
+                </div>
+              </footer>
+          </article>
+
+          <article id="references" class="references">
+              <header class="references__title">
+                  <h1 class="content__title" data-t>content-bloc-2.title</h1>
+              </header>
+              <section class="grid-x references__logo">
+                <div class="medium-3 medium-offset-1 cell references__content">
+                  <a href="http://www.lamontagne.fr" target="_blank">
+                    <img src="images/centrefrance.jpg" class="references__logo-customer g-responsive-image-prio" alt="La Montagne">
+                    <div class="references__customer_name">La Montagne</div>
+                    <div class="hide-for-small-only references__customer_url">www.lamontagne.fr</div>
+                  </a>
+                </div>
+                <div class="medium-3 cell references__content">
+                  <a href="http://www.lalocalerie.fr" target="_blank">
+                    <img src="images/taste.jpg" class="references__logo-customer g-responsive-image-prio" alt="Taste">
+                    <div class="references__customer_name">La Localerie</div>
+                    <div class="hide-for-small-only references__customer_url">www.lalocalerie.fr</div>
+                    <span class="references__tooltip"></span>
+                  </a>
+                </div>
+                <div class="medium-3 cell references__content">
+                  <a href="http://www.lescomptoirstaste.com" target="_blank">
+                    <img src="images/taste.jpg" class="references__logo-customer g-responsive-image-prio" alt="Taste">
+                    <div class="references__customer_name">Les Comptoirs Taste</div>
+                    <div class="hide-for-small-only references__customer_url">www.lescomptoirstaste.com</div>
+                  </a>
+                </div>
+              </section>
+          </article>
+
+          <article id="values" class="values">
+              <header>
+                  <h1 class="content__title" data-t>content-bloc-3.title</h1>
+              </header>
+              <section class="grid-x">
+                <div class="medium-10 medium-offset-1 cell">
+                  <p class="values__text" data-t>
+                    content-bloc-3.text
+                  </p>
+                </div>
+              </section>
+              <section class="grid-y values__list">
+                <div class="medium-9 medium-offset-2 cell values__list--decor" data-t>
+                  content-bloc-3.value-1
+                </div>
+                <div class="medium-9 cell medium-offset-2 values__list--decor" data-t>
+                  content-bloc-3.value-2
+                </div>
+                <div class="medium-9 cell medium-offset-2 values__list--decor" data-t>
+                  content-bloc-3.value-3
+                </div>
+                <div class="medium-9 cell medium-offset-2 values__list--decor" data-t>
+                  content-bloc-3.value-4
+                </div>
+                <div class="medium-9 cell medium-offset-2 values__list--decor" data-t>
+                  content-bloc-3.value-5
+                </div>
+              </section>
+              <footer class="grid-x content__footer">
+                <div class="medium-3 medium-offset-9 small-12 cell content__footer-bt">
+                  <a data-name="david.rigaudie" data-domain="itarverne" data-tld="com" href="#" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld">
+                    <img src="images/picto-pola.png" alt="postulez" class="content__hire-picto">
+                    <span class="content__hire-text" data-t>content-bloc-3.button</span>
+                  </a>
+                  <span class="g-corner content__footer-bt--corner"></span>
+                </div>
+              </footer>
+          </article>
+        </div>
+      
+        <footer class="footer">
+          <div class="grid-container">
+            <div class="grid-x grid-margin-x footer__item">
+              <div class="medium-4 cell">
+                <a href="#" class="is-active"><img src="../images/logo.png" alt="ITArverne"></a>
+                <p>© 2018 - <%= title %></p>
+              </div>
+              <div class="medium-4 cell">
+                <% if (putFacebook) { %>
+                <div id="fb-like" class="footer__facebook"></div>
+                <div id="fb-share" class="footer__facebook"></div>
+                <% } %>
+                <% if (putTwitter) { %>
+                <div id="twitter-follow" class="footer__twitter-follow"></div>
+                <div id="twitter-share" class="footer__twitter-share"></div>
+                <% } %>
+                <div id="linkedin-share" class="footer__linkedin">
+                  <script type="IN/Share" data-url="<%= url %>" data-counter="right"></script>
+                </div>
+              </div>
+              <div class="medium-4 cell">
+                <% if (putFacebook) { %>
+                <div class="footer__contact">
+                  <a href="https://www.facebook.com/itarverne" target="_blank" class="is-active">
+                    <img src="../images/facebook_bleu.png" alt="Facebook">
+                    Facebook
+                  </a>
+                </div>
+                <% } %>
+                <% if (putTwitter) { %>
+                <div class="footer__contact">
+                  <a href="<%= urlTwitter %>" target="_blank" class="is-active">
+                    <img src="../images/twitter_bleu.png" alt="Twitter">
+                    Twitter
+                  </a>
+                </div>
+                <% } %>
+                <div class="footer__contact">
+                  <a href="https://www.linkedin.com/company/itarverne" target="_blank" class="is-active">
+                    <img src="../images/linkedin_bleu.png" alt="LinkedIn">
+                    LinkedIn
+                  </a>
+                </div>
+                <div class="footer__contact">
+                  <a href="https://github.com/itarverne" target="_blank" class="is-active">
+                    <img src="../images/github_bleu.png" alt="github">
+                    Github
+                  </a>
+                </div>
+                <div class="footer__contact">
+                  <a data-name="david.rigaudie" data-domain="itarverne" data-tld="com" href="#" class="casper" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld">
+                    <img src="../images/enveloppe_bleu.png" alt="mail">
+                  </a>
+                </div>
+                <div class="footer__contact">
+                  <a data-number="06.44.28.80.72" href="#" class="lady-brown" onclick="window.location.href = 'tel:' + this.dataset.number">
+                    <img src="../images/tel_bleu.png" alt="téléphone">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="grid-x grid-margin-x">
+              <div class="cell"><span>Build with ❤ by </span> <a href="https://github.com/itarverne/generator-itarverne-landing-page" target="_blank">ITArverne</a> 2018</div>
+            </div>
+          </div>
+        </footer>
+    
       </div>
-      <nav>
-           <ul class="menu hide-for-small-only" data-magellan="">
-              <li><a href="#" class="is-active"><img src="../images/logo_white.png" alt="ITArverne"></a></li>
-              <li>
-                <a href="#activities" class="header__title g-link-visited">header.link-activities</a>
-              </li>
-              <li>
-                <a href="#references" class="header__title g-link-visited">header.link-references</a>
-                <div class="g-pipe"></div>
-              </li>
-              <!--<li>
-                <a href="#values" class="header__title g-link-visited">header.link-values</a>
-                <div class="g-pipe"></div>
-              </li>
-              <li>
-                <a href="#labs" class="header__title g-link-visited">header.link-labs</a>
-                <div class="g-pipe"></div>
-              </li>
-              <li>
-                <a href="#contact" class="header__title g-link-visited">header.link-contact</a>
-                <div class="g-pipe"></div>
-              </li>
-              <li>
-                <a href="#blog" class="header__title g-link-visited">header.link-blog</a>
-                <div class="g-pipe"></div>
-              </li>-->
-          </ul>
-          <img src="../images/logo_white.png" class="show-for-small-only header__mobile">
-      </nav>
-    </header>
 
-    <div class="content">
-      <article id="activities" class="activities">
-          <header>
-              <h1 class="content__title" data-t>content-bloc-1.title</h1>
-          </header>
-          <section class="grid-x" data-magellan-target="activities">
-            <div class="medium-4 medium-offset-1 activities__image cell">
-              <img src="images/appli-metier.png" alt="Application métier" class="activities__image-left"/>
-            </div>
-            <div class="medium-7 cell activities__app">
-              <h2 class="activities__app-title" data-t>content-bloc-1.app-title</h2>
-              <h3 class="activities__app-subtitle" data-t>content-bloc-1.app-desc</h3>
-              <p class="activities__app" data-t>content-bloc-1.app-content</p>
-            </div>
-            <img src="images/wheel.png" class="activities__wheel1" alt="wheel">
-          </section>
-          <section id="activities" class="grid-x">
-            <div class="medium-4 medium-offset-1 cell">
-              <img src="images/site.png" alt="" class="activities__image-left">
-            </div>
-            <div class="medium-7 cell">
-              <h2 class="activities__site-title">content-bloc-1.site-title</h2>
-              <h3 class="activities__site-subtitle">content-bloc-1.site-desc</h3>
-              <p class="activities__site">content-bloc-1.site-content</p>
-            </div>
-            <img src="images/wheel.png" class="activities__wheel2" alt="wheel">
-          </section>
-          <section id="pack" class="grid-x">
-            <img src="images/wheel.png" class="activities__wheel3" alt="wheel">
-            <div class="medium-7 cell">
-              <h2 class="activities__pack-title">content-bloc-1.pack-title</h2>
-              <p class="activities__pack">content-bloc-1.pack-content</p>
-            </div>
-            <div class="medium-4 medium-offset-1 cell">
-              <img src="images/pack.png" alt="" class="activities__image-right">
-            </div>
-          </section>
-          <section id="training" class="grid-x">
-            <img src="images/wheel.png" class="activities__wheel4" alt="wheel">
-            <div class="medium-7 cell">
-              <h2 class="activities__training-title">content-bloc-1.training-title</h2>
-              <p class="activities__training">content-bloc-1.training-content</p>
-            </div>
-            <div class="medium-4 medium-offset-1 cell">
-              <img src="images/training.png" alt="" class="activities__image-right">
-            </div>
-          </section>
-          <footer class="grid-x content__footer" >
-            <div class="medium-11 medium-offset-1 cell content__footer-bt">
-              <span class="content__quote-euro">€</span>
-              <span class="content__quote"> content-bloc-1.bt-content</span>
-              <span class="g-corner"></span>
-            </div>
-          </footer>
-      </article>
+      <div class="g-parallax__layer page__parallax-header hide-for-small-only">
+        <span data-t>header.main-text</span>
+      </div>
 
-      <article id="references" class="references">
-          <header class="references__title">
-              <h1 class="content__title">content-bloc-2.title</h1>
-          </header>
-          <section class="grid-x references__logo" data-magellan-target="references">
-            <div class="medium-3 medium-offset-1 cell">
-              <a href="http://www.lamontagne.fr" target="_blank">
-                <img src="images/centrefrance.jpg" class="references__logo-customer g-responsive-image-prio" alt="">
-                <div class="references__customer_name">La Montagne</div>
-                <div class="references__customer_url">www.lamontagne.fr</div>
-              </a>
-            </div>
-            <div class="medium-3 cell">
-              <a href="http://www.lalocalerie.fr" target="_blank">
-                <img src="images/taste.jpg" class="references__logo-customer g-responsive-image-prio" alt="">
-                <div class="references__customer_name">La Localerie</div>
-                <div class="references__customer_url">www.lalocalerie.fr</div>
-              </a>
-            </div>
-            <div class="medium-3 cell">
-              <a href="http://www.lescomptoirstaste.com" target="_blank">
-                <img src="images/taste.jpg" class="references__logo-customer g-responsive-image-prio" alt="">
-                <div class="references__customer_name">Les comptoirs</div>
-                <div class="references__customer_url">www.lescomptoirstaste.com</div>
-              </a>
-            </div>
-          </section>
-      </article>
-
-      <aside>
-          <h3>aside</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
-      </aside>
     </div>
-  
-    <a data-name="contact" data-domain="domain" data-tld="com" href="#" class="casper" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld"></a>
-    <a data-number="0123456789" href="#" class="lady-brown" onclick="window.location.href = 'tel:' + this.dataset.number"></a>
 
-    <footer class="footer">
-      <div class="grid-container">
-        <div class="grid-x grid-margin-x footer__item">
-          <div class="medium-4 cell">
-            <a href="#" class="is-active"><img src="../images/logo.png"></a>
-            <p>© 2018 - ITArverne</p>
-          </div>
-          <div class="medium-4 cell">
-            <div id="fb" class="footer__facebook"></div>
-            <div id="twitter-follow" class="footer__twitter-follow"></div>
-            <div id="twitter-share" class="footer__twitter-share"></div>
-            <div id="linkedin-share" class="footer__linkedin">
-              <script type="IN/Share" data-url="rigaudie.fr" data-counter="right"></script>
-            </div>
-          </div>
-          <div class="medium-4 cell">
-            <div class="footer__contact">
-              <a href="https://www.facebook.com/itarverne" target="_blank" class="is-active">
-                <img src="../images/facebook_bleu.png">
-                Facebook
-              </a>
-            </div>
-            <div class="footer__contact">
-              <a href="https://twitter.com/itarverne" target="_blank" class="is-active">
-                <img src="../images/twitter_bleu.png">
-                Twitter
-              </a>
-            </div>
-            <div class="footer__contact">
-              <a href="https://www.linkedin.com/company/18320306" target="_blank" class="is-active">
-                <img src="../images/linkedin_bleu.png">
-                LinkedIn
-              </a>
-            </div>
-            <div class="footer__contact">
-              <a href="https://github.com/itarverne" target="_blank" class="is-active">
-                <img src="../images/github_bleu.png">
-                Github
-              </a>
-            </div>
-            <div class="footer__contact">
-              <a data-name="contact" data-domain="domain" data-tld="com" href="#" class="casper" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld">
-                <img src="../images/enveloppe_bleu.png">
-              </a>
-            </div>
-            <div class="footer__contact">
-              <a data-number="0123456789" href="#" class="lady-brown" onclick="window.location.href = 'tel:' + this.dataset.number">
-                <img src="../images/enveloppe_bleu.png">
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="grid-x grid-margin-x">
-          <div class="cell"><span>Build with ❤ by </span> <a href="https://github.com/itarverne/generator-itarverne-landing-page" target="_blank">ITArverne</a> 2018</div>
-        </div>
-      </div>
-    </footer>
+    <div class="content__top-site hide-for-small-only">
+      <a href="#top" class="content__top-site--effect">Haut</a>
+    </div>
+
     
     <!-- include: "type": "js", "basePath": "build", "files": "scripts/**/*.js" -->
     <script src="scripts/ITArverne.min.3bed2ccd.js" async></script>
     <!-- /include -->
 
-    <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+    <script src="//platform.linkedin.com/in.js"></script>
     
   </body>
 </html>

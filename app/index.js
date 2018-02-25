@@ -43,8 +43,8 @@ module.exports = class extends Generator {
 		    default: 'linux or windows path supported'
 		},{
 		    type: 'input',
-		    name: 'codeGA',
-		    message: 'Put the following code for Google Analytics (UA-XXXXXXX-X)'
+		    name: 'codeGTM',
+		    message: 'Put the following code for Google Tag Management (GTM-XXXXXXX)'
 		},{
 		    type: 'confirm',
 		    name: 'putTwitter',
@@ -137,14 +137,14 @@ module.exports = class extends Generator {
 			this.log(chalk.bold.yellow('No favicon configured for apple, wrong path !'));			
 		}
 
-		if(this.props.codeGA != this.promptQuestion[3].default){
-			var regex = new RegExp('^UA-[0-9]{7}-[0-9]{1}$');
-			if(!regex.test(this.props.codeGA)){
-				this.props.codeGA = '';
-				this.log(chalk.bold.red('Wrong Google Analytics code provided, script not included !'));
+		if(this.props.codeGTM != this.promptQuestion[3].default){
+			var regex = new RegExp('^GTM-[0-9A-Z]{7}$');
+			if(!regex.test(this.props.codeGTM)){
+				this.props.codeGTM = '';
+				this.log(chalk.bold.red('Wrong Google Tag Management code provided, script not included !'));
 			}
 		} else {
-			this.log(chalk.bold.yellow('No Google Analytics code provided, script not included !'));
+			this.log(chalk.bold.yellow('No Google Tag Management code provided, script not included !'));
 		}
 
 		this.fs.copyTpl(
@@ -152,8 +152,14 @@ module.exports = class extends Generator {
 			this.destinationPath('public/index.html'),
 			{ 
 				title: this.props.appName,
-				ga: this.props.codeGA,
-				desc: this.props.desc
+				url: this.props.appUrl,
+				gtm: this.props.codeGTM,
+				desc: this.props.desc,
+				putTwitter: this.props.putTwitter,
+				nameTwitter: this.props.nameTwitter,
+				urlTwitter: this.props.urlTwitter,
+				putFacebook: this.props.putFacebook,
+				appIdFacebook: this.props.appIdFacebook,
 			}
 		);
 	}
