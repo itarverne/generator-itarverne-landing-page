@@ -28,7 +28,14 @@ yo itarverne-landing-page
 ```
 cd path/generator-itarverne-landing-page/public
 npm intall
-grunt build/serve
+# To build prod
+grunt build --target=prod
+# To build dev
+grunt build --target=dev
+# To build dev 
+grunt build
+# To launch the web server
+grunt serve
 ```
 
 # Test

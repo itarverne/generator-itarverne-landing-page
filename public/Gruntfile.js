@@ -390,7 +390,7 @@ module.exports = function (grunt) {
       app: [
         'babel',
         'sass',
-        //'imagemin',
+        'imagemin',
         'babel:jsx',
         'i18n'
       ]
