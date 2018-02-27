@@ -343,7 +343,8 @@ module.exports = function (grunt) {
         ordering: 'top-down',
         templates: {
           html: {
-            js: '<script src="{filePath}" async></script>'
+            js: '<script src="{filePath}" async></script>',
+            preloadCss: '<link rel="preload" href="{filePath}" as="style">'
           }
         }
       },
