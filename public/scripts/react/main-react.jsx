@@ -29,7 +29,7 @@ class SocialFbLike extends React.Component {
 
 ReactDOM.render(
   <SocialFbLike />,
-  document.getElementById('fb-like')
+  document.getElementById('js-fb-like')
 );
 
 class SocialFbShare extends React.Component {
@@ -46,7 +46,7 @@ class SocialFbShare extends React.Component {
 
 ReactDOM.render(
   <SocialFbShare />,
-  document.getElementById('fb-share')
+  document.getElementById('js-fb-share')
 );
 
 import { Share } from 'react-twitter-widgets'
@@ -61,7 +61,7 @@ ReactDOM.render((
     }}
     onLoad={() => console.log('Share twitter is loaded!')}
   />
-), document.getElementById('twitter-share'));
+), document.getElementById('js-twitter-share'));
 
 import { Follow } from 'react-twitter-widgets'
  
@@ -70,4 +70,4 @@ ReactDOM.render((
     username="itarverne"
     onLoad={() => console.log('Follow twitter is loaded!')}
   />
-), document.getElementById('twitter-follow'));
+), document.getElementById('js-twitter-follow'));
