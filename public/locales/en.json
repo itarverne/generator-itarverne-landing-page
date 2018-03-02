@@ -5,7 +5,7 @@
     "bt-valid": "I understand"
   },
   "header": {
-    "link-activity": "Activities",
+    "link-activities": "Activities",
     "link-references": "References",
     "link-values": "Values",
     "link-labs": "LABS",
@@ -15,28 +15,30 @@
   },
   "content-bloc-1": {
     "title": "our Activities",
-    "app-title": "Réalisation application métier",
+    "app-title": "Create business application",
     "app-desc": "JAVA, Python and React, AngularJs",
-    "app-content": "Réalisation d’une nouvelle application web correspondant à votre business.",
-    "site-title": "Création site",
+    "app-content": "Build new application matching with our business.",
+    "site-title": "Create website",
     "site-desc": "CMS / Landing page",
-    "site-content": "Mise en place d’un site web pour vous apporter de la visibilité sur internet",
+    "site-content": "Applicant website to increase our wev visibility",
     "pack-title": "Pack Startup",
-    "pack-content": "Mise en place d’un kit de démarrage : mail, site vitrine, partage document, CRM...",
-    "bt-content": "Ask your quote"
+    "pack-content": "Install startup toolkit : mail, landing page website, share document, CRM...",
+    "training-title": "Training",
+    "training-content": "Development newbie/expert, security, discover front end...",
+    "bt-content": " Ask your quote"
   },
   "content-bloc-2": {
     "title": "our References"
   },
   "content-bloc-3": {
     "title": "our Values",
-    "text": "<b>ITArverne</b> se veut être une société humaine où les collaborateurs s’épanouissent dans un environnement agréable. Nous nous donnons les moyens de former efficacement nos collaborateurs afin qu’ils deviennent de véritable expert en technique.<br>Il est possible d’avoir une carrière entière dans la technique, les pépites évolueront vers des postes d’architecte.",
-    "value-1": "<b> &lt;Respect&gt;</b> de nos collaborateurs et clients.",
-    "value-2": "Etre à <b>&lt;l’écoute&gt;</b> des attentes de chaque personne aussi bien en interne que chez nos clients.",
-    "value-3": "<b>&lt;Engagement qualité&gt;</b> Nos clients ont le droit à des experts pour développer leur projet.",
-    "value-4": "Développer une <b>&lt;expertise pointue&gt;</b> en se donnant les moyens d’être réellement efficace.",
-    "value-5": "<b>&lt;Valoriser&gt;</b> le travail des «techos» qui nécessite un investissement important.",
-    "button": "Postulez"
+    "text": "<b>ITArverne</b> wants to be a human society where employees thrive in a pleasant environment. We give ourselves the means to effectively train our employees so that they become true technical experts. <br> It is possible to have a full career in technology, the nuggets will evolve to positions of architect.",
+    "value-1": "<b> &lt;Respect&gt;</b> of our employees and customers.",
+    "value-2": " Being at <b>&lt;listening&gt;</ b> the expectations of each person both internally and at our customers.",
+    "value-3": " <b>&lt;Quality commitment&gt;</ b> Our clients have the right to experts to develop their project.",
+    "value-4": " Develop <b>&lt;sharp expertise&gt;</ b> with the means to be truly effective.",
+    "value-5": " <b>&lt;Valuing&gt;</b> the work of «techos» that requires a significant investment.",
+    "button": " Apply"
   },
   "footer": {
     "copyright": "Build with ❤ by "

@@ -67,38 +67,32 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KT78XXN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <div id="outdated"></div>
-
-    <header class="header">
+    <header class="header" data-magellan="">
       <div class="header__cookies hide">
         <h5>Usage des cookies</h5>
         <p>Ce site utilise des cookies afin d'améliorer l'expérience utilisateur. En aucun cas les données récoltées ne sont revendues à des tiers.</p>
         <a href="#" class="button header__cookies--validate" id="cookie__validate">Je comprend</a>
       </div>
-      <nav>
-        <ul class="menu hide-for-small-only" data-magellan="">
+      <nav data-magellan-target="top" id="top">
+        <ul class="menu hide-for-small-only">
             <li><a href="#" class="is-active"><img src="../../images/logo_white.png" alt="ITArverne"></a></li>
             <li>
-              <a href="#activities" class="header__title g-link-visited">Activités</a>
+              <a href="/#activities" class="header__title">Activités</a>
             </li>
             <li>
-              <a href="#references" class="header__title g-link-visited">Références</a>
+              <a href="/#references" class="header__title">Références</a>
+              <div class="g-pipe"></div>
+            </li>
+            <li>
+              <a href="/#values" class="header__title">Valeurs</a>
               <div class="g-pipe"></div>
             </li>
             <!--<li>
-              <a href="#values" class="header__title g-link-visited">Valeurs</a>
-              <div class="g-pipe"></div>
-            </li>
-            <li>
-              <a href="#labs" class="header__title g-link-visited">LABS</a>
-              <div class="g-pipe"></div>
-            </li>
-            <li>
-              <a href="#contact" class="header__title g-link-visited">Contact</a>
+              <a href="#labs" class="header__title">LABS</a>
               <div class="g-pipe"></div>
             </li>-->
             <li>
-              <a href="http://rigaudie.fr" target="_blank" class="header__title g-link-visited">Blog</a>
+              <a href="http://rigaudie.fr" target="_blank" class="header__title" rel="noopener">Blog</a>
               <div class="g-pipe"></div>
             </li>
         </ul>
@@ -165,10 +159,6 @@
               </div>
           </section>
       </article>
-
-      <div class="content__top-site hide-for-small-only" data-magellan="">
-        <a href="#activities" class="g-link-visited">Haut</a>
-      </div>
     </div>
     
     <footer class="footer">
@@ -230,8 +220,12 @@
       </div>
     </footer>
 
+    <div class="content__top-site hide-for-small-only" data-magellan="">
+      <a href="#top" class="content__top-site--effect">Haut</a>
+    </div>
+
     <!-- include: "type": "js", "basePath": "build", "files": "scripts/**/*.js" -->
-    <script src="../scripts/ITArverne.min.a7b98b7e.js" async></script>
+    <script src="../scripts/ITArverne.min.c4b85b94.js" async></script>
     <!-- /include -->
 
     <script src="//platform.linkedin.com/in.js"></script>

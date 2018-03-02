@@ -23,19 +23,21 @@
     "site-content": "Mise en place d’un site web pour vous apporter de la visibilité sur internet",
     "pack-title": "Pack Startup",
     "pack-content": "Mise en place d’un kit de démarrage : mail, site vitrine, partage document, CRM...",
-    "bt-content": "Demandez votre devis"
+    "training-title": "Formation",
+    "training-content": "Développement basique/avancé, sécurité, découverte écosystème front...",
+    "bt-content": " Demandez votre devis"
   },
   "content-bloc-2": {
     "title": "nos Références"
   },
   "content-bloc-3": {
-    "title": "our Values",
+    "title": "nos Valeurs",
     "text": "<b>ITArverne</b> se veut être une société humaine où les collaborateurs s’épanouissent dans un environnement agréable. Nous nous donnons les moyens de former efficacement nos collaborateurs afin qu’ils deviennent de véritable expert en technique.<br>Il est possible d’avoir une carrière entière dans la technique, les pépites évolueront vers des postes d’architecte.",
     "value-1": "<b> &lt;Respect&gt;</b> de nos collaborateurs et clients.",
-    "value-2": "Etre à <b>&lt;l’écoute&gt;</b> des attentes de chaque personne aussi bien en interne que chez nos clients.",
-    "value-3": "<b>&lt;Engagement qualité&gt;</b> Nos clients ont le droit à des experts pour développer leur projet.",
-    "value-4": "Développer une <b>&lt;expertise pointue&gt;</b> en se donnant les moyens d’être réellement efficace.",
-    "value-5": "<b>&lt;Valoriser&gt;</b> le travail des «techos» qui nécessite un investissement important.",
+    "value-2": " Etre à <b>&lt;l’écoute&gt;</b> des attentes de chaque personne aussi bien en interne que chez nos clients.",
+    "value-3": " <b>&lt;Engagement qualité&gt;</b> Nos clients ont le droit à des experts pour développer leur projet.",
+    "value-4": " Développer une <b>&lt;expertise pointue&gt;</b> en se donnant les moyens d’être réellement efficace.",
+    "value-5": " <b>&lt;Valoriser&gt;</b> le travail des «techos» qui nécessite un investissement important.",
     "button": "Postulez"
   },
   "footer": {
