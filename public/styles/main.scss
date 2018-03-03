@@ -355,6 +355,13 @@ $micro-font-size:  1.25rem; /* 20px; */
   content: '\25A0';
 }
 
+.david{
+  background-color: $color-greenblue-dark;
+  margin-top: 5px;
+  @include style-text;
+  text-align: justify;
+}
+
 .content__hire-picto{
   transform: translateX(16px);
 }
@@ -548,6 +555,11 @@ $micro-font-size:  1.25rem; /* 20px; */
     margin-left: 10px;
     color: white;
     font-size: $medium-font-size;
+  }
+
+ .david{
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .footer__item {

@@ -9,6 +9,7 @@
     "link-references": "References",
     "link-values": "Values",
     "link-labs": "LABS",
+    "link-david": "Who am I ?",
     "link-contact": "Get in touch",
     "link-blog": "Blog",
     "main-text": "Our web development expert"
@@ -39,6 +40,10 @@
     "value-4": " Develop <b>&lt;sharp expertise&gt;</ b> with the means to be truly effective.",
     "value-5": " <b>&lt;Valuing&gt;</b> the work of «techos» that requires a significant investment.",
     "button": " Apply"
+  },
+  "content-bloc-4": {
+    "title": "Who am I ?",
+    "text": "My name is David and I am from Auvergne where I decided to start my company. At work, I worked in different fields of activity but always related to the web. <br> <br> The job of developer impassioned me and I appreciate meeting my customers in order to propose them the best architecture with a maintainable code always according to the respects of the current coding. <br> <br> During these 10 years of experience, I was able to enrich my knowledge in the development but also in the business process. I master the Java, PHP and Python languages ​​on the back end as well as Reaction and Angular Js on the front end. As for the architecture part, I can intervene on the Docker, applications or just monolithic applications. find his account. <br>"
   },
   "footer": {
     "copyright": "Build with ❤ by "

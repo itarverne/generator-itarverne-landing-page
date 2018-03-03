@@ -9,6 +9,7 @@
     "link-references": "Références",
     "link-values": "Valeurs",
     "link-labs": "LABS",
+    "link-david": "Qui suis-je ?",
     "link-contact": "Contact",
     "link-blog": "Blog",
     "main-text": "Votre expert en développement web"
@@ -39,6 +40,10 @@
     "value-4": " Développer une <b>&lt;expertise pointue&gt;</b> en se donnant les moyens d’être réellement efficace.",
     "value-5": " <b>&lt;Valoriser&gt;</b> le travail des «techos» qui nécessite un investissement important.",
     "button": "Postulez"
+  },
+  "content-bloc-4": {
+    "title": "Qui suis-je ?",
+    "text": "Je m’appelle David et je suis originaire d’Auvergne où j’ai décidé de lancer ma société. Auparavant, j’ai travaillé dans différents domaines d’activités mais toujours en lien avec le web.<br><br>Le métier de développeur me passionne et j’apprécie rencontrer mes clients afin de leur proposer la meilleure architecture avec un code maintenable toujours selon les respects du codage actuel.<br><br>Pendant ces 10 années d’expériences, j’ai pu enrichir mes connaissances dans le développement pur mais aussi dans les process métier. Je maitrise les langages Java, PHP et Python côté back-end ainsi que React et Angular Js côté front-end. Quant à la partie architecture, je peux intervenir sur du Docker, des applications REST ou simplement des applications monolitiques.<br><br> Ma société veut mettre l’humain au centre de son activité pour que tous les intervenants s’épanouissent, chacun y trouve son compte.<br>"
   },
   "footer": {
     "copyright": "Build with ❤ by "
