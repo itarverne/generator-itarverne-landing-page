@@ -221,6 +221,10 @@ $micro-font-size:  1.25rem; /* 20px; */
   line-height: 100px;
 }
 
+.browser{
+  @include style-header;
+}
+
 /***************/
 /**  Content  **/
 /***************/

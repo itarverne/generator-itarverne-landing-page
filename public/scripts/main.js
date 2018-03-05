@@ -1,4 +1,13 @@
 import addFavicon from './helpers';
+const bowser = require('bowser');
+
+if (bowser.msie && bowser.version < 11) {
+  $('.browser').removeClass('hide');
+} else if (bowser.chrome && bowser.version < 64) {
+  $('.browser').removeClass('hide');
+} else if (bowser.firefox  && bowser.version < 58) {
+  $('.browser').removeClass('hide');
+}
 
 $(document).ready(() => {
   $(document).foundation();
