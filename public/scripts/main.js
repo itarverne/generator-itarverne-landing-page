@@ -1,4 +1,5 @@
 import addFavicon from './helpers';
+import LazyLoad from 'vanilla-lazyload';
 const bowser = require('bowser');
 
 if (bowser.msie && bowser.version < 11) {
@@ -11,6 +12,8 @@ if (bowser.msie && bowser.version < 11) {
 
 $(document).ready(() => {
   $(document).foundation();
+
+  new LazyLoad();
 
   if(document.cookie.indexOf('cookie_enabled') == -1)
   {
