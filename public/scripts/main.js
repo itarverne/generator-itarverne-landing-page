@@ -11,9 +11,9 @@ if (bowser.msie && bowser.version < 11) {
 }
 
 $(document).ready(() => {
-  $(document).foundation();
-
   new LazyLoad();
+
+  $(document).foundation();
 
   if(document.cookie.indexOf('cookie_enabled') == -1)
   {
