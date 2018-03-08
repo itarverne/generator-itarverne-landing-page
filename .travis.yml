@@ -46,7 +46,7 @@ after_success:
   - git commit -m "Push auto from generator-itarverne-landing-page github repo"
   - git push "https://${GH_USER}:${GH_PWD}@${GH_REPO}"
   # Get last message commit, extract name tag
-  - $TAG_TO_CREATE = git log -1 --pretty=%B | grep -oP "CREATE TAG v?\K([0-9.]*)"
+  - export TAG_TO_CREATE = git log -1 --pretty=%B | grep -oP "CREATE TAG v?\K([0-9.]*)"
   - |
     if [ ${TAG_TO_CREATE} ]; then
       BEFORE_LAST_COMMIT_TAG = git log --skip=1 --grep="CREATE TAG" --pretty=%H
