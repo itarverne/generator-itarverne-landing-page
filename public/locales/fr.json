@@ -12,7 +12,16 @@
     "link-david": "Qui suis-je ?",
     "link-contact": "Contact",
     "link-blog": "Blog",
-    "main-text": "Votre expert en développement web"
+    "main-text": "Votre expert en développement web",
+    "cookie-title": "Usage des cookies",
+    "cookie-content": "Ce site utilise des cookies afin d'améliorer l'expérience utilisateur. En aucun cas les données récoltées ne sont revendues à des tiers : ",
+    "cookie-link": "En savoir plus",
+    "cookie-bt": "Je comprend",
+    "browser-title": "Votre navigateur web est trop ancien!",
+    "browser-content": "Il est important de mettre à jour votre navigateur web afin de vous protéger correctement et de profiter des dernières technologies pour rendre votre navigation intuitive.",
+    "browser-desc-1": "Il est très simple de",
+    "browser-desc-2": "mettre à jour votre navigateur",
+    "browser-desc-3": "afin de profiter au mieux de ce site web."
   },
   "content-bloc-1": {
     "title": "nos Activités",
@@ -46,6 +55,7 @@
     "text": "Je m’appelle David et je suis originaire d’Auvergne où j’ai décidé de lancer ma société. Auparavant, j’ai travaillé dans différents domaines d’activités mais toujours en lien avec le web.<br><br>Le métier de développeur me passionne et j’apprécie rencontrer mes clients afin de leur proposer la meilleure architecture avec un code maintenable toujours selon les respects du codage actuel.<br><br>Pendant ces 10 années d’expériences, j’ai pu enrichir mes connaissances dans le développement pur mais aussi dans les process métier. Je maitrise les langages Java, PHP et Python côté back-end ainsi que React et Angular Js côté front-end. Quant à la partie architecture, je peux intervenir sur du Docker, des applications REST ou simplement des applications monolitiques.<br><br> Ma société veut mettre l’humain au centre de son activité pour que tous les intervenants s’épanouissent, chacun y trouve son compte.<br>"
   },
   "footer": {
-    "copyright": "Build with ❤ by "
+    "copyright": "Build with ❤ by ",
+    "top-link": "Haut"
   }
 }

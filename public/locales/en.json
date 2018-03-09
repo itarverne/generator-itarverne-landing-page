@@ -12,7 +12,15 @@
     "link-david": "Who am I ?",
     "link-contact": "Get in touch",
     "link-blog": "Blog",
-    "main-text": "Our web development expert"
+    "main-text": "Our web development expert",
+    "cookie-title": "Usage des cookies",
+    "cookie-content": "Ce site utilise des cookies afin d'améliorer l'expérience utilisateur. En aucun cas les données récoltées ne sont revendues à des tiers : ",
+    "cookie-link": "En savoir plus",
+    "cookie-bt": "Je comprend",
+    "browser-content": "Il est important de mettre à jour votre navigateur web afin de vous protéger correctement et de profiter des dernières technologies pour rendre votre navigation intuitive.",
+    "browser-desc-1": "Il est très simple de",
+    "browser-desc-2": "mettre à jour votre navigateur",
+    "browser-desc-3": "afin de profiter au mieux de ce site web."
   },
   "content-bloc-1": {
     "title": "our Activities",
@@ -46,6 +54,7 @@
     "text": "My name is David and I am from Auvergne where I decided to start my company. At work, I worked in different fields of activity but always related to the web. <br> <br> The job of developer impassioned me and I appreciate meeting my customers in order to propose them the best architecture with a maintainable code always according to the respects of the current coding. <br> <br> During these 10 years of experience, I was able to enrich my knowledge in the development but also in the business process. I master the Java, PHP and Python languages ​​on the back end as well as Reaction and Angular Js on the front end. As for the architecture part, I can intervene on the Docker, applications or just monolithic applications. find his account. <br>"
   },
   "footer": {
-    "copyright": "Build with ❤ by "
+    "copyright": "Build with ❤ by ",
+    "top-link": "Top"
   }
 }
