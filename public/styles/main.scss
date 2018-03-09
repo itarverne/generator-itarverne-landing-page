@@ -200,9 +200,14 @@ $micro-font-size:  1.25rem; /* 20px; */
   width: 100%;
   z-index: 2;
   padding-left: 10px;
+  margin-top: -32px;
 }
 .header__cookies--validate{
   background-color: $color-blue-dark;
+  font-family: 'quicksand-bold';
+  font-size: $small-font-size;
+}
+.header__cookies--more{
   font-family: 'quicksand-bold';
   font-size: $small-font-size;
 }

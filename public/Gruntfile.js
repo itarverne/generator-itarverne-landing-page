@@ -355,6 +355,9 @@ module.exports = function (grunt) {
         },{
           dest : '<%= config.tmp %>/cgv.html',
           src : ['<%= config.app %>/cgv.html']
+        },{
+          dest : '<%= config.tmp %>/cookies.html',
+          src : ['<%= config.app %>/cookies.html']
         }]
       },
       app: {
@@ -364,6 +367,9 @@ module.exports = function (grunt) {
         },{
           dest : '<%= config.app %>/cgv.html',
           src : ['<%= config.app %>/cgv.html']
+        },{
+          dest : '<%= config.app %>/cookies.html',
+          src : ['<%= config.app %>/cookies.html']
         }]
       }
     },
