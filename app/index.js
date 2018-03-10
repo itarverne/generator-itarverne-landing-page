@@ -25,7 +25,7 @@ module.exports = class extends Generator {
 		    name: 'appUrl',
 		    message: 'Your url domain',
 		    default: function(response){
-		    	return response.appName+'.itarverne.com';
+		    	return response.appName.toLowerCase()+'.itarverne.com';
 		    }
 		},{
 		    type: 'input',
@@ -149,7 +149,39 @@ module.exports = class extends Generator {
 
 		this.fs.copyTpl(
 			this.templatePath('index.html'),
-			this.destinationPath('public/index.html'),
+			this.destinationPath('testyo/index.html'), // public instead of testyo
+			{ 
+				title: this.props.appName,
+				url: this.props.appUrl,
+				gtm: this.props.codeGTM,
+				desc: this.props.desc,
+				putTwitter: this.props.putTwitter,
+				nameTwitter: this.props.nameTwitter,
+				urlTwitter: this.props.urlTwitter,
+				putFacebook: this.props.putFacebook,
+				appIdFacebook: this.props.appIdFacebook,
+			}
+		);
+
+		this.fs.copyTpl(
+			this.templatePath('cookies.html'),
+			this.destinationPath('testyo/cookies.html'), // public instead of testyo
+			{ 
+				title: this.props.appName,
+				url: this.props.appUrl,
+				gtm: this.props.codeGTM,
+				desc: this.props.desc,
+				putTwitter: this.props.putTwitter,
+				nameTwitter: this.props.nameTwitter,
+				urlTwitter: this.props.urlTwitter,
+				putFacebook: this.props.putFacebook,
+				appIdFacebook: this.props.appIdFacebook,
+			}
+		);
+
+		this.fs.copyTpl(
+			this.templatePath('scripts/react/main-react.jsx'),
+			this.destinationPath('testyo/scripts/react/main-react.jsx'), // public instead of testyo
 			{ 
 				title: this.props.appName,
 				url: this.props.appUrl,
