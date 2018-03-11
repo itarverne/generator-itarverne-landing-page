@@ -91,6 +91,24 @@ module.exports = class extends Generator {
 		 
 		 		return !appId.trim().length == 0
 		    }
+		},{
+		    type: 'confirm',
+		    name: 'putLinkedin',
+		    message: 'Do you want to put share and follow LinkedIn button ?',
+		    default: 'N'
+		},{
+			when: function (response) {
+				return response.putLinkedin;
+			},
+		    type: 'input',
+		    name: 'urlLinkedin',
+		    message: 'Put the LinkedIn url : ',
+		    validate: function(url){
+		    	if(url.trim().length == 0)
+		    		return "The LinkedIn url is required !";
+		 
+		 		return !url.trim().length == 0
+		    }
 		}];
   	}
 
@@ -160,6 +178,8 @@ module.exports = class extends Generator {
 				urlTwitter: this.props.urlTwitter,
 				putFacebook: this.props.putFacebook,
 				appIdFacebook: this.props.appIdFacebook,
+				putLinkedin: this.props.putLinkedin,
+				urlLinkedin: this.props.urlLinkedin
 			}
 		);
 
@@ -176,6 +196,8 @@ module.exports = class extends Generator {
 				urlTwitter: this.props.urlTwitter,
 				putFacebook: this.props.putFacebook,
 				appIdFacebook: this.props.appIdFacebook,
+				putLinkedin: this.props.putLinkedin,
+				urlLinkedin: this.props.urlLinkedin
 			}
 		);
 
@@ -192,6 +214,8 @@ module.exports = class extends Generator {
 				urlTwitter: this.props.urlTwitter,
 				putFacebook: this.props.putFacebook,
 				appIdFacebook: this.props.appIdFacebook,
+				putLinkedin: this.props.putLinkedin,
+				urlLinkedin: this.props.urlLinkedin
 			}
 		);
 	}

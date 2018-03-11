@@ -15,7 +15,9 @@
     <link rel="preload" href="styles/assets_css_ITArverne.min.27b74b91.css" as="style">
     <!-- /include -->
 
-    <link rel="prefetch" href="//platform.linkedin.com/in.js">
+    <% if (putLinkedin) { %>
+      <link rel="prefetch" href="//platform.linkedin.com/in.js">
+    <% } %>
 
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -262,9 +264,12 @@
                 <div id="js-twitter-follow" class="footer__twitter-follow"></div>
                 <div id="js-twitter-share" class="footer__twitter-share"></div>
                 <% } %>
-                <div id="linkedin-share" class="footer__linkedin">
-                  <script type="IN/Share" data-url="<%= url %>" data-counter="right"></script>
-                </div>
+
+                <% if (putLinkedin) { %>
+                  <div id="linkedin-share" class="footer__linkedin">
+                    <script type="IN/Share" data-url="<%= url %>" data-counter="right"></script>
+                  </div>
+                <% } %>
               </div>
               <div class="medium-4 cell">
                 <% if (putFacebook) { %>
@@ -283,12 +288,14 @@
                   </a>
                 </div>
                 <% } %>
+                <% if (putLinkedin) { %>
                 <div class="footer__contact">
-                  <a href="https://www.linkedin.com/company/itarverne" target="_blank" class="is-active" rel="noopener">
+                  <a href="<%= urlLinkedin %>" target="_blank" class="is-active" rel="noopener">
                     <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../images/linkedin_bleu.png" alt="LinkedIn">
                     LinkedIn
                   </a>
                 </div>
+                <% } %>
                 <div class="footer__contact">
                   <a href="https://github.com/itarverne" target="_blank" class="is-active" rel="noopener">
                     <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../images/github_bleu.png" alt="github">
@@ -330,7 +337,9 @@
     <script src="scripts/ITArverne.min.3bed2ccd.js" async></script>
     <!-- /include -->
 
-    <script src="//platform.linkedin.com/in.js"></script>
-    
+    <% if (putLinkedin) { %>
+      <script src="//platform.linkedin.com/in.js"></script>
+    <% } %>
+
   </body>
 </html>
