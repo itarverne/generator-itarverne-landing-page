@@ -79,38 +79,7 @@
       <p data-t>header.browser-desc-1 <a href="http://outdatedbrowser.com/en" target="_blank" data-t>header.browser-desc-2</a>header.browser-desc-3 </p>
     </div>
 
-    <header class="header" data-magellan="">
-      <div class="header__cookies hide">
-        <h5>Usage des cookies</h5>
-        <p>Ce site utilise des cookies afin d'améliorer l'expérience utilisateur. En aucun cas les données récoltées ne sont revendues à des tiers : <a href="cookies.html" class="header__cookies--more">En savoir plus</a></p>
-        <a href="#" class="button header__cookies--validate" id="cookie__validate">Je comprend</a>
-      </div>
-      <nav data-magellan-target="top" id="top">
-        <ul class="menu hide-for-small-only">
-            <li><a href="#" class="is-active"><img src="../images/logo_white.png" alt="ITArverne"></a></li>
-            <li>
-              <a href="/#activities" class="header__title">Activités</a>
-            </li>
-            <li>
-              <a href="/#references" class="header__title">Références</a>
-              <div class="g-pipe"></div>
-            </li>
-            <li>
-              <a href="/#values" class="header__title">Valeurs</a>
-              <div class="g-pipe"></div>
-            </li>
-            <!--<li>
-              <a href="#labs" class="header__title">LABS</a>
-              <div class="g-pipe"></div>
-            </li>-->
-            <li>
-              <a href="http://rigaudie.fr" target="_blank" class="header__title" rel="noopener">Blog</a>
-              <div class="g-pipe"></div>
-            </li>
-        </ul>
-        <img src="../images/logo_white.png" class="show-for-small-only header__mobile" alt="ITArverne">
-      </nav>
-    </header>
+    <%- include('commons/header.html') %>
 
     <div class="content">
       <article>
@@ -130,78 +99,7 @@
       </article>
     </div>
     
-    <footer class="footer">
-      <div class="grid-container">
-        <div class="grid-x grid-margin-x footer__item">
-          <div class="medium-4 cell">
-            <a href="#" class="is-active"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../images/logo.png" alt="ITArverne"></a>
-            <p>© 2018 - <%= title %></p>
-            <p><a href="cgv.html">CGV</a></p>
-          </div>
-          <div class="medium-4 cell">
-            <% if (putFacebook) { %>
-            <div id="js-fb-like" class="footer__facebook"></div>
-            <div id="js-fb-share" class="footer__facebook"></div>
-            <% } %>
-            <% if (putTwitter) { %>
-            <div id="js-twitter-follow" class="footer__twitter-follow"></div>
-            <div id="js-twitter-share" class="footer__twitter-share"></div>
-            <% } %>
-
-            <% if (putLinkedin) { %>
-              <div id="linkedin-share" class="footer__linkedin">
-                <script type="IN/Share" data-url="<%= url %>" data-counter="right"></script>
-              </div>
-            <% } %>
-          </div>
-          <div class="medium-4 cell">
-            <% if (putFacebook) { %>
-            <div class="footer__contact">
-              <a href="https://www.facebook.com/itarverne" target="_blank" class="is-active" rel="noopener">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../images/facebook_bleu.png" alt="Facebook">
-                Facebook
-              </a>
-            </div>
-            <% } %>
-            <% if (putTwitter) { %>
-            <div class="footer__contact">
-              <a href="<%= urlTwitter %>" target="_blank" class="is-active" rel="noopener">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../images/twitter_bleu.png" alt="Twitter">
-                Twitter
-              </a>
-            </div>
-            <% } %>
-            <% if (putLinkedin) { %>
-            <div class="footer__contact">
-              <a href="<%= urlLinkedin %>" target="_blank" class="is-active" rel="noopener">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../images/linkedin_bleu.png" alt="LinkedIn">
-                LinkedIn
-              </a>
-            </div>
-            <% } %>
-            <div class="footer__contact">
-              <a href="https://github.com/itarverne" target="_blank" class="is-active" rel="noopener">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../images/github_bleu.png" alt="github">
-                Github
-              </a>
-            </div>
-            <div class="footer__contact">
-              <a data-name="david.rigaudie" data-domain="itarverne" data-tld="com" href="#" class="casper" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../images/enveloppe_bleu.png" alt="mail">
-              </a>
-            </div>
-            <div class="footer__contact">
-              <a data-number="06.44.28.80.72" href="#" class="lady-brown" onclick="window.location.href = 'tel:' + this.dataset.number">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../images/tel_bleu.png" alt="téléphone">
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="grid-x grid-margin-x">
-          <div class="cell"><span>Build with ❤ by </span> <a href="https://github.com/itarverne/generator-itarverne-landing-page" target="_blank" rel="noopener">ITArverne</a> 2018</div>
-        </div>
-      </div>
-    </footer>
+    <%- include('commons/footer.html') %>
 
     <div class="content__top-site hide-for-small-only">
       <a href="#top" class="content__top-site--effect" data-t>footer.top-link</a>
