@@ -22,7 +22,7 @@ import FacebookProvider, { Like, Share as ShareFb} from 'react-facebook';
     render() {
       return (
         <FacebookProvider appId="<%= appIdFacebook %>">
-          <Like href="<%= url %>" colorScheme="dark" layout="button_count" showFaces />
+          <Like href="<%= urlFacebook %>" colorScheme="dark" layout="button_count" showFaces />
         </FacebookProvider>
       );
     }
@@ -37,7 +37,7 @@ import FacebookProvider, { Like, Share as ShareFb} from 'react-facebook';
     render() {
       return (
         <FacebookProvider appId="<%= appIdFacebook %>">
-          <ShareFb href="<%= url %>">
+          <ShareFb href="<%= urlFacebook %>">
             <ButtonFb>Share</ButtonFb>
           </ShareFb>
         </FacebookProvider>

@@ -92,6 +92,19 @@ module.exports = class extends Generator {
 		 		return !appId.trim().length == 0
 		    }
 		},{
+			when: function (response) {
+				return response.putFacebook;
+			},
+		    type: 'input',
+		    name: 'urlFacebook',
+		    message: 'Put the URL Facebook : ',
+		    validate: function(url){
+		    	if(url.trim().length == 0)
+		    		return "The Facebook url is required !";
+		 
+		 		return !url.trim().length == 0
+		    }
+		},{
 		    type: 'confirm',
 		    name: 'putLinkedin',
 		    message: 'Do you want to put share and follow LinkedIn button ?',
@@ -178,6 +191,7 @@ module.exports = class extends Generator {
 				urlTwitter: this.props.urlTwitter,
 				putFacebook: this.props.putFacebook,
 				appIdFacebook: this.props.appIdFacebook,
+				urlFacebook: this.props.urlFacebook,
 				putLinkedin: this.props.putLinkedin,
 				urlLinkedin: this.props.urlLinkedin
 			}
@@ -196,6 +210,7 @@ module.exports = class extends Generator {
 				urlTwitter: this.props.urlTwitter,
 				putFacebook: this.props.putFacebook,
 				appIdFacebook: this.props.appIdFacebook,
+				urlFacebook: this.props.urlFacebook,
 				putLinkedin: this.props.putLinkedin,
 				urlLinkedin: this.props.urlLinkedin
 			}
@@ -214,6 +229,7 @@ module.exports = class extends Generator {
 				urlTwitter: this.props.urlTwitter,
 				putFacebook: this.props.putFacebook,
 				appIdFacebook: this.props.appIdFacebook,
+				urlFacebook: this.props.urlFacebook,
 				putLinkedin: this.props.putLinkedin,
 				urlLinkedin: this.props.urlLinkedin
 			}
