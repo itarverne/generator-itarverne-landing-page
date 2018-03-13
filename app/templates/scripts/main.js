@@ -2,7 +2,9 @@ import addFavicon from './helpers';
 import LazyLoad from 'vanilla-lazyload';
 const bowser = require('bowser');
 
-if (bowser.msie && bowser.version < 11) {
+if (bowser.msie) {
+  $('.browser').removeClass('hide');
+} else if (bowser.msedge && bowser.version < 12) {
   $('.browser').removeClass('hide');
 } else if (bowser.chrome && bowser.version < 64) {
   $('.browser').removeClass('hide');
