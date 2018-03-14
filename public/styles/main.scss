@@ -3,8 +3,11 @@
 
 /** Set CSS variables **/
 $path-header-img-small: '../images/entete-small.png';
+$path-header-img-small-blur: '../images/entete-small-blur.jpg';
 $path-header-img-medium: '../images/entete-medium.png';
+$path-header-img-medium-blur: '../images/entete-medium-blur.jpg';
 $path-header-img-large: '../images/entete-large.png';
+$path-header-img-large-blur: '../images/entete-large-blur.jpg';
 $path-header-moutain: '../images/white-mountain.png';
 $color-greenblue-dark: rgb(130, 175, 196);
 $color-greenblue-light: rgba(130, 175, 196, 0.68);
@@ -191,6 +194,18 @@ $micro-font-size:  1.25rem; /* 20px; */
   }
 
 }
+.g-blur-header {
+  filter: blur(20px);
+  background-color: #a07250;
+  animation: hd-quality 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+.g-blur-header::after {
+  animation: low-quality 1s;
+  animation-delay: 1s;
+}
+
 .header__cookies{
   position: fixed;
   font-family: 'consola';
@@ -574,8 +589,43 @@ $micro-font-size:  1.25rem; /* 20px; */
   .footer__item {
     padding-top: 20px;
   }
+
+  @keyframes low-quality { 
+    0% {
+      background-image: url($path-header-img-small-blur);
+    }
+  }
+
+  @keyframes hd-quality { 
+    0% {
+      background-image: url($path-header-img-small);
+      filter: blur(20px);
+    }
+    100% {
+      background-image: url($path-header-img-small);
+      filter: blur(0px);
+    }
+  }
 }
 
+@include breakpoint(medium only) {
+  @keyframes low-quality { 
+    0% {
+      background-image: url($path-header-img-medium-blur);
+    }
+  }
+
+  @keyframes hd-quality { 
+    0% {
+      background-image: url($path-header-img-medium);
+      filter: blur(20px);
+    }
+    100% {
+      background-image: url($path-header-img-medium);
+      filter: blur(0px);
+    }
+  }
+}
 /***************/
 /** Animation **/
 /***************/
@@ -595,4 +645,21 @@ $micro-font-size:  1.25rem; /* 20px; */
     to { 
       @include transform(translateX(0)); 
     }
+}
+
+@keyframes low-quality { 
+  0% {
+    background-image: url($path-header-img-large-blur);
+  }
+}
+
+@keyframes hd-quality { 
+  0% {
+    background-image: url($path-header-img-large);
+    filter: blur(20px);
+  }
+  100% {
+    background-image: url($path-header-img-large);
+    filter: blur(0px);
+  }
 }
