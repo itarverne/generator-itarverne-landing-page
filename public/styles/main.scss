@@ -445,13 +445,17 @@ $micro-font-size:  1.25rem; /* 20px; */
 	@include xy-gutters($gutters:200px, $gutter-type:padding, $gutter-position: top bottom);
 }
 .footer__contact{
-  margin: 10px; 
+  margin: 17px; 
 }
-.footer__facebook,
-.footer__twitter-follow,
+/*
+.footer__facebook,*/
+.footer__twitter-follow/*,
 .footer__twitter-share,
+.footer__linkedin*/{
+  margin-top:10px;
+}
 .footer__linkedin{
-  margin:10px;
+  margin-top:8px;
 }
 
 /* https://keithclark.co.uk/articles/pure-css-parallax-websites */
