@@ -774,3 +774,21 @@ $micro-font-size:  1.25rem; /* 20px; */
     filter: blur(0px);
   }
 }
+
+/***************************/
+/** Hack for Firefox only **/
+/***************************/
+@-moz-document url-prefix() {
+    .labs__bt--corner {
+        margin-left: -14px;
+    }
+}
+
+/*******************************/
+/** Hack for IE EDGE 12+ only **/
+/*******************************/
+@supports (-ms-ime-align:auto) {
+    .labs__bt--corner {
+        margin-left: -24px !important;
+    }
+}

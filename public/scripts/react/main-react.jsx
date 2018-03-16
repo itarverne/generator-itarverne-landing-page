@@ -21,7 +21,7 @@ class SocialFbLike extends React.Component {
   render() {
     return (
       <FacebookProvider appId="474812546226673">
-        <Like href="http://www.itarverne.com" colorScheme="dark" layout="button_count" showFaces />
+        <Like href="https://www.facebook.com/itarverne/" colorScheme="dark" layout="button_count" showFaces />
       </FacebookProvider>
     );
   }
