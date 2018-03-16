@@ -135,8 +135,13 @@ $micro-font-size:  1.25rem; /* 20px; */
 }
 
 .g-rectangle{
-  width: 200px;
-  height: 50px;
+  width: 404px;
+  height: 230px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: justify;
   border: 1px solid white;
 }
 .g-corner-right--hidden {
@@ -144,7 +149,7 @@ $micro-font-size:  1.25rem; /* 20px; */
   height: 0;
   position: relative;
   top: -30px;
-  left: 178px;
+  left: 378px;
 }
 .g-corner-right--hidden:after {
   content: "";
@@ -159,7 +164,7 @@ $micro-font-size:  1.25rem; /* 20px; */
 .g-corner-right--line{
   width: 25px;
   top: 8px;
-  left: 177px;
+  left: 377px;
   position: relative;
   transform: rotate(45deg);
   border-bottom:1px solid white;
@@ -415,6 +420,61 @@ $micro-font-size:  1.25rem; /* 20px; */
   margin-top: 5px;
   @include style-text;
 }
+.labs__desc{
+  margin-bottom: 50px;
+}
+.labs__bloc-generator,
+.labs__bloc-in{
+  margin-left: auto;
+  margin-right: auto;
+}
+.labs__bloc-generator-title,
+.labs__bloc-in-title{
+  font-size: $little-font-size;
+  font-family: 'quicksand-bold';
+  color: white;
+  margin-left: 50px;
+  vertical-align: top;
+  display: inline;
+}
+.labs__bloc-generator-content,
+.labs__bloc-in-content{
+  @include style-text;
+  color: white;
+  text-indent: 50px;
+  margin-top: 20px;
+}
+.labs__bloc-generator-img,
+.labs__bloc-in-img{
+  transform: scale(20);
+  height: 5px;
+}
+.labs__bloc-generator-bt,
+.labs__bloc-in-bt{
+  text-align: center;
+}
+.labs__bloc-generator-bt-content,
+.labs__bloc-in-bt-content{
+  font-family: 'quicksand-bold';
+  font-size: $medium-font-size;
+  line-height: 25px;
+  color: white;
+  background-color: $color-blue-dark;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  display: inline-block;
+  @include link-pseudo-color(white, white, white, white);
+}
+.labs__bt--corner{
+  margin-left: -28px;
+  border-top: 10px solid $color-greenblue-dark;
+}
+.labs__footer{
+  margin-top: 50px;  
+  margin-bottom: 50px;  
+}
 
 .david{
   background-color: $color-greenblue-dark;
@@ -627,7 +687,12 @@ $micro-font-size:  1.25rem; /* 20px; */
     font-size: $medium-font-size;
   }
 
- .david{
+  .labs{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .david{
     padding-left: 10px;
     padding-right: 10px;
   }
