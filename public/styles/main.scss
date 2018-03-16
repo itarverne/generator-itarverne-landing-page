@@ -134,6 +134,37 @@ $micro-font-size:  1.25rem; /* 20px; */
   overflow-y: scroll;
 }
 
+.g-rectangle{
+  width: 200px;
+  height: 50px;
+  border: 1px solid white;
+}
+.g-corner-right--hidden {
+  width: 0;
+  height: 0;
+  position: relative;
+  top: -30px;
+  left: 178px;
+}
+.g-corner-right--hidden:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 22px solid transparent;
+  border-right: 22px solid $color-greenblue-dark;
+  position: absolute;
+  top: 27px;
+  left: 0px;
+}
+.g-corner-right--line{
+  width: 25px;
+  top: 8px;
+  left: 177px;
+  position: relative;
+  transform: rotate(45deg);
+  border-bottom:1px solid white;
+}
+
 ::selection{
   background-color: white;
   color: $color-blue-dark;
@@ -377,6 +408,12 @@ $micro-font-size:  1.25rem; /* 20px; */
 }
 .values__list--decor::before{
   content: '\25A0';
+}
+
+.labs{
+  background-color: $color-greenblue-dark;
+  margin-top: 5px;
+  @include style-text;
 }
 
 .david{
