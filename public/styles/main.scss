@@ -422,6 +422,11 @@ $micro-font-size:  1.25rem; /* 20px; */
   @include style-text;
   text-align: justify;
 }
+.david__picture{
+  overflow:hidden;
+  margin:30px auto;
+  shape-outside: polygon(0 0,240px 0,260px 146px,350px 346px,320px 546px,330px 640px,0 640px);
+}
 
 .content__hire-picto{
   transform: translateX(16px);
