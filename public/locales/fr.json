@@ -51,6 +51,16 @@
     "button": "Postulez"
   },
   "content-bloc-4": {
+    "title": "Labs",
+    "desc": "<b>ITArverne</b> soutient l’Open Source en proposant des outils gratuits, librement accessibles avec un support technique.",
+    "bloc1-title": "GENERATEUR SITE STATIC",
+    "bloc1-desc": "Une application JS/HTML 5 qui permet de créer un site de type landing page avec le générateur yeoman.",
+    "bloc2-title": "REACT LinkedIn",
+    "bloc2-desc": "Une application React permettant de partager une page sur le réseau LinkedIn.",
+    "processing": "en cours ...",
+    "more": "Et encore plein d'autres idées à vénir... "
+  },
+  "content-bloc-5": {
     "title": "Qui suis-je ?",
     "text": "Je m’appelle David et je suis originaire d’Auvergne où j’ai décidé de lancer ma société. Auparavant, j’ai travaillé dans différents domaines d’activités mais toujours en lien avec le web.<br><br>Le métier de développeur me passionne et j’apprécie rencontrer mes clients afin de leur proposer la meilleure architecture avec un code maintenable toujours selon les respects du codage actuel.<br><br>Pendant ces 10 années d’expériences, j’ai pu enrichir mes connaissances dans le développement pur mais aussi dans les process métier. Je maitrise les langages Java, PHP et Python côté back-end ainsi que React et Angular Js côté front-end. Quant à la partie architecture, je peux intervenir sur du Docker, des applications REST ou simplement des applications monolitiques.<br><br> Ma société veut mettre l’humain au centre de son activité pour que tous les intervenants s’épanouissent, chacun y trouve son compte.<br>"
   },
