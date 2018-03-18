@@ -232,7 +232,7 @@ $micro-font-size:  1.25rem; /* 20px; */
 }
 .g-blur-header {
   filter: blur(20px);
-  background-color: #a07250;
+  background-color: $color-greenblue-light;
   animation: hd-quality 1s;
   animation-delay: 2s;
   animation-fill-mode: forwards;
