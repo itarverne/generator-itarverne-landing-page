@@ -629,6 +629,21 @@ $micro-font-size:  1.25rem; /* 20px; */
     max-width: 100%;
     height: auto;
   }  
+  .header__title {
+    @include style-header;
+    font-size: $micro-font-size;
+    @include link-pseudo-color(white, white, white, white);
+    margin: 0px;
+    line-height: 20px !important;
+  }
+  .header__menu-responsive{
+    margin-left: 10px;
+  }
+  .header__menu-responsive-text{
+    display: inline-block;
+    @include style-header;
+    font-size: $micro-font-size;
+  }
 
   .activities__image-left,
   .activities__image-right{
