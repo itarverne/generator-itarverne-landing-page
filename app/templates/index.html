@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="<%= lang %>">
   <head>
     <% if (gtm) { %>
       <!-- Google Tag Manager -->
@@ -22,9 +22,9 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %></title>
+    <title><%= appName %></title>
 
-    <link rel="alternate" href="http://itarverne.com" hreflang="en"/>
+    <link rel="alternate" href="<%= alt %>" hreflang="<%= altLang %>"/>
     
     <link rel="icon" href="images/favicon/favicon.png">
     <link rel="icon" sizes="24x24" href="images/favicon/favicon_24x24.png" type="image/png">
@@ -32,12 +32,12 @@
     <link rel="icon" sizes="48x48" href="images/favicon/favicon_48x48.png" type="image/png">
     <link rel="icon" sizes="64x64" href="images/favicon/favicon_64x64.png" type="image/png">
 
-    <meta name="description" content="Entreprise auvergnate notamment spécialisée dans le développement d'application Web, Python et Java coté back-end">
+    <meta name="description" content="<%= desc %>">
     <meta name="generator" content="generator-itarverne-landing-page 1.0.0">
     
     <!--FACEBOOK-->
-    <meta property="og:title" content="Développement, conseil et formation en Informatique">
-    <meta property="og:site_name" content="<%= title %>">
+    <meta property="og:title" content="<%= title %>">
+    <meta property="og:site_name" content="<%= appName %>">
     <meta property="og:url" content="<%= url %>">
     <meta property="og:description" content="<%= desc %>">
     <meta property="og:image" content="<%= url %>/images/logo-social.png">
@@ -45,21 +45,21 @@
     <meta property="og:image:height" content="517">
     <meta property="fb:app_id" content="<%= appIdFacebook %>">
     <meta property="og:type" content="website">
-    <meta property="og:locale" content="fr">
+    <meta property="og:locale" content="<%= lang %>">
 
     <!--TWITTER-->
     <meta property="twitter:card" content="summary">
-    <meta property="twitter:title" content="Développement, conseil et formation en Informatique">
+    <meta property="twitter:title" content="<%= title %>">
     <meta property="twitter:description" content="<%= desc %>">
-    <meta property="twitter:creator" content="@drigaudie">
+    <meta property="twitter:creator" content="<%= authorTwitter %>">
     <meta property="twitter:url" content="<%= url %>">
     <meta property="twitter:image" content="<%= url %>/images/logo-social.png">
-    <meta property="twitter:image:alt" content="<%= title %>">
-    <meta property="twitter:site" content="@itarverne">
+    <meta property="twitter:image:alt" content="<%= appName %>">
+    <meta property="twitter:site" content="<%= nameTwitter %>">
 
     <!--GOOGLE+-->
     <link rel="author" href="drigaudie">
-    <link rel="publisher" href="<%= title %>">
+    <link rel="publisher" href="<%= appName %>">
 
     <!-- include: "type": "css", "basePath": "build", "files": "styles/*.css" -->
     <link href="styles/assets_css_ITArverne.min.ba62c9bd.css" rel="stylesheet" type="text/css">

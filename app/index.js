@@ -29,6 +29,31 @@ module.exports = class extends Generator {
 		    }
 		},{
 		    type: 'input',
+		    name: 'lang',
+		    message: 'Put the lag of your website'
+		},{
+		    type: 'input',
+		    name: 'alt',
+		    message: 'Put the alternate url for the meta tag'
+		},{
+			when: function (response) {
+				return response.alternate;
+			},
+		    type: 'input',
+		    name: 'alt-lang',
+		    message: 'Put the alternate url lang for the meta tag : ',
+		    validate: function(lang){
+		    	if(lang.trim().length == 0)
+		    		return "The alternate url lang for the meta tag is required !";
+		 
+		 		return !lang.trim().length == 0
+		    }
+		},{
+		    type: 'input',
+		    name: 'title',
+		    message: 'Put the website title'
+		},{
+		    type: 'input',
 		    name: 'desc',
 		    message: 'Put the website description'
 		},{
@@ -72,6 +97,19 @@ module.exports = class extends Generator {
 		    message: 'Put the url to share in twitter : ',
 		    default: function(response){
 		    	return response.appUrl;
+		    }
+		},{
+			when: function (response) {
+				return response.putTwitter;
+			},
+		    type: 'input',
+		    name: 'authorTwitter',
+		    message: 'Put the author in twitter : ',
+		    validate: function(author){
+		    	if(author.trim().length == 0)
+		    		return "The twitter author is required !";
+		 
+		 		return !author.trim().length == 0
 		    }
 		},{
 		    type: 'confirm',
@@ -182,13 +220,18 @@ module.exports = class extends Generator {
 			this.templatePath('index.html'),
 			this.destinationPath('testyo/index.html'), // public instead of testyo
 			{ 
-				title: this.props.appName,
+				appName: this.props.appName,
+				lang: this.props.lang,
+				alt: this.props.alt,
+				altLang: this.props.altLang,
 				url: this.props.appUrl,
 				gtm: this.props.codeGTM,
+				title: this.props.title,
 				desc: this.props.desc,
 				putTwitter: this.props.putTwitter,
 				nameTwitter: this.props.nameTwitter,
 				urlTwitter: this.props.urlTwitter,
+				authorTwitter: this.props.authorTwitter,
 				putFacebook: this.props.putFacebook,
 				appIdFacebook: this.props.appIdFacebook,
 				urlFacebook: this.props.urlFacebook,
@@ -201,13 +244,18 @@ module.exports = class extends Generator {
 			this.templatePath('cookies.html'),
 			this.destinationPath('testyo/cookies.html'), // public instead of testyo
 			{ 
-				title: this.props.appName,
+				appName: this.props.appName,
+				lang: this.props.lang,
+				alt: this.props.alt,
+				altLang: this.props.altLang,
 				url: this.props.appUrl,
 				gtm: this.props.codeGTM,
+				title: this.props.title,
 				desc: this.props.desc,
 				putTwitter: this.props.putTwitter,
 				nameTwitter: this.props.nameTwitter,
 				urlTwitter: this.props.urlTwitter,
+				authorTwitter: this.props.authorTwitter,
 				putFacebook: this.props.putFacebook,
 				appIdFacebook: this.props.appIdFacebook,
 				urlFacebook: this.props.urlFacebook,
@@ -220,13 +268,15 @@ module.exports = class extends Generator {
 			this.templatePath('scripts/react/main-react.jsx'),
 			this.destinationPath('testyo/scripts/react/main-react.jsx'), // public instead of testyo
 			{ 
-				title: this.props.appName,
+				appName: this.props.appName,
 				url: this.props.appUrl,
 				gtm: this.props.codeGTM,
+				title: this.props.title,
 				desc: this.props.desc,
 				putTwitter: this.props.putTwitter,
 				nameTwitter: this.props.nameTwitter,
 				urlTwitter: this.props.urlTwitter,
+				authorTwitter: this.props.authorTwitter,
 				putFacebook: this.props.putFacebook,
 				appIdFacebook: this.props.appIdFacebook,
 				urlFacebook: this.props.urlFacebook,
