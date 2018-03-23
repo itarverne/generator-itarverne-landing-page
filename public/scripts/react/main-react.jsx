@@ -1,6 +1,23 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import FacebookProvider, { Like, Share as ShareFb} from 'react-facebook';
+import ReactLinkedIn from 'react-share-linkedin';
+
+class SocialLinkedinShare extends React.Component {
+  render() {
+    return (
+      <ReactLinkedIn 
+        url="http://itarverne.com"
+        title="The web developer expert in Auvergne"
+        summary="The web developer expert in Auvergne"
+      />
+    );
+  }
+}
+ReactDOM.render(
+  <SocialLinkedinShare />,
+  document.getElementById('js-in-share')
+);
 
 const ButtonFb = styled.button`
   border-radius: 3px;

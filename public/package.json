@@ -4,7 +4,7 @@
   "description": "Landing page template generator",
   "license": "MIT",
   "author": "RIGAUDIE David",
-  "homepage": "http://itarverne.com",  
+  "homepage": "http://itarverne.com",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/itarverne/website.git"
@@ -60,7 +60,8 @@
       "es6": true
     },
     "ecmaFeatures": {
-      "modules": true
+      "modules": true,
+      "jsx": true
     },
     "parserOptions": {
       "ecmaVersion": 6,
@@ -88,6 +89,7 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-facebook": "^4.2.1",
+    "react-share-linkedin": "^0.1.7",
     "react-twitter-widgets": "^1.4.0",
     "vanilla-lazyload": "^10.5.1"
   }

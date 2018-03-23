@@ -157,7 +157,7 @@ module.exports = function (grunt) {
             debug: (target === 'dev') ? true : false
           },
           // the plugin babelify allow to use babel in order to consert ES5 to ES6
-          transform: [['babelify', { 'presets': ['es2015'] }]]
+          transform: [['babelify', { plugins: ['transform-react-jsx'] , presets: ['es2015'] } ]]
         },
         files: {
           '<%= config.tmp %>/scripts/bundle-require.js': [         
@@ -217,7 +217,6 @@ module.exports = function (grunt) {
         src: [
           '<%= config.build %>/scripts/{,*/}*.js',
           '<%= config.build %>/styles/{,*/}*.css'
-          //'<%= config.dist %>/images/{,*/}*.*',
         ]
       }
     },
@@ -396,8 +395,8 @@ module.exports = function (grunt) {
       app: [
         'babel',
         'sass',
-        //'imagemin',
         'babel:jsx',
+        //'imagemin',
         'i18n'
       ]
     }
