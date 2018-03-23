@@ -4,7 +4,11 @@
   "description": "ITArverne provide an automatic tool in order to generate your own landing page.",
   "license": "MIT",
   "author": "RIGAUDIE David",
-  "homepage": "http://rigaudie.fr",
+  "homepage": "http://itarverne.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itarverne/generator-itarverne-landing-page.git"
+  },
   "files": [
     "app",
     "router"
@@ -13,13 +17,13 @@
     "yeoman-generator"
   ],
   "dependencies": {
-    "chalk": "^2.0.1",
+    "chalk": "^2.3.2",
     "fs-extra": "^5.0.0",
     "yeoman-generator": "^1.0.0"
   },
   "devDependencies": {
-    "mocha": "^4.0.1",
-    "sinon": "^4.4.1",
+    "mocha": "^4.1.0",
+    "sinon": "^4.4.8",
     "yeoman-assert": "^3.1.0",
     "yeoman-test": "^1.7.0"
   },
