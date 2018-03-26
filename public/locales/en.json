@@ -1,8 +1,8 @@
 {
   "cookie": {
     "header": "Cookies usage",
-    "content": "This website use cookies in order to increase user experience. No data are collect to sold to other company.",
-    "bt-valid": "I understand"
+    "content": "This site uses cookies to improve the user’s experience. In no case will this data be sold to a third party.",
+    "bt-valid": "I understand."
   },
   "header": {
     "link-activities": "Activities",
