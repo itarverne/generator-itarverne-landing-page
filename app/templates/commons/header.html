@@ -1,4 +1,4 @@
-<header class="header" data-magellan="">
+<header class="header g-blur-header" path-header-img-large="">
   <div class="callout header__cookies hide">
     <h5>Usage des cookies</h5>
     <p>Ce site utilise des cookies afin d'améliorer l'expérience utilisateur. En aucun cas les données récoltées ne sont revendues à des tiers : <a href="cookies.html" class="header__cookies--more">En savoir plus</a></p>
@@ -6,30 +6,34 @@
   </div>
   
   <nav id="top">
-    <ul class="menu hide-for-small-only">
-        <li><a href="#" class="is-active"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../images/logo_white.png" alt="ITArverne"></a></li>
+    <div class="header__menu-responsive show-for-small-only" data-responsive-toggle="js-menu-responsive">
+      <button class="menu-icon" type="button" data-toggle="js-menu-responsive"></button>
+      <div class="header__menu-responsive-text">Menu</div>
+    </div>
+    <ul id="js-menu-responsive" class="menu">
+        <li><a href="#" class="hide-for-small-only"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../images/logo_white.png" alt="ITArverne"></a></li>
         <li>
           <a href="#activities" class="header__title">Activités</a>
         </li>
         <li>
           <a href="#references" class="header__title">Références</a>
-          <div class="g-pipe"></div>
+          <div class="g-pipe hide-for-small-only"></div>
         </li>
         <li>
           <a href="#values" class="header__title">Valeurs</a>
-          <div class="g-pipe"></div>
+          <div class="g-pipe hide-for-small-only"></div>
         </li>
         <li>
           <a href="#labs" class="header__title">Labs</a>
-          <div class="g-pipe"></div>
+          <div class="g-pipe hide-for-small-only"></div>
         </li>
         <li>
           <a href="#david" class="header__title">Qui suis-je ?</a>
-          <div class="g-pipe"></div>
+          <div class="g-pipe hide-for-small-only"></div>
         </li>
         <li>
           <a href="http://rigaudie.fr" target="_blank" class="header__title" rel="noopener">Blog</a>
-          <div class="g-pipe"></div>
+          <div class="g-pipe hide-for-small-only"></div>
         </li>
     </ul>
     <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../images/logo_white.png" class="show-for-small-only header__mobile" alt="ITArverne">

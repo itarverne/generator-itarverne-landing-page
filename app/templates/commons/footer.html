@@ -16,18 +16,15 @@
       </div> 
       <div class="medium-3 cell">
         <% if (putFacebook) { %>
-        <div id="js-fb-like" class="footer__facebook"></div>
-        <div id="js-fb-share" class="footer__facebook"></div>
+          <div id="js-fb-like" class="footer__facebook"></div>
+          <div id="js-fb-share" class="footer__facebook"></div>
         <% } %>
         <% if (putTwitter) { %>
-        <div id="js-twitter-follow" class="footer__twitter-follow"></div>
-        <div id="js-twitter-share" class="footer__twitter-share"></div>
+          <div id="js-twitter-follow" class="footer__twitter-follow"></div>
+          <div id="js-twitter-share" class="footer__twitter-share"></div>
         <% } %>
-
-        <% if (putLinkedin) { %>
-          <div id="linkedin-share" class="footer__linkedin">
-            <script type="IN/Share" data-url="<%= url %>" data-counter="right"></script>
-          </div>
+        <% if (putLinkedin) { %>          
+          <div id="js-in-share"></div>
         <% } %>
       </div>
       <div class="medium-4 cell">
