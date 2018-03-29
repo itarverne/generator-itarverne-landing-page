@@ -157,7 +157,7 @@ module.exports = function (grunt) {
             debug: (target === 'dev') ? true : false
           },
           // the plugin babelify allow to use babel in order to consert ES5 to ES6
-          transform: [['babelify', { plugins: ['transform-react-jsx'] , presets: ['es2015'] } ]]
+          transform: [['babelify', { presets: ['es2015'], plugins: ['transform-react-jsx'] } ]]
         },
         files: {
           '<%= config.tmp %>/scripts/bundle-require.js': [         
