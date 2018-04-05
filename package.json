@@ -22,6 +22,8 @@
     "yeoman-generator": "^1.0.0"
   },
   "devDependencies": {
+    "compress-images": "^1.2.0",
+    "grunt-compress-images": "^0.1.0",
     "mocha": "^4.1.0",
     "sinon": "^4.4.8",
     "yeoman-assert": "^3.1.0",
