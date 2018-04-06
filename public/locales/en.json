@@ -56,6 +56,8 @@
     "bloc1-desc": "Une application JS/HTML 5 qui permet de créer un site de type landing page avec le générateur yeoman.",
     "bloc2-title": "REACT LinkedIn",
     "bloc2-desc": "Une application React permettant de partager une page sur le réseau LinkedIn.",
+    "bloc3-title": "GRUNT plugin",
+    "bloc3-desc": "Un plugin Grunt pour la librairie npm compress-images afin d'adapter la taille des images pour le web.",
     "processing": "en cours ...",
     "more": "Et encore plein d'autres idées à vénir... "
   },
