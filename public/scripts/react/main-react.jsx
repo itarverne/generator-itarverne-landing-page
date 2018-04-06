@@ -10,6 +10,7 @@ class SocialLinkedinShare extends React.Component {
         url="http://itarverne.com"
         title="The web developer expert in Auvergne"
         summary="The web developer expert in Auvergne"
+        borderRadius="3px"
       />
     );
   }
