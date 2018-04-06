@@ -222,17 +222,17 @@ module.exports = function (grunt) {
     },
 
     // Reduce the size image for the web
-    compress_images: {
+    compressImages: {
       prod : {
         input_path: 'images/**/*.{jpg,JPG,jpeg,JPEG,png,svg,gif}',
         output_path: '<%= config.build %>/images/',
         options: {
-          compress_force: false, 
-          statistic: false, 
-          autoupdate: true
+          compress_force: true, 
+          statistic: true, 
+          autoupdate: false
         },
         jpg: {
-          engine: 'jpegtran',
+          engine: 'mozjpeg',
           command: ['-quality', '60']
         },
         png: {
@@ -410,7 +410,7 @@ module.exports = function (grunt) {
         'babel',
         'sass',
         'babel:jsx',
-        'compress_images',
+        'compressImages',
         'i18n'
       ]
     }
