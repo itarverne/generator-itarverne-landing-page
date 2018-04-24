@@ -10,7 +10,7 @@
         <div ><a href="#references" >Références</a></div>
         <div ><a href="#values" >Valeurs</a></div>                
         <div ><a href="#david" >Qui suis-je ?</a></div>                
-        <div ><a href="#" data-name="david.rigaudie" data-domain="itarverne" data-tld="com" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld">Contact</a></div>                
+        <div ><a href="#" data-name="<%= userMail %>" data-domain="<%= domainMail %>" data-tld="<%= extMail %>" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld">Contact</a></div>                
         <div ><a href="http://rigaudie.fr" target="_blank" rel="noopener">Blog</a></div>                
         <div ><a href="cgv.html">CGV</a></div>
       </div> 
@@ -59,7 +59,7 @@
           </a>
         </div>
         <div class="footer__contact">
-          <a data-name="david.rigaudie" data-domain="itarverne" data-tld="com" href="#" class="casper" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld">
+          <a data-name="<%= userMail %>" data-domain="<%= domainMail %>" data-tld="<%= extMail %>" href="#" class="casper" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld">
             <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../images/enveloppe_bleu.png" alt="mail">
           </a>
         </div>

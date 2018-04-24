@@ -16,7 +16,7 @@ module.exports = class extends Generator {
     	this.log('Initializing the generator ...');
 
     	this.promptQuestion = [{
-		    type: 'input',
+    		type: 'input',
 		    name: 'appName',
 		    message: 'Your site name',
 		    default: 'ITArverne'
@@ -160,6 +160,20 @@ module.exports = class extends Generator {
 		 
 		 		return !url.trim().length == 0
 		    }
+		},{
+			type: 'input',
+		    name: 'mail',
+		    message: 'Put the mail to get in touch : ',
+		    validate: function(mail){
+		    	const atpos = mail.indexOf("@");
+				const dotpos = mail.lastIndexOf(".");
+				if (atpos < 1 || ( dotpos - atpos < 2 ))
+				{
+					return "The mail is wrong !";
+				}
+		 
+		 		return true;
+		    }
 		}];
   	}
 
@@ -216,6 +230,13 @@ module.exports = class extends Generator {
 			this.log(chalk.bold.yellow('No Google Tag Management code provided, script not included !'));
 		}
 
+		const user, domain, extension;
+		if(this.props.mail){
+			user = this.props.mail.split("@")[0];
+			domain = this.props.mail.split("@")[1].split('.')[0];
+			extension = this.props.mail.split("@")[1].split('.')[1];
+		}
+
 		this.fs.copyTpl(
 			this.templatePath('index.html'),
 			this.destinationPath('testyo/index.html'), // public instead of testyo
@@ -236,7 +257,10 @@ module.exports = class extends Generator {
 				appIdFacebook: this.props.appIdFacebook,
 				urlFacebook: this.props.urlFacebook,
 				putLinkedin: this.props.putLinkedin,
-				urlLinkedin: this.props.urlLinkedin
+				urlLinkedin: this.props.urlLinkedin,
+				userMail: user,
+				domainMail: domain,
+				extMail: extension
 			}
 		);
 
@@ -260,7 +284,10 @@ module.exports = class extends Generator {
 				appIdFacebook: this.props.appIdFacebook,
 				urlFacebook: this.props.urlFacebook,
 				putLinkedin: this.props.putLinkedin,
-				urlLinkedin: this.props.urlLinkedin
+				urlLinkedin: this.props.urlLinkedin,
+				userMail: user,
+				domainMail: domain,
+				extMail: extension
 			}
 		);
 
@@ -281,7 +308,10 @@ module.exports = class extends Generator {
 				appIdFacebook: this.props.appIdFacebook,
 				urlFacebook: this.props.urlFacebook,
 				putLinkedin: this.props.putLinkedin,
-				urlLinkedin: this.props.urlLinkedin
+				urlLinkedin: this.props.urlLinkedin,
+				userMail: user,
+				domainMail: domain,
+				extMail: extension
 			}
 		);
 	}
