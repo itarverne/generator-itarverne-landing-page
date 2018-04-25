@@ -2,9 +2,13 @@
   "cookie": {
     "header": "Usage des cookies",
     "content": "Ce site utilise des cookies afin d'améliorer l'expérience utilisateur. En aucun cas les données récoltées ne sont revendues à des tiers.",
-    "bt-valid": "Je comprend"
+    "more": "En savoir plus",
+    "bt-valid": "Je comprend",
+    "title": "les Cookies",
+    "content-detail": "Un cookie est une valeur stoquée dans votre navigateur pour l'utiliser sur notre site. Cette usage permet de personnaliser votre affichage et optimiser le temps de chargement du site. ITArverne utilise : <ul><li>Un cookie pour le suivi d'activité du site</li><li>Un cookie pour vous afficher un message d'usage relatif aux cookies comme l'exige la réglementation</li></ul>ITArverne ne fait pas un mauvais usage de ces cookies comme certains publicitaires, nous respectons la vie privée de nos clients, vous pouvez naviguer en sécurité sur notre site. Vous avez le choix de supprimer les cookies stoquées sur votre ordianteur, en effaçant les données de votre navigateur."
   },
   "header": {
+    "menu": "menu",
     "link-activities": "Activités",
     "link-references": "Références",
     "link-values": "Valeurs",
@@ -12,6 +16,7 @@
     "link-david": "Qui suis-je ?",
     "link-contact": "Contact",
     "link-blog": "Blog",
+    "link-cgv": "CGV",
     "main-text": "Votre expert en développement web",
     "cookie-title": "Usage des cookies",
     "cookie-content": "Ce site utilise des cookies afin d'améliorer l'expérience utilisateur. En aucun cas les données récoltées ne sont revendues à des tiers : ",
