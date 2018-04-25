@@ -51,6 +51,9 @@ after_success:
       git add CHANGELOG.md
       git commit -m "Auto generate CHANGELOG"
       git push "https://${GH_USER}:${GH_PWD}@${GH_REPO}"
+
+      git tag -a v${TAG_TO_CREATE} -m "Tag ${TAG_TO_CREATE}"
+      git push --tags
     fi
 
 after_script:
