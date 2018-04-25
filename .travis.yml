@@ -46,7 +46,7 @@ after_success:
       sed -i '1s/^/$NEW_CHANGELOG/' CHANGELOG.md;
       git add CHANGELOG.md;
       git commit -m "Auto generate CHANGELOG";
-      git push "https://${GH_USER}:${GH_PWD}@${GH_REPO} origin master";
+      git push https://${GH_USER}:${GH_PWD}@${GH_REPO} origin master;
 
       git tag -a v${TAG_TO_CREATE} -m "Tag ${TAG_TO_CREATE}";
       git push --tags;
