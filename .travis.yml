@@ -36,7 +36,6 @@ script:
 
 after_success:
   # Get last message commit, extract name tag
-  # git remote set-url origin git@github.com:${GH_COMPANY}/${NAME_REPO}.git
   - TAG_TO_CREATE=`git log -1 --pretty=%B | grep -oP "CREATE TAG v?\K([0-9.]*)"`
   - |
     if [ ${TAG_TO_CREATE} ]; then
@@ -45,12 +44,13 @@ after_success:
       sed -i '1s/^/##[$BEFORE_LAST_COMMIT_TAG]/' CHANGELOG.md;
       sed -i '1s/^/### Added/' CHANGELOG.md;
       sed -i '1s/^/$NEW_CHANGELOG/' CHANGELOG.md;
+      git remote add origin https://${GH_USER}:${GH_PWD}@${GH_REPO}
       git add CHANGELOG.md;
       git commit -m "Auto generate CHANGELOG";
       git push https://${GH_USER}:${GH_PWD}@${GH_REPO} origin master;
 
       git tag -a v${TAG_TO_CREATE} -m "Tag ${TAG_TO_CREATE}";
-      git push https://${GH_USER}:${GH_PWD}@${GH_REPO} origin v${TAG_TO_CREATE};
+      git push -u origin v${TAG_TO_CREATE};
     fi
 
 after_script:
