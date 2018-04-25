@@ -29,6 +29,8 @@ before_script:
   - gem install sass
   - npm install -g yo
   - npm link
+  - gem install travis
+  - travis login --github-token $GH_TOKEN
 
 script:
   - npm test
