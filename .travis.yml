@@ -29,8 +29,6 @@ before_script:
   - gem install sass
   - npm install -g yo
   - npm link
-  - gem install travis
-  - travis encrypt --add --repo ${GH_COMPANY}/${NAME_REPO} GITHUB_TOKEN=$GH_TOKEN
 
 script:
   - npm test
