@@ -8,7 +8,6 @@ env:
     - GH_EMAIL=$GH_EMAIL
     - NAME_REPO=$NAME_REPO
     - GH_REPO="github.com/${GH_COMPANY}/${NAME_REPO}.git"
-    - ADD_FILES="public/*"
 
 node_js:
   - "8"
