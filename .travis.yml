@@ -44,10 +44,9 @@ after_success:
       sed -i '1s/^/##[$BEFORE_LAST_COMMIT_TAG]/' CHANGELOG.md;
       sed -i '1s/^/### Added/' CHANGELOG.md;
       sed -i '1s/^/$NEW_CHANGELOG/' CHANGELOG.md;
-      git remote add origin https://${GH_REPO}
       git add CHANGELOG.md;
       git commit -m "Auto generate CHANGELOG";
-      git push "https://${GH_USER}:${GH_PWD}@${GH_REPO}";
+      git push "https://${GH_USER}:${GH_PWD}@${GH_REPO} HEAD:master";
 
       git tag -a v${TAG_TO_CREATE} -m "Tag ${TAG_TO_CREATE}";
       git push --tags;
