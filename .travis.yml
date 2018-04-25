@@ -30,7 +30,7 @@ before_script:
   - npm install -g yo
   - npm link
   - gem install travis
-  - travis encrypt --add --repo ${GH_COMPANY}/${NAME_REPO} GITHUB_TOKEN=${GH_TOKEN} --org
+  - travis encrypt --org GITHUB_TOKEN=${GH_TOKEN} --add --repo ${GH_COMPANY}/${NAME_REPO}
 
 script:
   - npm test
