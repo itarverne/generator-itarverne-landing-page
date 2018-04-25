@@ -36,22 +36,15 @@ script:
 
 
 after_success:
-  - git clone git://${GH_REPO}
-  - yes | cp -rf ${ADD_FILES} ${NAME_REPO}/
-  - cd ${NAME_REPO}
-  - git remote
-  - git config user.email ${GH_EMAIL}
-  - git config user.name ${GH_USER}
-  - git pull
-  - git add ${ADD_FILES}
-  - git commit -m "Push auto from generator-itarverne-landing-page github repo"
-  - git push "https://${GH_USER}:${GH_PWD}@${GH_REPO}"
   # Get last message commit, extract name tag
   - TAG_TO_CREATE=`git log -1 --pretty=%B | grep -oP "CREATE TAG v?\K([0-9.]*)"`
+  - ${TAG_TO_CREATE}
   - |
     if [ ${TAG_TO_CREATE} ]; then
       BEFORE_LAST_COMMIT_TAG=`git log --skip=1 --grep="CREATE TAG" --pretty=%H`
+      ${BEFORE_LAST_COMMIT_TAG}
       NEW_CHANGELOG=`git log ${BEFORE_LAST_COMMIT_TAG}.. --no-merges --pretty=format:'- %s'`
+      ${NEW_CHANGELOG}
       sed -i '1s/^/##[$BEFORE_LAST_COMMIT_TAG]/' CHANGELOG.md
       sed -i '1s/^/### Added/' CHANGELOG.md
       sed -i '1s/^/$NEW_CHANGELOG/' CHANGELOG.md
