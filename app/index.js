@@ -230,7 +230,9 @@ module.exports = class extends Generator {
 			this.log(chalk.bold.yellow('No Google Tag Management code provided, script not included !'));
 		}
 
-		const user, domain, extension;
+		const user = "",
+			domain = "",
+			extension="";
 		if(this.props.mail){
 			user = this.props.mail.split("@")[0];
 			domain = this.props.mail.split("@")[1].split('.')[0];
