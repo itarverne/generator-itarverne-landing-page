@@ -48,6 +48,9 @@ after_success:
       sed -i '1s/^/### Added/' CHANGELOG.md;
       sed -i '1s/^/$NEW_CHANGELOG/' CHANGELOG.md;
       
+      git config credential.helper "store --file=.git/credentials"
+      echo "https://${GITHUB_TOKEN}:@github.com" > .git/credentials
+
       echo "Adding changelog...";
       ${GITHUB_TOKEN};
       git add CHANGELOG.md;
