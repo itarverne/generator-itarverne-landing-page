@@ -30,11 +30,11 @@ before_script:
   - npm install -g yo
   - npm link
   - gem install travis
-  - travis encrypt GH_TOKEN=${GH_TOKEN} --add --repo ${GH_COMPANY}/${NAME_REPO} --org
+  - travis encrypt SECURE_GH_TOKEN=${GH_TOKEN} --add --repo ${GH_COMPANY}/${NAME_REPO} --org
   - git config --global user.email ${GH_EMAIL};   
   - git config --global user.name ${GH_USER};
   - git config credential.helper "store --file=.git/credentials"   
-  - echo "https://${GH_TOKEN}:@github.com" > .git/credentials 
+  - echo "https://${SECURE_GH_TOKEN}:@github.com" > .git/credentials 
 
 script:
   - npm test
@@ -46,6 +46,8 @@ after_success:
   - TAG_TO_CREATE=`git log -1 --pretty=%B | grep -oP "CREATE TAG v?\K([0-9.]*)"`
   - |
     if [ ${TAG_TO_CREATE} ]; then
+      git pull origin master
+
       BEFORE_LAST_COMMIT_TAG=`git log --skip=1 --grep="CREATE TAG" --pretty=%H`;
       NEW_CHANGELOG=`git log ${BEFORE_LAST_COMMIT_TAG}.. --no-merges --pretty=format:'- %s'`;
       sed -i '1s/^/##[$BEFORE_LAST_COMMIT_TAG]/' CHANGELOG.md;
@@ -53,14 +55,13 @@ after_success:
       sed -i '1s/^/$NEW_CHANGELOG/' CHANGELOG.md;
 
       echo "Adding changelog...";
-      git pull origin master
       git add CHANGELOG.md;
       git commit -m "Auto generate CHANGELOG";
-      git push -u https://${GH_TOKEN}@${GH_REPO} origin master;
+      git push -u https://${SECURE_GH_TOKEN}@${GH_REPO} master;
       
       echo "Pushing tag...";
       git tag -a v${TAG_TO_CREATE} -m "Auto create tag ${TAG_TO_CREATE} from $TRAVIS_BUILD_NUMBER";
-      git push -u https://${GH_TOKEN}@${GH_REPO} origin v${TAG_TO_CREATE};
+      git push -u https://${SECURE_GH_TOKEN}@${GH_REPO} v${TAG_TO_CREATE};
     fi
 
 after_script:
