@@ -30,7 +30,7 @@ before_script:
   - npm install -g yo
   - npm link
   - gem install travis
-  - travis encrypt --org GITHUB_TOKEN=${GH_TOKEN} --add --repo ${GH_COMPANY}/${NAME_REPO}
+  - travis encrypt GITHUB_TOKEN=${GH_TOKEN} --add --repo ${GH_COMPANY}/${NAME_REPO} --org
 
 script:
   - npm test
@@ -50,14 +50,13 @@ after_success:
       
       echo "Adding changelog...";
       ${GITHUB_TOKEN};
-      git remote add origin https://${GITHUB_TOKEN}@${GH_REPO};
       git add CHANGELOG.md;
       git commit -m "Auto generate CHANGELOG";
-      git push https://${GITHUB_TOKEN}@${GH_REPO};
+      git push https://${GITHUB_TOKEN}@${GH_REPO} origin master;
       
       echo "Pushing tag...";
       git tag -a v${TAG_TO_CREATE} -m "Auto create tag ${TAG_TO_CREATE} from $TRAVIS_BUILD_NUMBER";
-      git push -u origin v${TAG_TO_CREATE};
+      git push -u https://${GITHUB_TOKEN}@${GH_REPO} origin v${TAG_TO_CREATE};
     fi
 
 after_script:
