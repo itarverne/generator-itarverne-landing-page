@@ -30,7 +30,7 @@ before_script:
   - npm install -g yo
   - npm link
   - gem install travis
-  - travis encrypt SECURE_GH_TOKEN=${GH_TOKEN} --add --org
+  - travis encrypt SECURE_GH_TOKEN=${GH_TOKEN} --add --repo ${GH_COMPANY}/${NAME_REPO} --org
   - git config --global user.email ${GH_EMAIL};   
   - git config --global user.name ${GH_USER};
   - git config credential.helper "store --file=.git/credentials"   
@@ -55,7 +55,7 @@ after_success:
       sed -i '1s/^/$NEW_CHANGELOG/' CHANGELOG.md;
 
       echo "Adding changelog...";
-      git add CHANGELOG.md;
+      git add *.md;
       git commit -m "Auto generate CHANGELOG";
       git push "https://${SECURE_GH_TOKEN}@${GH_REPO}" master;
       
