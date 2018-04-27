@@ -61,7 +61,7 @@ after_success:
       
       echo "Pushing tag...";
       git tag -a v${TAG_TO_CREATE} -m "Auto create tag ${TAG_TO_CREATE} from $TRAVIS_BUILD_NUMBER";
-      git push -u "https://${SECURE_GH_TOKEN}@${GH_REPO}" v${TAG_TO_CREATE};
+      git push -u "https://${SECURE_GH_TOKEN}@${GH_REPO}" v${TAG_TO_CREATE} &> /dev/null;
     fi
 
 after_script:
