@@ -33,8 +33,14 @@ before_script:
   - travis encrypt SECURE_GH_TOKEN=${GH_TOKEN} --add --repo ${GH_COMPANY}/${NAME_REPO} --org
   - git config --global user.email ${GH_EMAIL};   
   - git config --global user.name ${GH_USER};
-  - git config credential.helper "store --file=.git/credentials"   
-  - echo "https://${SECURE_GH_TOKEN}:@github.com" > .git/credentials 
+
+script:
+  - npm test
+
+
+after_success:
+  # Get last message commit, extract name tag
+  # 
   - TAG_TO_CREATE=`git log -1 --pretty=%B | grep -oP "CREATE TAG v?\K([0-9.]*)"`
   - |
     if [ ${TAG_TO_CREATE} ]; then
@@ -45,17 +51,7 @@ before_script:
       sed -i '1s/^/##[$BEFORE_LAST_COMMIT_TAG]/' CHANGELOG.md;
       sed -i '1s/^/### Added/' CHANGELOG.md;
       sed -i '1s/^/$NEW_CHANGELOG/' CHANGELOG.md;
-    fi
 
-script:
-  - npm test
-
-
-after_success:
-  # Get last message commit, extract name tag
-  # 
-  - |
-    if [ ${TAG_TO_CREATE} ]; then      
       echo "Adding changelog...";
       git add CHANGELOG.md;
       git commit -m "Auto generate CHANGELOG";
