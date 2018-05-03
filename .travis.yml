@@ -50,12 +50,12 @@ after_success:
 
       BEFORE_LAST_COMMIT_TAG=`git log --skip=1 --grep="CREATE TAG" --pretty=%H`;
       NEW_CHANGELOG=`git log ${BEFORE_LAST_COMMIT_TAG}.. --no-merges --pretty=format:'- %s'`;
+      echo $NEW_CHANGELOG;
       sed -i '1s/^/##[$BEFORE_LAST_COMMIT_TAG]/' CHANGELOG.md;
       sed -i '1s/^/### Added/' CHANGELOG.md;
       sed -i '1s/^/$NEW_CHANGELOG/' CHANGELOG.md;
 
       echo "Adding changelog...";
-      ls -l;
       git add CHANGELOG.md;
       git commit -m "Auto generate CHANGELOG";
       git push https://${GH_TOKEN}@${GH_REPO} master;
