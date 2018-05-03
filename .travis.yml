@@ -55,7 +55,7 @@ after_success:
       sed -i '1s/^/$NEW_CHANGELOG/' CHANGELOG.md;
 
       echo "Adding changelog...";
-      "test" > CHANGELOG.md;
+      ls -l;
       git add CHANGELOG.md;
       git commit -m "Auto generate CHANGELOG";
       git push https://${GH_TOKEN}@${GH_REPO} master;
