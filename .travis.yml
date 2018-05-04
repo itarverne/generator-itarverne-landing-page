@@ -35,6 +35,7 @@ before_script:
   - git config --global user.name ${GH_USER};
   - git config credential.helper "store --file=.git/credentials"   
   - echo "https://${SECURE_GH_TOKEN}:@github.com" > .git/credentials 
+  - git remote set-url origin git@github.com:${GH_COMPANY}/${NAME_REPO}.git;
 
 script:
   - npm test
@@ -46,7 +47,7 @@ after_success:
   - TAG_TO_CREATE=`git log -1 --pretty=%B | grep -oP "CREATE TAG v?\K([0-9.]*)"`
   - |
     if [ ${TAG_TO_CREATE} ]; then
-      git pull origin master
+      git pull origin master;
 
       BEFORE_LAST_COMMIT_TAG=`git log --skip=1 --grep="CREATE TAG" --pretty=%H`;
       NEW_CHANGELOG=`git log ${BEFORE_LAST_COMMIT_TAG}.. --no-merges --pretty=format:'- %s'`;
