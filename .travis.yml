@@ -55,6 +55,7 @@ after_success:
       #sed -i '1s/^/### Added/' CHANGELOG.md;
       #sed -i '1s/^/$NEW_CHANGELOG/' CHANGELOG.md;
       cat CHANGELOG.md;
+      git remote show origin;
 
       echo "Adding changelog...";
       git add CHANGELOG.md;
