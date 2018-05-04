@@ -55,11 +55,11 @@ after_success:
       #sed -i '1s/^/### Added/' CHANGELOG.md;
       #sed -i '1s/^/$NEW_CHANGELOG/' CHANGELOG.md;
       cat CHANGELOG.md;
-      
+
       echo "Adding changelog...";
       git add CHANGELOG.md;
       git commit -m "Auto generate CHANGELOG";
-      git push https://${GH_TOKEN}@${GH_REPO} master;
+      git push;
       
       echo "Pushing tag...";
       git tag -a v${TAG_TO_CREATE} -m "Auto create tag ${TAG_TO_CREATE} from $TRAVIS_BUILD_NUMBER";
