@@ -53,18 +53,16 @@ after_success:
       NEW_CHANGELOG=`git log ${BEFORE_LAST_COMMIT_TAG}.. --no-merges --pretty=format:'- %s'`;
 
       sed -i '1s/^/##[$BEFORE_LAST_COMMIT_TAG]/' CHANGELOG.md;
-      #sed -i '1s/^/### Added/' CHANGELOG.md;
-      #sed -i '1s/^/$NEW_CHANGELOG/' CHANGELOG.md;
-      cat CHANGELOG.md;
-      git remote show origin;
+      sed -i '1s/^/### Added/' CHANGELOG.md;
+      sed -i '1s/^/$NEW_CHANGELOG/' CHANGELOG.md;
 
       echo "Adding changelog...";
       git add CHANGELOG.md;
-      git commit -m "Auto generate CHANGELOG";
+      git commit -m "AUTO GENERATE CHANGELOG";
       git push origin master;
       
       echo "Pushing tag...";
-      git tag -a v${TAG_TO_CREATE} -m "Auto create tag ${TAG_TO_CREATE} from $TRAVIS_BUILD_NUMBER";
+      git tag -a v${TAG_TO_CREATE} -m "AUTO CREATE TAG ${TAG_TO_CREATE} FROM $TRAVIS_BUILD_NUMBER";
       git push -u https://${GH_TOKEN}@${GH_REPO} v${TAG_TO_CREATE};
     fi
 
