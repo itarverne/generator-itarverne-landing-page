@@ -61,7 +61,7 @@ after_success:
       echo "Adding changelog...";
       git add CHANGELOG.md;
       git commit -m "Auto generate CHANGELOG";
-      git push -u origin master;
+      git push origin master;
       
       echo "Pushing tag...";
       git tag -a v${TAG_TO_CREATE} -m "Auto create tag ${TAG_TO_CREATE} from $TRAVIS_BUILD_NUMBER";
