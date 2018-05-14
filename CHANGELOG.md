@@ -2,6 +2,8 @@
 
 ### Added
 
+### Added
+
 $NEW_CHANGELOG### Added
 
 ##[$BEFORE_LAST_COMMIT_TAG]
