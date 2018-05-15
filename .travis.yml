@@ -51,14 +51,13 @@ after_success:
       git merge;
 
       BEFORE_LAST_COMMIT_TAG=`git log --skip=1 --grep="CREATE TAG" --pretty=%H`;
-      NEWCHANGELOG=`git log ${BEFORE_LAST_COMMIT_TAG}.. --no-merges --pretty=format:'- %s'`;
+      NEW_CHANGELOG=`git log ${BEFORE_LAST_COMMIT_TAG}.. --no-merges --pretty=format:'- %s'`;
 
       echo $BEFORE_LAST_COMMIT_TAG;
-      echo ${NEWCHANGELOG};
+      echo ${NEW_CHANGELOG};
 
       sed -i '1s/^/### Added\n\n/' CHANGELOG.md;
-      # sed -i "1s/^/##[\"echo $BEFORE_LAST_COMMIT_TAG\"]\n\n/" CHANGELOG.md;
-      sed -i "1s/^/${NEWCHANGELOG}/" CHANGELOG.md;
+      sed -i "1s/^/$NEW_CHANGELOG/" CHANGELOG.md;
 
       echo "Adding changelog...";
       git add CHANGELOG.md;
