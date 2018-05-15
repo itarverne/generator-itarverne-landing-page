@@ -57,7 +57,6 @@ after_success:
       echo ${NEW_CHANGELOG};
 
       sed -i '1s/^/### Added\n\n/' CHANGELOG.md;
-      sed -i "1s/^/$NEW_CHANGELOG/" CHANGELOG.md;
 
       echo "Adding changelog...";
       git add CHANGELOG.md;
