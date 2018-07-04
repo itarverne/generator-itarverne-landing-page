@@ -667,6 +667,16 @@ $micro-font-size:  1.25rem; /* 20px; */
   }
 }
 
+@include breakpoint(medium only) {
+  .header__title{
+    padding: 0.7rem 0.5rem !important;
+    margin:0px;
+  }
+  .header__logo{
+    width: 20%;
+  }
+}
+
 @include breakpoint(small only) {
   .header__mobile{
     margin-left: 30%;
