@@ -38,6 +38,14 @@ grunt build
 grunt serve
 ```
 
+# Templates
+
+You have 2 templates availables :
+- origin
+- monoblue
+
+There are available on `/templates` folder. So can you easily write your own
+
 # Test
 
 ```

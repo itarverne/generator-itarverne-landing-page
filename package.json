@@ -19,10 +19,11 @@
   "dependencies": {
     "chalk": "^2.3.2",
     "fs-extra": "^5.0.0",
-    "yeoman-generator": "^1.0.0"
+    "windows-autoconf": "^1.11.1",
+    "yeoman-generator": "^4.0.1"
   },
   "devDependencies": {
-    "compress-images": "^1.2.0",
+    "compress-images": "^1.5.8",
     "grunt-compress-images": "^0.1.0",
     "mocha": "^4.1.0",
     "sinon": "^4.4.8",
