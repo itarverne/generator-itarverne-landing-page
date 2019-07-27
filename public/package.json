@@ -28,11 +28,11 @@
     "grunt-concurrent": "^1.0.0",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-cssmin": "^0.12.2",
-    "grunt-contrib-htmlmin": "^0.4.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-htmlmin": "^3.1.0",
     "grunt-contrib-imagemin": "^2.0.1",
     "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-uglify": "^0.8.0",
+    "grunt-contrib-uglify": "^4.0.1",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-eslint": "^17.0.0",
     "grunt-filerev": "^2.2.0",
@@ -91,8 +91,9 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-facebook": "^4.2.1",
-    "react-share-linkedin": "^0.1.13",
+    "react-share-linkedin": "^1.0.0",
     "react-twitter-widgets": "^1.4.0",
+    "tent-css": "^1.4.3",
     "vanilla-lazyload": "^10.5.2"
   }
 }
