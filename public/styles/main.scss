@@ -1,29 +1,149 @@
 @import 'tent';
 
+
+
+
 // /** Set CSS variables **/
 // $path-header-img-small: '../images/entete-small.png';
 // $path-header-img-small-blur: '../images/entete-small-blur.jpg';
 // $path-header-img-medium: '../images/entete-medium.png';
 // $path-header-img-medium-blur: '../images/entete-medium-blur.jpg';
-// $path-header-img-large: '../images/entete-large.png';
-// $path-header-img-large-blur: '../images/entete-large-blur.jpg';
+$path-header-img-large: '../images/entete-large.png';
+$path-header-img-large-blur: '../images/entete-large-blur.jpg';
 // $path-header-moutain: '../images/white-mountain.png';
 // $color-greenblue-dark: rgb(130, 175, 196);
 // $color-greenblue-light: rgba(130, 175, 196, 0.68);
 // $color-blue-dark: rgb(0, 101, 146);
+$color-bg-primary: #378795;
 
 // /** 1 rem = 16px **/
 // $huge-font-size:  2.5rem; /* 40px; */
 // $big-font-size:  1.875rem; /* 30px; */
 // $medium-font-size: 1.625rem; /* 26px; */
-// $little-font-size:  1.5rem; /* 24px; */
+$little-font-size:  1.5rem; /* 24px; */
 // $micro-font-size:  1.25rem; /* 20px; */
+$header-font-size:  2.5rem;
 
-// @mixin style-header{
-//   font-family: 'Quicksand';
-//   color: white;
-//   font-size: $little-font-size;
+@mixin style-header{
+  color: white;
+  font-size: $header-font-size;
+}
+
+
+/** Menu pur css **/
+/* preventing from overflow */
+// html,
+// body {
+//   overflow-x: hidden;
 // }
+
+/* wrapper styles */
+.content {
+  position: relative;
+  min-height: 100vh;
+}
+
+.header__logo{
+    display: inline-block;
+    margin-right: 20%;
+}
+
+.header__nav-element{
+    display: inline-block;
+}
+
+/* small screens styles */
+@media (max-width: 767px) {
+  .header__logo{
+        display: none;
+  }
+
+  .header__nav {
+    position: absolute;
+    top: 0;
+    width: 50vw;
+    min-height: 100vh;
+  }
+  .header__nav-element{
+    display: inline-block;
+    width: 100%;
+  }
+  .content {
+    transform: translateX(0) translateZ(0);
+    transition: transform .2s;
+    will-change: transform;
+  }
+
+  /* Button deco */
+  [class^="nav-button"] {
+    display: block;
+    z-index: 1;
+    height: 3.5rem; width: 3.5rem;
+    background-color: transparent;
+    background-image: linear-gradient(to right, #333, #333),
+      linear-gradient(to right, #333, #333),
+      linear-gradient(to right, #333, #333);
+    background-position: center top, center, center bottom;
+    background-repeat: no-repeat;
+    background-size: 3.5rem .9rem;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+  }
+  
+  /* here's goes the push left effect */
+  body:target .content {
+    transform: translateX(30vw);
+  }
+  .nav-button-close,
+  body:target .nav-button-open {
+    display: none;
+  }
+  .nav-button-open,
+  body:target .nav-button-close {
+    display: block;
+  }
+  
+} /* end of small screen media query */
+
+/* Global deco */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 1.6em;
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+a {
+  color: #fff;
+}
+.content {
+  padding: 2rem;
+  background-color: #eee;
+  color: #333;
+}
+.header__nav {
+  padding-top: 1em;
+  background: $color-bg-primary;
+  color: #ddd;
+}
+nav a {
+  display: block;
+  padding: .7em;
+  margin-bottom: 2px;
+  text-decoration: none;
+  background: rgba(255,255,255, 0.1);
+}
+/** Fin Menu pur css **/
+
 
 // @mixin style-title-bold{
 //   font-family: 'quicksand-bold';
@@ -75,6 +195,11 @@
 //       color: $hover;   
 //     }
 // }
+
+.hide{
+    display: none;
+}
+
 
 // /***************/
 // /** Font-face **/
@@ -208,13 +333,11 @@
 // /************/
 // /** Header **/
 // /************/
-// .header{
-//   margin:0;
-//   height: 100vh;
-//   padding-top: 2%;
-//   vertical-align: middle;
-//   background: url($path-header-img-large) no-repeat;
-//   background-size: 100vw 100vh;
+.header{
+  margin:0;
+  padding-top: 2%;
+  vertical-align: middle;
+  background-color: $color-bg-primary;
 
 //   @include breakpoint(small only) {
 //     background: url($path-header-img-small) no-repeat;
@@ -228,7 +351,7 @@
 //     height: 100vh;
 //   }
 
-// }
+}
 // .g-blur-header {
 //   filter: blur(20px);
 //   background-color: $color-greenblue-light;
@@ -241,26 +364,23 @@
 //   animation-delay: 1s;
 // }
 
-// .header__cookies{
-//   position: fixed;
-//   font-family: 'consola';
-//   font-size: $micro-font-size;
-//   color: white;
-//   background-color: $color-greenblue-dark;
-//   width: 100%;
-//   z-index: 2;
-//   padding-left: 10px;
-//   margin-top: -32px;
-// }
-// .header__cookies--validate{
-//   background-color: $color-blue-dark;
-//   font-family: 'quicksand-bold';
-//   font-size: $small-font-size;
-// }
-// .header__cookies--more{
-//   font-family: 'quicksand-bold';
-//   font-size: $small-font-size;
-// }
+.header__cookies{
+  position: fixed;
+  @include style-header;
+  width: 100%;
+  padding-left: 10px;
+  margin-top: -32px;
+}
+.header__cookies--validate{
+  font-size: $little-font-size;
+}
+.header__cookies--more{
+  font-size: $little-font-size;
+}
+.header__nav-list{
+    list-style: none;
+    display: inline-block;
+}
 // .header__title {
 //   @include style-header;
 //   @include link-pseudo-color(white, white, white, white);
@@ -582,13 +702,6 @@
 //   overflow-y: auto; /* scroll */
 // }
 
-// .g-parallax__layer {
-//   position: absolute; /* fixed */
-//   top: 0;
-//   right: 0;
-//   bottom: 0;
-//   left: 0;
-// }
 // .page__parallax-header {
 //   @include style-header;
 //   font-size: 2 * $huge-font-size;
@@ -596,9 +709,6 @@
 //   text-align: center;
 // }
 
-// .page__parallax-header--bck{
-//   transform: translateZ(0);
-// }
 
 // .content__top-site{
 //     position: fixed;
@@ -688,14 +798,6 @@
 //     @include link-pseudo-color(white, white, white, white);
 //     margin: 0px;
 //     line-height: 20px !important;
-//   }
-//   .header__menu-responsive{
-//     margin-left: 10px;
-//   }
-//   .header__menu-responsive-text{
-//     display: inline-block;
-//     @include style-header;
-//     font-size: $micro-font-size;
 //   }
 
 //   .activities__image-left,

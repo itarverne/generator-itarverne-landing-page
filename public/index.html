@@ -1,420 +1,466 @@
 <!doctype html>
- <html lang="fr">
-  <head>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})
-      (window,document,'script','dataLayer','GTM-KT78XXN');</script>
-    <!-- End Google Tag Manager -->
+<html lang="fr">
 
-    <!-- include: "type": "preloadCss", "basePath": "build", "files": "styles/*.css" -->
-    <link rel="preload" href="styles/assets_css_ITArverne.min.6ccf56d5.css" as="style">
-    <!-- /include -->
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })
+      (window, document, 'script', 'dataLayer', 'GTM-KT78XXN');</script>
+  <!-- End Google Tag Manager -->
 
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITArverne</title>
+  <!-- include: "type": "preloadCss", "basePath": "build", "files": "styles/*.css" -->
+  <link rel="preload" href="styles/assets_css_ITArverne.min.css" as="style">
+  <!-- /include -->
 
-    <link rel="alternate" href="http://itarverne.com" hreflang="en_GB">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITArverne</title>
 
-    <link rel="icon" href="images/favicon/favicon.png">
-    <link rel="icon" sizes="24x24" href="images/favicon/favicon_24x24.png" type="image/png">
-    <link rel="icon" sizes="32x32" href="images/favicon/favicon_32x32.png" type="image/png">
-    <link rel="icon" sizes="48x48" href="images/favicon/favicon_48x48.png" type="image/png">
-    <link rel="icon" sizes="64x64" href="images/favicon/favicon_64x64.png" type="image/png">
+  <link rel="alternate" href="http://itarverne.com" hreflang="en_GB">
 
-    <meta name="description" content="Entreprise auvergnate notamment spécialisée dans le développement d'application Web, Python et Java coté back-end">
-    <meta name="generator" content="generator-itarverne-landing-page 1.0.0">
-    
-    <!--FACEBOOK-->
-    <meta property="fb:app_id" content="474812546226673">
-    <meta property="og:title" content="Développement, conseil et formation en Informatique">
-    <meta property="og:site_name" content="ITArverne">
-    <meta property="og:url" content="https://itarverne.com">
-    <meta property="og:description" content="Entreprise auvergnate notamment spécialisée dans le développement d'application Web, Python et Java coté back-end">
-    <meta property="og:image" content="http://itarverne.com/images/logo-social.png">
-    <meta property="og:image:width" content="1237">
-    <meta property="og:image:height" content="648">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="fr_FR">
-    <meta property="og:locale:alternate" content="en_GB"> 
+  <link rel="icon" href="images/favicon/favicon.png">
+  <link rel="icon" sizes="24x24" href="images/favicon/favicon_24x24.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="images/favicon/favicon_32x32.png" type="image/png">
+  <link rel="icon" sizes="48x48" href="images/favicon/favicon_48x48.png" type="image/png">
+  <link rel="icon" sizes="64x64" href="images/favicon/favicon_64x64.png" type="image/png">
 
-    <!--TWITTER-->
-    <meta property="twitter:card" content="summary">
-    <meta property="twitter:title" content="Développement, conseil et formation en Informatique">
-    <meta property="twitter:description" content="Entreprise auvergnate notamment spécialisée dans le développement d'application Web, Python et Java coté back-end">
-    <meta property="twitter:creator" content="@drigaudie">
-    <meta property="twitter:url" content="http://itarverne.com">
-    <meta property="twitter:image" content="http://itarverne.com/images/logo-social-twitter.png">
-    <meta property="twitter:image:alt" content="ITArverne">
-    <meta property="twitter:site" content="@itarverne">
+  <meta name="description"
+    content="Entreprise auvergnate notamment spécialisée dans le développement d'application Web, Python et Java coté back-end">
+  <meta name="generator" content="generator-itarverne-landing-page 1.0.0">
 
-    <!--GOOGLE+-->
-    <link rel="author" href="drigaudie">
-    <link rel="publisher" href="itarverne">
+  <!--FACEBOOK-->
+  <meta property="fb:app_id" content="474812546226673">
+  <meta property="og:title" content="Développement, conseil et formation en Informatique">
+  <meta property="og:site_name" content="ITArverne">
+  <meta property="og:url" content="https://itarverne.com">
+  <meta property="og:description"
+    content="Entreprise auvergnate notamment spécialisée dans le développement d'application Web, Python et Java coté back-end">
+  <meta property="og:image" content="http://itarverne.com/images/logo-social.png">
+  <meta property="og:image:width" content="1237">
+  <meta property="og:image:height" content="648">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:locale:alternate" content="en_GB">
 
-    <!-- include: "type": "css", "basePath": "build", "files": "styles/*.css" -->
-    <link href="styles/assets_css_ITArverne.min.6ccf56d5.css" rel="stylesheet" type="text/css">
-    <!-- /include -->
+  <!--TWITTER-->
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:title" content="Développement, conseil et formation en Informatique">
+  <meta property="twitter:description"
+    content="Entreprise auvergnate notamment spécialisée dans le développement d'application Web, Python et Java coté back-end">
+  <meta property="twitter:creator" content="@drigaudie">
+  <meta property="twitter:url" content="http://itarverne.com">
+  <meta property="twitter:image" content="http://itarverne.com/images/logo-social-twitter.png">
+  <meta property="twitter:image:alt" content="ITArverne">
+  <meta property="twitter:site" content="@itarverne">
 
-  </head>
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KT78XXN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+  <!-- include: "type": "css", "basePath": "build", "files": "styles/*.css" -->
+  <link href="styles/assets_css_ITArverne.min.css" rel="stylesheet" type="text/css">
+  <!-- /include -->
 
-    <div class="callout alert browser hide">
-      <h3>Votre navigateur web est trop ancien!</h3>
-      <p>Il est important de mettre à jour votre navigateur web afin de vous protéger correctement et de profiter des dernières technologies pour rendre votre navigation intuitive.</p>
-      <p>Il est très simple de <a href="http://outdatedbrowser.com/en" target="_blank">mettre à jour votre navigateur</a> afin de profiter au mieux de ce site web.</p>
+</head>
+
+<body id="body">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KT78XXN" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div class="callout alert browser hide">
+    <h3>Votre navigateur web est trop ancien!</h3>
+    <p>Il est important de mettre à jour votre navigateur web afin de vous protéger correctement et de profiter des
+      dernières technologies pour rendre votre navigation intuitive.</p>
+    <p>Il est très simple de <a href="http://outdatedbrowser.com/en" target="_blank">mettre à jour votre navigateur</a>
+      afin de profiter au mieux de ce site web.</p>
+  </div>
+
+  <header class="header g-blur-header">
+
+    <div class="header__cookies hide">
+      <h3 class="header__cookies-title title title--xl">Usage des cookies</h5>
+        <p>Ce site utilise des cookies afin d'améliorer l'expérience utilisateur. En aucun cas les données récoltées
+          ne sont revendues à des tiers : <a href="cookies.html" class="header__cookies--more">En savoir plus</a></p>
+        <a href="#" class="button header__cookies--validate" id="js-cookie__validate">Je comprend</a>
     </div>
 
-    <div class="g-parallax g-scroll">      
-      <div class="g-parallax__layer page__parallax-header--bck">
+    <aside class="header__nav">
+      <nav id="nav" role="navigation">
+        <a href="#" class="header__logo"><img src="../images/logo_white.png" alt="ITArverne"></a>
+        <ul class="header__nav-list">
+          <li class="header__nav-element">
+            <a href="#activities" class="header__title">Activités</a>
+          </li>
+          <li class="header__nav-element">
+            <a href="#references" class="header__title">Références</a>
+          </li>
+          <li class="header__nav-element">
+            <a href="#values" class="header__title">Valeurs</a>
+          </li>
+          <li class="header__nav-element">
+            <a href="#labs" class="header__title">Labs</a>
+          </li>
+          <li class="header__nav-element">
+            <a href="#david" class="header__title">Qui suis-je ?</a>
+          </li>
+          <li class="header__nav-element">
+            <a href="http://rigaudie.fr" target="_blank" class="header__title" rel="noopener">Blog</a>
+          </li>
+        </ul>
+        <!-- <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          data-src="../images/logo_white.png" class="show-for-small-only header__mobile" alt="ITArverne"> -->
+      </nav>
+    </aside>
 
-        <header class="header g-blur-header" path-header-img-large>
+  </header>
 
-          <div class="callout header__cookies hide">
-            <h5>Usage des cookies</h5>
-            <p>Ce site utilise des cookies afin d'améliorer l'expérience utilisateur. En aucun cas les données récoltées ne sont revendues à des tiers : <a href="cookies.html" class="header__cookies--more">En savoir plus</a></p>
-            <a href="#" class="button header__cookies--validate" id="js-cookie__validate">Je comprend</a>
-          </div>
-          
-          <nav id="top">
-            <div class="header__menu-responsive show-for-small-only" data-responsive-toggle="js-menu-responsive">
-              <button class="menu-icon" type="button" data-toggle="js-menu-responsive"></button>
-              <div class="header__menu-responsive-text">Menu</div>
-            </div>
-            <ul id="js-menu-responsive" class="menu">
-                <li class="hide-for-small-only header__logo"><a href="#" class="is-active"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../images/logo_white.png" alt="ITArverne"></a></li>
-                <li>
-                  <a href="#activities" class="header__title">Activités</a>
-                </li>
-                <li>
-                  <a href="#references" class="header__title">Références</a>
-                  <div class="g-pipe hide-for-small-only"></div>
-                </li>
-                <li>
-                  <a href="#values" class="header__title">Valeurs</a>
-                  <div class="g-pipe hide-for-small-only"></div>
-                </li>
-                <li>
-                  <a href="#labs" class="header__title">Labs</a>
-                  <div class="g-pipe hide-for-small-only"></div>
-                </li>
-                <li>
-                  <a href="#david" class="header__title">Qui suis-je ?</a>
-                  <div class="g-pipe hide-for-small-only"></div>
-                </li>
-                <li>
-                  <a href="http://rigaudie.fr" target="_blank" class="header__title" rel="noopener">Blog</a>
-                  <div class="g-pipe hide-for-small-only"></div>
-                </li>
-            </ul>
-            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../images/logo_white.png" class="show-for-small-only header__mobile" alt="ITArverne">
-          </nav>
-            
-        </header>
-
-        <div class="content">
-          <article id="activities" class="activities">
-              <header>
-                  <h1 class="content__title">nos Activites</h1>
-              </header>
-              <section class="grid-x">
-                <div class="medium-4 medium-offset-1 activities__image cell">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/appli-metier.png" alt="Application métier" class="activities__image-left">
-                </div>
-                <div class="medium-7 cell activities__app">
-                  <h2 class="activities__app-title">Réalisation application métier</h2>
-                  <h3 class="activities__app-subtitle">JAVA, Python et React, AngularJs</h3>
-                  <p>Réalisation d’une nouvelle application web correspondant à votre business.</p>
-                </div>
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/wheel.png" class="activities__wheel1" alt="wheel">
-              </section>
-              <section id="site" class="grid-x">
-                <div class="medium-4 medium-offset-1 activities__image cell">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/site.png" alt="site" class="activities__image-left">
-                </div>
-                <div class="medium-7 cell activities__site">
-                  <h2 class="activities__site-title">Création site</h2>
-                  <h3 class="activities__site-subtitle">CMS / Landing page</h3>
-                  <p>Mise en place d’un site web pour vous apporter de la visibilité sur internet.</p>
-                </div>
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/wheel.png" class="activities__wheel2" alt="wheel">
-              </section>
-              <section id="pack" class="grid-x">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/wheel.png" class="activities__wheel3" alt="wheel">
-                <div class="medium-7 cell activities__pack">
-                  <h2 class="activities__pack-title">Pack Startup</h2>
-                  <p class="activities__pack">Mise en place d’un kit de démarrage : mail, site vitrine, partage document, CRM...</p>
-                </div>
-                <div class="medium-4 medium-offset-1 activities__image cell">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/pack.png" alt="pack" class="activities__image-right">
-                </div>
-              </section>
-              <section id="training" class="grid-x">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/wheel.png" class="activities__wheel4" alt="wheel">
-                <div class="medium-7 cell activities__training">
-                  <h2 class="activities__training-title">Formation</h2>
-                  <p class="activities__training">Développement basique/avancé, sécurité, découverte écosystème front...</p>
-                </div>
-                <div class="medium-4 medium-offset-1 activities__image cell">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/training.png" alt="Formation" class="activities__image-right">
-                </div>
-              </section>
-              <footer class="grid-x content__footer">
-                <div class="medium-11 medium-offset-1 cell content__footer-bt">
-                  <span class="content__quote-euro">€</span>
-                  <a data-name="david.rigaudie" data-domain="itarverne" data-tld="com" href="#" class="content__quote" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld"> Demandez votre devis</a>
-                  <span class="g-corner"></span>
-                </div>
-              </footer>
-          </article>
-
-          <article id="references" class="references">
-              <header class="references__title">
-                  <h1 class="content__title">nos Références</h1>
-              </header>
-              <section class="grid-x references__logo">
-                <div class="medium-3 medium-offset-1 cell references__content">
-                  <a href="http://www.lamontagne.fr" target="_blank" rel="noopener">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/centrefrance.jpg" class="references__logo-customer g-responsive-image-prio" alt="La Montagne">
-                    <div class="references__customer_name">La Montagne</div>
-                    <div class="hide-for-small-only references__customer_url">www.lamontagne.fr</div>
-                  </a>
-                </div>
-                <div class="medium-3 cell references__content">
-                  <a href="http://www.lalocalerie.fr" target="_blank" rel="noopener">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/taste.jpg" class="references__logo-customer g-responsive-image-prio" alt="Taste">
-                    <div class="references__customer_name">La Localerie</div>
-                    <div class="hide-for-small-only references__customer_url">www.lalocalerie.fr</div>
-                    <span class="references__tooltip"></span>
-                  </a>
-                </div>
-                <div class="medium-3 cell references__content">
-                  <a href="http://www.lescomptoirstaste.com" target="_blank" rel="noopener">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/taste.jpg" class="references__logo-customer g-responsive-image-prio" alt="Taste">
-                    <div class="references__customer_name">Les Comptoirs Taste</div>
-                    <div class="hide-for-small-only references__customer_url">www.lescomptoirstaste.com</div>
-                  </a>
-                </div>
-              </section>
-          </article>
-
-          <article id="values" class="values">
-              <header>
-                  <h1 class="content__title">nos Valeurs</h1>
-              </header>
-              <section class="grid-x">
-                <div class="medium-10 medium-offset-1 end cell">
-                  <p class="values__text">
-                    <b>ITArverne</b> se veut être une société humaine où les collaborateurs s’épanouissent
-                    dans un environnement agréable. Nous nous donnons les moyens de former
-                    efficacement nos collaborateurs afin qu’ils deviennent de véritable expert en
-                    technique.<br>
-                    Il est possible d’avoir une carrière entière dans la technique, les pépites
-                    évolueront vers des postes d’architecte.
-                  </p>
-                </div>
-              </section>
-              <section class="grid-y values__list">
-                <div class="medium-9 medium-offset-2 end cell values__list--decor">
-                  <b> &lt;Respect&gt;</b> de nos collaborateurs et clients.
-                </div>
-                <div class="medium-9 cell medium-offset-2 end values__list--decor">
-                  Etre à <b>&lt;l’écoute&gt;</b> des attentes de chaque personne aussi bien en interne que chez nos clients.
-                </div>
-                <div class="medium-9 cell medium-offset-2 end values__list--decor">
-                  <b>&lt;Engagement qualité&gt;</b> Nos clients ont le droit à des experts pour développer leur projet.
-                </div>
-                <div class="medium-9 cell medium-offset-2 end values__list--decor">
-                  Développer une <b>&lt;expertise pointue&gt;</b> en se donnant les moyens d’être réellement efficace.
-                </div>
-                <div class="medium-9 cell medium-offset-2 end values__list--decor">
-                  <b>&lt;Valoriser&gt;</b> le travail des «techos» qui nécessite un investissement important.
-                </div>
-              </section>
-              <footer class="grid-x content__footer">
-                <div class="medium-3 medium-offset-9 small-12 cell content__footer-bt">
-                  <a class="js-hire-track-gtm" data-name="david.rigaudie" data-domain="itarverne" data-tld="com" href="#" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/picto-pola.png" alt="postulez" class="content__hire-picto">
-                    <span class="content__hire-text">Postulez</span>
-                  </a>
-                  <span class="g-corner content__footer-bt--corner"></span>
-                </div>
-              </footer>
-          </article>
-
-          <article id="labs" class="labs">
-              <header>
-                  <h1 class="content__title">Labs</h1>
-              </header>
-              <section class="grid-x">
-                <div class="medium-10 medium-offset-1 end cell">
-                  <p class="labs__desc">
-                    <b>ITArverne</b> soutient l’Open Source en proposant des outils gratuits, librement accessibles avec un support technique.
-                  </p>
-                </div>
-              </section>
-              <section class="grid-x">
-                <div class="grid-lab-12 cell">
-                  <div class="g-rectangle labs__bloc-generator">
-                    <div class="g-corner-right--hidden"></div>
-                    <div class="g-corner-right--line"></div>
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/yeoman.png" class="labs__bloc-generator-img" alt="yeoman">
-                    <h4 class="labs__bloc-generator-title">GENERATEUR SITE STATIC</h4>
-                    <p class="labs__bloc-generator-content">Une application JS/HTML 5 qui permet de créer un site de type landing page avec le générateur yeoman.</p>
-                  </div>
-                  <div class="labs__bloc-generator-bt">
-                    <a class="js-github-generator-track-gtm" href="https://github.com/itarverne/generator-itarverne-landing-page" target="_blank" rel="noopener">
-                      <span class="labs__bloc-generator-bt-content">GITHUB</span>
-                    </a>
-                    <span class="g-corner labs__bt--corner"></span>
-                  </div>
-                </div>
-                <div class="grid-lab-12 cell">
-                  <div class="g-rectangle labs__bloc-in">
-                    <div class="g-corner-right--hidden"></div>
-                    <div class="g-corner-right--line"></div>
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/in.png" class="labs__bloc-in-img" alt="yeoman">
-                    <h4 class="labs__bloc-in-title">REACT LinkedIn</h4>
-                    <p class="labs__bloc-in-content">Une application React permettant de partager une page sur le réseau LinkedIn.</p>
-                  </div>
-                  <div class="labs__bloc-in-bt">
-                    <a class="js-github-react-track-gtm" href="https://github.com/itarverne/react-share-linkedin" target="_blank" rel="noopener">
-                      <span class="labs__bloc-in-bt-content">GITHUB</span>
-                    </a>
-                    <span class="g-corner labs__bt--corner"></span>
-                  </div>
-                </div>
-                <div class="grid-lab-3 cell">
-                  <div class="g-rectangle labs__bloc-grunt">
-                    <div class="g-corner-right--hidden"></div>
-                    <div class="g-corner-right--line"></div>
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/npm.png" class="labs__bloc-grunt-img" alt="yeoman">
-                    <h4 class="labs__bloc-grunt-title">GRUNT plugin</h4>
-                    <p class="labs__bloc-grunt-content">Un plugin Grunt pour la librairie npm compress-images afin d'adapter la taille des images pour le web.</p>
-                  </div>
-                  <div class="labs__bloc-grunt-bt">
-                    <a class="js-github-grunt-track-gtm" href="https://github.com/itarverne/grunt-compress-images" target="_blank" rel="noopener">
-                      <span class="labs__bloc-grunt-bt-content">GITHUB</span>
-                    </a>
-                    <span class="g-corner labs__bt--corner"></span>
-                  </div>
-                </div>
-              </section>
-              <section class="grid-x">
-                <div class="medium-11 medium-offset-1 cell labs__footer">
-                  Et encore plein d'autres idées à venir... 
-                </div>
-              </section>
-          </article>
-
-          <article id="david" class="david">
-              <header>
-                  <h1 class="content__title">Qui suis-je ?</h1>
-              </header>
-              <section class="grid-x">
-                <div class="medium-10 medium-offset-1 cell end">
-                  <img align="left" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/david.png" class="david__picture hide-for-small-only" alt="david">
-                  <img align="left" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/david-small.png" class="david__picture show-for-small-only" alt="david">
-                  <p>Je m’appelle David et je suis originaire d’Auvergne où j’ai décidé de lancer ma société. Auparavant, j’ai travaillé dans différents domaines d’activités mais toujours en lien avec le web.<br><br>
-                    Le métier de développeur me passionne et j’apprécie rencontrer mes clients afin de leur proposer la meilleure architecture avec un code maintenable toujours selon les respects du codage actuel.<br><br>
-                    Pendant ces 10 années d’expériences, j’ai pu enrichir mes connaissances dans le développement pur mais aussi dans les process métier. Je maitrise les langages Java, PHP et Python côté back-end ainsi que React et Angular Js côté front-end.
-                    Quant à la partie architecture, je peux intervenir sur du Docker, des applications REST ou simplement des applications monolitiques.<br><br>
-                    Ma société veut mettre l’humain au centre de son activité pour que tous les intervenants s’épanouissent, chacun y trouve son compte.<br>
-                  </p>
-                </div>
-              </section>
-          </article>
-
+  <div id="#top" class="content">
+    <a href="#body" class="nav-button-open" aria-label="open navigation"></a>
+    <a href="#" class="nav-button-close" aria-label="close navigation"></a>
+    <article id="activities" class="activities">
+      <!-- <header>
+        <h1 class="content__title">nos Activites</h1>
+      </header>
+      <section class="grid-x">
+        <div class="medium-4 medium-offset-1 activities__image cell">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            data-src="images/appli-metier.png" alt="Application métier" class="activities__image-left">
         </div>
-      
-        <footer class="footer">
-          <div class="grid-container">
-            <div class="grid-x grid-margin-x footer__item">
-              <div class="medium-3 cell">
-                <a href="#" class="is-active"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../images/logo.png" alt="ITArverne"></a>
-                <p>© 2018 - ITArverne</p>
-              </div>
-              <div class="medium-2 cell">
-                <div><a href="#activities">Activités</a></div>
-                <div><a href="#references">Références</a></div>
-                <div><a href="#values">Valeurs</a></div>                
-                <div><a href="#david">Qui suis-je ?</a></div>                
-                <div><a href="#" data-name="david.rigaudie" data-domain="itarverne" data-tld="com" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld">Contact</a></div>                
-                <div><a href="http://rigaudie.fr" target="_blank" rel="noopener">Blog</a></div>                
-                <div><a href="cgv.html">CGV</a></div>
-              </div>              
-              <div class="medium-3 cell">
-                <div id="js-fb-like" class="footer__facebook"></div>
-                <div id="js-fb-share" class="footer__facebook"></div>
-                <div id="js-twitter-follow" class="footer__twitter-follow"></div>
-                <div id="js-twitter-share" class="footer__twitter-share"></div>
-                <div id="js-in-share"></div>
-              </div>
-              <div class="medium-4 cell">
-                <div class="footer__contact">
-                  <a href="https://www.facebook.com/itarverne" target="_blank" class="is-active" rel="noopener">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../images/facebook_bleu.png" alt="Facebook">
-                    Facebook
-                  </a>
-                </div>
-                <div class="footer__contact">
-                  <a href="https://twitter.com/itarverne" target="_blank" class="is-active" rel="noopener">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../images/twitter_bleu.png" alt="Twitter">
-                    Twitter
-                  </a>
-                </div>
-                <div class="footer__contact">
-                  <a href="https://www.linkedin.com/company/itarverne" target="_blank" class="is-active" rel="noopener">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../images/linkedin_bleu.png" alt="LinkedIn">
-                    LinkedIn
-                  </a>
-                </div>
-                <div class="footer__contact">
-                  <a href="https://github.com/itarverne" target="_blank" class="is-active" rel="noopener">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../images/github_bleu.png" alt="github">
-                    Github
-                  </a>
-                </div>
-                <div class="footer__contact">
-                  <a data-name="david.rigaudie" data-domain="itarverne" data-tld="com" href="#" class="casper" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../images/enveloppe_bleu.png" alt="mail">
-                  </a>
-                </div>
-                <div class="footer__contact">
-                  <a data-number="06.44.28.80.72" href="#" class="lady-brown" onclick="window.location.href = 'tel:' + this.dataset.number">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../images/tel_bleu.png" alt="téléphone">
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="grid-x grid-margin-x">
-              <div class="cell"><span>Build with ❤ by </span> <a href="https://github.com/itarverne/generator-itarverne-landing-page" target="_blank" rel="noopener">ITArverne</a> 2018</div>
-            </div>
+        <div class="medium-7 cell activities__app">
+          <h2 class="activities__app-title">Réalisation application métier</h2>
+          <h3 class="activities__app-subtitle">JAVA, Python et React, AngularJs</h3>
+          <p>Réalisation d’une nouvelle application web correspondant à votre business.</p>
+        </div>
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          data-src="images/wheel.png" class="activities__wheel1" alt="wheel">
+      </section>
+      <section id="site" class="grid-x">
+        <div class="medium-4 medium-offset-1 activities__image cell">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            data-src="images/site.png" alt="site" class="activities__image-left">
+        </div>
+        <div class="medium-7 cell activities__site">
+          <h2 class="activities__site-title">Création site</h2>
+          <h3 class="activities__site-subtitle">CMS / Landing page</h3>
+          <p>Mise en place d’un site web pour vous apporter de la visibilité sur internet.</p>
+        </div>
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          data-src="images/wheel.png" class="activities__wheel2" alt="wheel">
+      </section>
+      <section id="pack" class="grid-x">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          data-src="images/wheel.png" class="activities__wheel3" alt="wheel">
+        <div class="medium-7 cell activities__pack">
+          <h2 class="activities__pack-title">Pack Startup</h2>
+          <p class="activities__pack">Mise en place d’un kit de démarrage : mail, site vitrine, partage document,
+            CRM...</p>
+        </div>
+        <div class="medium-4 medium-offset-1 activities__image cell">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            data-src="images/pack.png" alt="pack" class="activities__image-right">
+        </div>
+      </section>
+      <section id="training" class="grid-x">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          data-src="images/wheel.png" class="activities__wheel4" alt="wheel">
+        <div class="medium-7 cell activities__training">
+          <h2 class="activities__training-title">Formation</h2>
+          <p class="activities__training">Développement basique/avancé, sécurité, découverte écosystème front...</p>
+        </div>
+        <div class="medium-4 medium-offset-1 activities__image cell">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            data-src="images/training.png" alt="Formation" class="activities__image-right">
+        </div>
+      </section>
+      <footer class="grid-x content__footer">
+        <div class="medium-11 medium-offset-1 cell content__footer-bt">
+          <span class="content__quote-euro">€</span>
+          <a data-name="david.rigaudie" data-domain="itarverne" data-tld="com" href="#" class="content__quote"
+            onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld">
+            Demandez votre devis</a>
+          <span class="g-corner"></span>
+        </div>
+      </footer> -->
+    </article>
+
+    <article id="references" class="references">
+      <!-- <header class="references__title">
+        <h1 class="content__title">nos Références</h1>
+      </header>
+      <section class="grid-x references__logo">
+        <div class="medium-3 medium-offset-1 cell references__content">
+          <a href="http://www.lamontagne.fr" target="_blank" rel="noopener">
+            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              data-src="images/centrefrance.jpg" class="references__logo-customer g-responsive-image-prio"
+              alt="La Montagne">
+            <div class="references__customer_name">La Montagne</div>
+            <div class="hide-for-small-only references__customer_url">www.lamontagne.fr</div>
+          </a>
+        </div>
+        <div class="medium-3 cell references__content">
+          <a href="http://www.lalocalerie.fr" target="_blank" rel="noopener">
+            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              data-src="images/taste.jpg" class="references__logo-customer g-responsive-image-prio" alt="Taste">
+            <div class="references__customer_name">La Localerie</div>
+            <div class="hide-for-small-only references__customer_url">www.lalocalerie.fr</div>
+            <span class="references__tooltip"></span>
+          </a>
+        </div>
+        <div class="medium-3 cell references__content">
+          <a href="http://www.lescomptoirstaste.com" target="_blank" rel="noopener">
+            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              data-src="images/taste.jpg" class="references__logo-customer g-responsive-image-prio" alt="Taste">
+            <div class="references__customer_name">Les Comptoirs Taste</div>
+            <div class="hide-for-small-only references__customer_url">www.lescomptoirstaste.com</div>
+          </a>
+        </div>
+      </section> -->
+    </article>
+
+    <article id="values" class="values">
+      <!-- <header>
+        <h1 class="content__title">nos Valeurs</h1>
+      </header>
+      <section class="grid-x">
+        <div class="medium-10 medium-offset-1 end cell">
+          <p class="values__text">
+            <b>ITArverne</b> se veut être une société humaine où les collaborateurs s’épanouissent
+            dans un environnement agréable. Nous nous donnons les moyens de former
+            efficacement nos collaborateurs afin qu’ils deviennent de véritable expert en
+            technique.<br>
+            Il est possible d’avoir une carrière entière dans la technique, les pépites
+            évolueront vers des postes d’architecte.
+          </p>
+        </div>
+      </section>
+      <section class="grid-y values__list">
+        <div class="medium-9 medium-offset-2 end cell values__list--decor">
+          <b> &lt;Respect&gt;</b> de nos collaborateurs et clients.
+        </div>
+        <div class="medium-9 cell medium-offset-2 end values__list--decor">
+          Etre à <b>&lt;l’écoute&gt;</b> des attentes de chaque personne aussi bien en interne que chez nos clients.
+        </div>
+        <div class="medium-9 cell medium-offset-2 end values__list--decor">
+          <b>&lt;Engagement qualité&gt;</b> Nos clients ont le droit à des experts pour développer leur projet.
+        </div>
+        <div class="medium-9 cell medium-offset-2 end values__list--decor">
+          Développer une <b>&lt;expertise pointue&gt;</b> en se donnant les moyens d’être réellement efficace.
+        </div>
+        <div class="medium-9 cell medium-offset-2 end values__list--decor">
+          <b>&lt;Valoriser&gt;</b> le travail des «techos» qui nécessite un investissement important.
+        </div>
+      </section>
+      <footer class="grid-x content__footer">
+        <div class="medium-3 medium-offset-9 small-12 cell content__footer-bt">
+          <a class="js-hire-track-gtm" data-name="david.rigaudie" data-domain="itarverne" data-tld="com" href="#"
+            onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld">
+            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              data-src="images/picto-pola.png" alt="postulez" class="content__hire-picto">
+            <span class="content__hire-text">Postulez</span>
+          </a>
+          <span class="g-corner content__footer-bt--corner"></span>
+        </div>
+      </footer> -->
+    </article>
+
+    <article id="labs" class="labs">
+      <!-- <header>
+        <h1 class="content__title">Labs</h1>
+      </header>
+      <section class="grid-x">
+        <div class="medium-10 medium-offset-1 end cell">
+          <p class="labs__desc">
+            <b>ITArverne</b> soutient l’Open Source en proposant des outils gratuits, librement accessibles avec un
+            support technique.
+          </p>
+        </div>
+      </section>
+      <section class="grid-x">
+        <div class="grid-lab-12 cell">
+          <div class="g-rectangle labs__bloc-generator">
+            <div class="g-corner-right--hidden"></div>
+            <div class="g-corner-right--line"></div>
+            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              data-src="images/yeoman.png" class="labs__bloc-generator-img" alt="yeoman">
+            <h4 class="labs__bloc-generator-title">GENERATEUR SITE STATIC</h4>
+            <p class="labs__bloc-generator-content">Une application JS/HTML 5 qui permet de créer un site de type
+              landing page avec le générateur yeoman.</p>
           </div>
-        </footer>
-    
+          <div class="labs__bloc-generator-bt">
+            <a class="js-github-generator-track-gtm"
+              href="https://github.com/itarverne/generator-itarverne-landing-page" target="_blank" rel="noopener">
+              <span class="labs__bloc-generator-bt-content">GITHUB</span>
+            </a>
+            <span class="g-corner labs__bt--corner"></span>
+          </div>
+        </div>
+        <div class="grid-lab-12 cell">
+          <div class="g-rectangle labs__bloc-in">
+            <div class="g-corner-right--hidden"></div>
+            <div class="g-corner-right--line"></div>
+            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              data-src="images/in.png" class="labs__bloc-in-img" alt="yeoman">
+            <h4 class="labs__bloc-in-title">REACT LinkedIn</h4>
+            <p class="labs__bloc-in-content">Une application React permettant de partager une page sur le réseau
+              LinkedIn.</p>
+          </div>
+          <div class="labs__bloc-in-bt">
+            <a class="js-github-react-track-gtm" href="https://github.com/itarverne/react-share-linkedin"
+              target="_blank" rel="noopener">
+              <span class="labs__bloc-in-bt-content">GITHUB</span>
+            </a>
+            <span class="g-corner labs__bt--corner"></span>
+          </div>
+        </div>
+        <div class="grid-lab-3 cell">
+          <div class="g-rectangle labs__bloc-grunt">
+            <div class="g-corner-right--hidden"></div>
+            <div class="g-corner-right--line"></div>
+            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              data-src="images/npm.png" class="labs__bloc-grunt-img" alt="yeoman">
+            <h4 class="labs__bloc-grunt-title">GRUNT plugin</h4>
+            <p class="labs__bloc-grunt-content">Un plugin Grunt pour la librairie npm compress-images afin d'adapter
+              la taille des images pour le web.</p>
+          </div>
+          <div class="labs__bloc-grunt-bt">
+            <a class="js-github-grunt-track-gtm" href="https://github.com/itarverne/grunt-compress-images"
+              target="_blank" rel="noopener">
+              <span class="labs__bloc-grunt-bt-content">GITHUB</span>
+            </a>
+            <span class="g-corner labs__bt--corner"></span>
+          </div>
+        </div>
+      </section>
+      <section class="grid-x">
+        <div class="medium-11 medium-offset-1 cell labs__footer">
+          Et encore plein d'autres idées à venir...
+        </div>
+      </section> -->
+    </article>
+
+    <article id="david" class="david">
+      <!-- <header>
+        <h1 class="content__title">Qui suis-je ?</h1>
+      </header>
+      <section class="grid-x">
+        <div class="medium-10 medium-offset-1 cell end">
+          <img align="left" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            data-src="images/david.png" class="david__picture hide-for-small-only" alt="david">
+          <img align="left" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            data-src="images/david-small.png" class="david__picture show-for-small-only" alt="david">
+          <p>Je m’appelle David et je suis originaire d’Auvergne où j’ai décidé de lancer ma société. Auparavant,
+            j’ai travaillé dans différents domaines d’activités mais toujours en lien avec le web.<br><br>
+            Le métier de développeur me passionne et j’apprécie rencontrer mes clients afin de leur proposer la
+            meilleure architecture avec un code maintenable toujours selon les respects du codage actuel.<br><br>
+            Pendant ces 10 années d’expériences, j’ai pu enrichir mes connaissances dans le développement pur mais
+            aussi dans les process métier. Je maitrise les langages Java, PHP et Python côté back-end ainsi que
+            React et Angular Js côté front-end.
+            Quant à la partie architecture, je peux intervenir sur du Docker, des applications REST ou simplement
+            des applications monolitiques.<br><br>
+            Ma société veut mettre l’humain au centre de son activité pour que tous les intervenants s’épanouissent,
+            chacun y trouve son compte.<br>
+          </p>
+        </div>
+      </section> -->
+    </article>
+
+  </div>
+
+  <footer class="footer">
+    <!-- <div class="grid-container">
+      <div class="grid-x grid-margin-x footer__item">
+        <div class="medium-3 cell">
+          <a href="#" class="is-active"><img
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              data-src="../images/logo.png" alt="ITArverne"></a>
+          <p>© 2018 - ITArverne</p>
+        </div>
+        <div class="medium-2 cell">
+          <div><a href="#activities">Activités</a></div>
+          <div><a href="#references">Références</a></div>
+          <div><a href="#values">Valeurs</a></div>
+          <div><a href="#david">Qui suis-je ?</a></div>
+          <div><a href="#" data-name="david.rigaudie" data-domain="itarverne" data-tld="com"
+              onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld">Contact</a>
+          </div>
+          <div><a href="http://rigaudie.fr" target="_blank" rel="noopener">Blog</a></div>
+          <div><a href="cgv.html">CGV</a></div>
+        </div>
+        <div class="medium-3 cell">
+          <div id="js-fb-like" class="footer__facebook"></div>
+          <div id="js-fb-share" class="footer__facebook"></div>
+          <div id="js-twitter-follow" class="footer__twitter-follow"></div>
+          <div id="js-twitter-share" class="footer__twitter-share"></div>
+          <div id="js-in-share"></div>
+        </div>
+        <div class="medium-4 cell">
+          <div class="footer__contact">
+            <a href="https://www.facebook.com/itarverne" target="_blank" class="is-active" rel="noopener">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                data-src="../images/facebook_bleu.png" alt="Facebook">
+              Facebook
+            </a>
+          </div>
+          <div class="footer__contact">
+            <a href="https://twitter.com/itarverne" target="_blank" class="is-active" rel="noopener">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                data-src="../images/twitter_bleu.png" alt="Twitter">
+              Twitter
+            </a>
+          </div>
+          <div class="footer__contact">
+            <a href="https://www.linkedin.com/company/itarverne" target="_blank" class="is-active" rel="noopener">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                data-src="../images/linkedin_bleu.png" alt="LinkedIn">
+              LinkedIn
+            </a>
+          </div>
+          <div class="footer__contact">
+            <a href="https://github.com/itarverne" target="_blank" class="is-active" rel="noopener">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                data-src="../images/github_bleu.png" alt="github">
+              Github
+            </a>
+          </div>
+          <div class="footer__contact">
+            <a data-name="david.rigaudie" data-domain="itarverne" data-tld="com" href="#" class="casper"
+              onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                data-src="../images/enveloppe_bleu.png" alt="mail">
+            </a>
+          </div>
+          <div class="footer__contact">
+            <a data-number="06.44.28.80.72" href="#" class="lady-brown"
+              onclick="window.location.href = 'tel:' + this.dataset.number">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                data-src="../images/tel_bleu.png" alt="téléphone">
+            </a>
+          </div>
+        </div>
       </div>
-
-      <div class="g-parallax__layer page__parallax-header hide-for-small-only">
-        <span>Votre expert en développement web</span>
+      <div class="grid-x grid-margin-x">
+        <div class="cell"><span>Build with ❤ by </span> <a
+            href="https://github.com/itarverne/generator-itarverne-landing-page" target="_blank"
+            rel="noopener">ITArverne</a> 2018</div>
       </div>
+    </div> -->
+  </footer>
 
-    </div>
 
-    <div class="content__top-site hide-for-small-only">
-      <a href="#top" class="content__top-site--effect">Haut</a>
-    </div>
 
-    <!-- include: "type": "js", "basePath": "build", "files": "scripts/**/*.js" -->
-    <script src="scripts/ITArverne.min.ba180a5c.js" async></script>
-    <!-- /include -->
+  <div class="content__top-site hide-for-small-only">
+    <a href="#top" class="content__top-site--effect">Haut</a>
+  </div>
+
+  <!-- include: "type": "js", "basePath": "build", "files": "scripts/**/*.js" -->
+  <script src="scripts/ITArverne.min.f5bb38ba.js" async></script>
+  <!-- /include -->
 
 </body>
+
 </html>

@@ -408,7 +408,7 @@ module.exports = function (grunt) {
         'sass',
         'babel:jsx',
         // 'compressImages',
-        'i18n'
+        // 'i18n'
       ]
     }
 

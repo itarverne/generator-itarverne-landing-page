@@ -85,7 +85,6 @@
   "dependencies": {
     "bowser": "^1.9.3",
     "current-device": "^0.7.2",
-    "foundation-sites": "^6.4.1",
     "grunt-compress-images": "^1.0.0",
     "jquery": "^3.3.1",
     "react": "^15.6.1",
