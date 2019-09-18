@@ -15,13 +15,19 @@ $path-header-img-large-blur: '../images/entete-large-blur.jpg';
 // $color-greenblue-light: rgba(130, 175, 196, 0.68);
 // $color-blue-dark: rgb(0, 101, 146);
 $color-bg-primary: #378795;
+$color-bg-dark: #387983;
+$color-bg-light: #178095;
+$color-secondary-light: #D0E6E7;
+$color-gray: #6A93A2;
+$color-text-dark: #1F3C49;
 
 // /** 1 rem = 16px **/
 // $huge-font-size:  2.5rem; /* 40px; */
 // $big-font-size:  1.875rem; /* 30px; */
 // $medium-font-size: 1.625rem; /* 26px; */
 $little-font-size:  1.5rem; /* 24px; */
-// $micro-font-size:  1.25rem; /* 20px; */
+$micro-font-size:  1rem; /* 16px; */
+$nano-font-size:  0.5rem; /* 9px; */
 $header-font-size:  2.5rem;
 
 @mixin style-header{
@@ -144,6 +150,17 @@ nav a {
 }
 /** Fin Menu pur css **/
 
+/*  Helper center vertical */
+.vertical-center {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+/* Fin Helper center vertical */
+
+@include breakpoint-max(sm) {
+  .hide-sm {display: none;}
+}
 
 // @mixin style-title-bold{
 //   font-family: 'quicksand-bold';
@@ -400,9 +417,52 @@ nav a {
 //   @include style-header;
 // }
 
-// /***************/
-// /**  Content  **/
-// /***************/
+/***************/
+/**  Content  **/
+/***************/
+
+// Activities
+.card {
+  background-color: $color-bg-light;
+  border: none;
+}
+.card__content-header{
+  background-color: $color-secondary-light;
+  color: $color-text-dark;
+  height: 10vh;
+}
+.card__content {
+  padding: 0;
+}
+.card__content-title{
+  font-size: $little-font-size;
+  text-transform: uppercase;
+  background-color: $color-bg-dark;
+  padding: 10px;
+  margin: 0;
+  height: 100%;
+  color: white;
+}
+.card__content-text{
+  font-size: $little-font-size;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 100%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  color: white;
+}
+.card__content-bt{
+  font-size: $little-font-size;
+  text-align: center;
+  margin: 5px;
+  height: 100%;
+}
+.card__content-bt-link{
+  background-color: $color-gray;
+  border: none;
+}
+
 // .activities{
 //   background-color: $color-greenblue-light;
 //   margin-top: 5px;
