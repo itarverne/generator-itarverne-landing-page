@@ -158,6 +158,14 @@ justify-content: center;
 }
 /* Fin Helper center vertical */
 
+/*  Helper bottom vertical */
+.vertical-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  }
+  /* Fin Helper bottom vertical */
+
 @include breakpoint-max(sm) {
   .hide-sm {display: none;}
 }
@@ -430,6 +438,7 @@ justify-content: center;
   background-color: $color-secondary-light;
   color: $color-text-dark;
   height: 10vh;
+  font-size: $little-font-size;
 }
 .card__content {
   padding: 0;
@@ -463,6 +472,9 @@ justify-content: center;
   border: none;
 }
 
+.grid__right-activities{
+height: 100%;
+}
 // .activities{
 //   background-color: $color-greenblue-light;
 //   margin-top: 5px;
