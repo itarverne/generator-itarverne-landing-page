@@ -16,6 +16,7 @@ $path-header-img-large-blur: '../images/entete-large-blur.jpg';
 // $color-blue-dark: rgb(0, 101, 146);
 $color-bg-primary: #378795;
 $color-bg-dark: #387983;
+$color-bg-dark-hight: #154256;
 $color-bg-light: #178095;
 $color-secondary-light: #D0E6E7;
 $color-gray: #6A93A2;
@@ -168,6 +169,12 @@ justify-content: center;
 
 @include breakpoint-max(sm) {
   .hide-sm {display: none;}
+}
+
+@include breakpoint-min(md) {
+  .hide-gt-sm {display: none;}
+
+
 }
 
 // @mixin style-title-bold{
@@ -474,6 +481,35 @@ justify-content: center;
 
 .grid__right-activities{
 height: 100%;
+}
+
+// Referencies
+.references__grid{
+  margin-top: 5rem;
+}
+.references__header, .references__header{
+  background-color: $color-bg-dark-hight;
+}
+.references__header-title, .references__header-title{
+  font-size: $little-font-size;
+  text-transform: uppercase;
+  color: white;
+  padding: 0.5rem;
+}
+.references__text, .references__text{
+  background-color: white;
+  padding: 1rem;
+}
+.references__button{
+  padding:0;
+}
+.references__button-link{
+  background-color: $color-gray;
+  text-transform: uppercase;
+  padding: 0.4rem;
+}
+.references__button--small{
+  padding-top: 1.5rem;
 }
 // .activities{
 //   background-color: $color-greenblue-light;
