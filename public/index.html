@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" class="g-scroll">
 
 <head>
   <!-- Google Tag Manager -->
@@ -23,7 +23,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ITArverne</title>
 
-  <link rel="alternate" href="http://itarverne.com" hreflang="en_GB">
+  <link rel="alternate" href="http://itarverne.com" hreflang="en-GB">
 
   <link rel="icon" href="images/favicon/favicon.png">
   <link rel="icon" sizes="24x24" href="images/favicon/favicon_24x24.png" type="image/png">
@@ -83,14 +83,14 @@
   <header class="header g-blur-header">
 
     <div class="header__cookies hide">
-      <h3 class="header__cookies-title title title--xl">Usage des cookies</h5>
-        <p>Ce site utilise des cookies afin d'améliorer l'expérience utilisateur. En aucun cas les données récoltées
-          ne sont revendues à des tiers : <a href="cookies.html" class="header__cookies--more">En savoir plus</a></p>
-        <a href="#" class="button header__cookies--validate" id="js-cookie__validate">Je comprend</a>
+      <h5 class="header__cookies-title title title--xl">Usage des cookies</h5>
+      <p>Ce site utilise des cookies afin d'améliorer l'expérience utilisateur. En aucun cas les données récoltées
+        ne sont revendues à des tiers : <a href="cookies.html" class="header__cookies--more">En savoir plus</a></p>
+      <a href="#" class="button header__cookies--validate" id="js-cookie__validate">Je comprend</a>
     </div>
 
     <aside class="header__nav">
-      <nav id="nav" role="navigation">
+      <nav id="nav">
         <a href="#" class="header__logo"><img src="../images/logo_white.png" alt="ITArverne"></a>
         <ul class="header__nav-list">
           <li class="header__nav-element">
@@ -106,7 +106,7 @@
             <a href="#labs" class="header__title">Labs</a>
           </li>
           <li class="header__nav-element">
-            <a href="#david" class="header__title">Qui suis-je ?</a>
+            <a href="#entreprise" class="header__title">Entreprise</a>
           </li>
           <li class="header__nav-element">
             <a href="http://rigaudie.fr" target="_blank" class="header__title" rel="noopener">Blog</a>
@@ -116,7 +116,7 @@
     </aside>
   </header>
 
-  <article id="#top" class="content">
+  <article id="#top" class="content g-scroll">
     <a href="#body" class="nav-button-open" aria-label="open navigation"></a>
     <a href="#" class="nav-button-close" aria-label="close navigation"></a>
     <header id="activities" class="activities">
@@ -136,12 +136,24 @@
         <div class="grid grid--center">
           <div class="card">
             <div class="card__content">
+              <h3 class="card__content-title type-center">Applications métier</h3>
+              <div class="card__content-text type-center vertical-center">Nous réalisons des applications adaptées à
+                votre métier afin d'automatiser certaines tâches pour vous libérer du temps.</div>
+              <div class="card__content-bt"><a href="#activities-app" class="button card__content-bt-link">En
+                  savoir plus</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid--center">
+          <div class="card">
+            <div class="card__content">
               <h3 class="card__content-title type-center">Pack start-up</h3>
               <div class="card__content-text type-center vertical-center">Le démarrage d'une nouvelle activitée ou la
                 promotion d'un nouveau service nécessite de mettre en place des outils numériques.
                 ITArverne vous accompagne dans ses démarches mais aussi dans la configuration de ces élements
               </div>
-              <div class="card__content-bt"><a href="#" class="button card__content-bt-link">En
+              <div class="card__content-bt"><a href="#activities-pack" class="button card__content-bt-link">En
                   savoir plus</a>
               </div>
             </div>
@@ -154,22 +166,7 @@
               <div class="card__content-text type-center vertical-center">Vous avez envi de découvrir le langague
                 Python ou alors approfondir vos connaisances dans le développement Web, notre formateur met ses 15 ans
                 d'expériences à votre service.</div>
-              <div class="card__content-bt"><a href="#" class="button card__content-bt-link">En
-                  savoir plus</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid grid--center">
-          <div class="card">
-            <div class="card__content">
-              <h3 class="card__content-title type-center">Applications métier</h3>
-              <div class="card__content-text type-center vertical-center">Nous réalisons des applications adaptées à
-                votre métier
-                afin
-                d'automatiser certaines tâches pour
-                vous libérer du temps.</div>
-              <div class="card__content-bt"><a href="#" class="button card__content-bt-link">En
+              <div class="card__content-bt"><a href="#activities-formation" class="button card__content-bt-link">En
                   savoir plus</a>
               </div>
             </div>
@@ -206,12 +203,12 @@
     </section>
   </article>
 
-  <article id="references" class="references content">
-    <section class="grid grid--justify-center references__grid">
-      <header class="grid__column grid__column--12 grid__column--2--md references__header vertical-center type-center">
-        <h3 class="references__header-title">Application métier web</h3>
+  <article class="activities content">
+    <section id="activities-app" class="grid grid--justify-center activities__grid">
+      <header class="grid__column grid__column--12 grid__column--2--md activities__header vertical-center type-center">
+        <h3 class="activities__header-title">Application métier web</h3>
       </header>
-      <div class="grid__column grid__column--12 grid__column--6--md vertical-center references__text">
+      <div class="grid__column grid__column--12 grid__column--6--md vertical-center activities__text">
         Cette prestation met à votre disposition un outil informatique adapté à votre business au travers un navigateur
         Web.<br><br>
         Nous vous proposons exclusivement des techniques sur des technologies maitrisées. Notre volonté est de mettre
@@ -222,48 +219,48 @@
         Vous avez également le choix de nous confier la maintenance de l'application pour que l'on effectue les mises à
         jour de sécurité.
       </div>
-      <div class="grid__column grid__column--8--md grid__column--bottom type-right references__button hide-sm">
-        <a class="js-hire-track-gtm references__button-link" data-name="david.rigaudie" data-domain="itarverne"
+      <div class="grid__column grid__column--8--md grid__column--bottom type-right activities__button hide-sm">
+        <a class="js-hire-track-gtm activities__button-link" data-name="david.rigaudie" data-domain="itarverne"
           data-tld="com" href="#"
           onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld">
           Demande de devis app
         </a>
       </div>
     </section>
-    <section class="grid grid--justify-center references__grid">
-      <header class="grid__column grid__column--12 grid__column--2--md references__header vertical-center type-center">
-        <h3 class="references__header-title">Pack start-up</h3>
+    <section id="activities-pack" class="grid grid--justify-center activities__grid">
+      <header class="grid__column grid__column--12 grid__column--2--md activities__header vertical-center type-center">
+        <h3 class="activities__header-title">Pack start-up</h3>
       </header>
-      <div class="grid__column grid__column--12 grid__column--6--md vertical-center references__text">
-        Si vous démarrez une nouvelle activité ou souhaitez communiquez sur un nouveau service, il y a de forte chance
+      <div class="grid__column grid__column--12 grid__column--6--md vertical-center activities__text">
+        Si vous démarrez une nouvelle activité ou souhaitez communiquer sur un nouveau service, il y a de forte chance
         que vous ayez besoin d'outils digitaux.<br><br>
         En effet afin de communiquer avec vos client il sera nécessaire et rassurant pour ces derniers de s'informer de
         ce que vous proposez.<br><br>
-        Ces outils seront configurés et développé pour mettre en avant votre professionalisme :<br>
+        Ces outils seront configurés et développé pour mettre en avant votre professionnalisme :<br>
         &#959; Votre nom de domaine<br>
         &#959; ...
       </div>
-      <div class="grid__column grid__column--8--md grid__column--bottom type-right references__button hide-sm">
-        <a class="js-hire-track-gtm references__button-link" data-name="david.rigaudie" data-domain="itarverne"
+      <div class="grid__column grid__column--8--md grid__column--bottom type-right activities__button hide-sm">
+        <a class="js-hire-track-gtm activities__button-link" data-name="david.rigaudie" data-domain="itarverne"
           data-tld="com" href="#"
           onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld">
           Demande de devis pack
         </a>
       </div>
     </section>
-    <section class="grid grid--justify-center references__grid">
-      <header class="grid__column grid__column--12 grid__column--2--md references__header vertical-center type-center">
-        <h3 class="references__header-title">Formation technique</h3>
+    <section id="activities-formation" class="grid grid--justify-center activities__grid">
+      <header class="grid__column grid__column--12 grid__column--2--md activities__header vertical-center type-center">
+        <h3 class="activities__header-title">Formation technique</h3>
       </header>
-      <div class="grid__column grid__column--12 grid__column--6--md vertical-center references__text">
-        Que vous ayez envi de décourvir un langague de programmation comme le python ou alors comprendre le métier de
+      <div class="grid__column grid__column--12 grid__column--6--md vertical-center activities__text">
+        Que vous ayez envi de découvrir un langage de programmation comme le python ou alors comprendre le métier de
         développeur Full Stack, notre formateur met à votre service son savoir faire.<br><br>
         Les formations sont dispensées dans notre centre de formation ou bien dans vos locaux.<br><br>
         Le temps de formations dépend de vos besoin, de 1 journée à 7 jours.<br><br>
         Rendez vous sur notre site dédié à nos formations pour personnaliser votre devis.
       </div>
-      <div class="grid__column grid__column--8--md grid__column--bottom type-right references__button hide-sm">
-        <a class="js-hire-track-gtm references__button-link" data-name="david.rigaudie" data-domain="itarverne"
+      <div class="grid__column grid__column--8--md grid__column--bottom type-right activities__button hide-sm">
+        <a class="js-hire-track-gtm activities__button-link" data-name="david.rigaudie" data-domain="itarverne"
           data-tld="com" href="#"
           onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld">
           Demande de devis formation
@@ -271,14 +268,109 @@
       </div>
     </section>
     <div
-      class="grid__column grid__column--12--sm grid__column--12--xs references__button--small hide-gt-sm type-center">
-      <a class="js-hire-track-gtm references__button-link" data-name="david.rigaudie" data-domain="itarverne"
+      class="grid__column grid__column--12--sm grid__column--12--xs activities__button--small hide-gt-sm type-center">
+      <a class="js-hire-track-gtm activities__button-link" data-name="david.rigaudie" data-domain="itarverne"
         data-tld="com" href="#"
         onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld">
         Demande de devis
       </a>
     </div>
-    <!-- <header class="references__title">
+  </article>
+
+  <article id="entreprise" class="company content">
+    <h2 class="type-center company__title">Notre expertise technique en développement</h2>
+    <div class="grid grid--justify-center">
+      <div class="grid__column grid__column--12 grid__column--9--md type-left company__text">
+        <p class="margin-xl">Depuis 2 ans ITArverne propose ses services de développement d'applications afin de
+          faciliter au quotidien le
+          travail de nos clients.</p>
+
+        <p class="margin-xl">ITArverne a été concu autour de valeurs importantes auxquelles nous voulons faire adhérer
+          nos partenaires et
+          clients.
+          Notre société se veut humaine et souhaite mettre en avant le travail local Auvergnat qui recorge de
+          pépittes.</p>
+
+        <p class="margin-xl">Nos références aussi bien auprès de grand compte que de startup montre notre capacité à
+          s'adapter aux demandes
+          de nos clients.</p>
+
+        <p class="margin-xl">Vous aussi, vous souhaitez mettre en place une application Web qui vous aidera dans
+          votre activité alors
+          n'hésitez pas à nous demander un devis</p>
+        <div class="grid__column grid__column--12 grid__column--9--md type-right">
+          <a class="js-hire-track-gtm activities__button-link" data-name="david.rigaudie" data-domain="itarverne"
+            data-tld="com" href="#"
+            onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld">
+            Demande de devis
+          </a>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article id="values" class="values content">
+    <h2 class="type-center values__header">Les valeurs </h2>
+    <div class="grid grid--justify-center">
+      <div class="grid__column grid__column--12 grid__column--3--md type-left values__row">
+        <div class="grid grid--justify-center">
+          <div class="grid__column grid__column--12 grid__column--6--md"><img
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></div>
+          <div class="grid__column grid__column--12 grid__column--6--md">
+            <h3 class="values__title type-center">Une expertise pointue</h3>
+            <p class="type-center">en se donnant les moyens d'être efficace</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid__column grid__column--12 grid__column--3--md type-left values__row">
+        <div class="grid grid--justify-center">
+          <div class="grid__column grid__column--12 grid__column--6--md"><img
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></div>
+          <div class="grid__column grid__column--12 grid__column--6--md">
+            <h3 class="values__title type-center">Être à l'écoute</h3>
+            <p class="type-center">des attentes des personnes intervenant sur nos projets</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid__column grid__column--12 grid__column--3--md type-left values__row">
+        <div class="grid grid--justify-center">
+          <div class="grid__column grid__column--12 grid__column--6--md"><img
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></div>
+          <div class="grid__column grid__column--12 grid__column--6--md">
+            <h3 class="values__title type-center">Engagement qualité</h3>
+            <p class="type-center">Nos clients ont toujours le droit à des experts</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid grid--justify-center values__gris-2">
+      <div class="grid__column grid__column--12 grid__column--3--md type-left values__row">
+        <div class="grid grid--justify-center">
+          <div class="grid__column grid__column--12 grid__column--6--md"><img
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></div>
+          <div class="grid__column grid__column--12 grid__column--6--md">
+            <h3 class="values__title type-center">Respect</h3>
+            <p class="type-center">de nos collaborateurs et de nos clients</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid__column grid__column--12 grid__column--3--md type-left values__row">
+        <div class="grid grid--justify-center">
+          <div class="grid__column grid__column--12 grid__column--6--md"><img
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></div>
+          <div class="grid__column grid__column--12 grid__column--6--md">
+            <h3 class="values__title type-center">Valoriser</h3>
+            <p class="type-center">le travail de nos collaborateurs qui nécessite un investissement important</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- <header class="references__title">
         <h1 class="content__title">nos Références</h1>
       </header>
       <section class="grid-x references__logo">
@@ -309,52 +401,18 @@
           </a>
         </div>
       </section> -->
-  </article>
-
-  <article id="values" class="values">
-    <!-- <header>
-        <h1 class="content__title">nos Valeurs</h1>
-      </header>
-      <section class="grid-x">
-        <div class="medium-10 medium-offset-1 end cell">
-          <p class="values__text">
-            <b>ITArverne</b> se veut être une société humaine où les collaborateurs s’épanouissent
-            dans un environnement agréable. Nous nous donnons les moyens de former
-            efficacement nos collaborateurs afin qu’ils deviennent de véritable expert en
-            technique.<br>
-            Il est possible d’avoir une carrière entière dans la technique, les pépites
-            évolueront vers des postes d’architecte.
-          </p>
-        </div>
-      </section>
-      <section class="grid-y values__list">
-        <div class="medium-9 medium-offset-2 end cell values__list--decor">
-          <b> &lt;Respect&gt;</b> de nos collaborateurs et clients.
-        </div>
-        <div class="medium-9 cell medium-offset-2 end values__list--decor">
-          Etre à <b>&lt;l’écoute&gt;</b> des attentes de chaque personne aussi bien en interne que chez nos clients.
-        </div>
-        <div class="medium-9 cell medium-offset-2 end values__list--decor">
-          <b>&lt;Engagement qualité&gt;</b> Nos clients ont le droit à des experts pour développer leur projet.
-        </div>
-        <div class="medium-9 cell medium-offset-2 end values__list--decor">
-          Développer une <b>&lt;expertise pointue&gt;</b> en se donnant les moyens d’être réellement efficace.
-        </div>
-        <div class="medium-9 cell medium-offset-2 end values__list--decor">
-          <b>&lt;Valoriser&gt;</b> le travail des «techos» qui nécessite un investissement important.
-        </div>
-      </section>
-      <footer class="grid-x content__footer">
-        <div class="medium-3 medium-offset-9 small-12 cell content__footer-bt">
-          <a class="js-hire-track-gtm" data-name="david.rigaudie" data-domain="itarverne" data-tld="com" href="#"
-            onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld">
-            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              data-src="images/picto-pola.png" alt="postulez" class="content__hire-picto">
-            <span class="content__hire-text">Postulez</span>
-          </a>
-          <span class="g-corner content__footer-bt--corner"></span>
-        </div>
-      </footer> -->
+  <article id="referencies-app" class="referencies content">
+    <h2 class="referencies__header-title type-center">Ils nous font confiance</h2>
+    <div class="grid grid--justify-center">
+      <div class="grid__column grid__column--12 grid__column--3--md referencies__row">
+        <a href="http://www.lamontagne.fr" target="_blank" rel="noopener">
+          <img src="images/centrefrance.jpg" alt="La Montagne">
+        </a>
+      </div>
+      <div class="grid__column grid__column--12 grid__column--3--md referencies__row">
+        <img src="images/taste.jpg" alt="La Localerie">
+      </div>
+    </div>
   </article>
 
   <article id="labs" class="labs">
@@ -431,34 +489,6 @@
         </div>
       </section> -->
   </article>
-
-  <article id="david" class="david">
-    <!-- <header>
-        <h1 class="content__title">Qui suis-je ?</h1>
-      </header>
-      <section class="grid-x">
-        <div class="medium-10 medium-offset-1 cell end">
-          <img align="left" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            data-src="images/david.png" class="david__picture hide-for-small-only" alt="david">
-          <img align="left" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            data-src="images/david-small.png" class="david__picture show-for-small-only" alt="david">
-          <p>Je m’appelle David et je suis originaire d’Auvergne où j’ai décidé de lancer ma société. Auparavant,
-            j’ai travaillé dans différents domaines d’activités mais toujours en lien avec le web.<br><br>
-            Le métier de développeur me passionne et j’apprécie rencontrer mes clients afin de leur proposer la
-            meilleure architecture avec un code maintenable toujours selon les respects du codage actuel.<br><br>
-            Pendant ces 10 années d’expériences, j’ai pu enrichir mes connaissances dans le développement pur mais
-            aussi dans les process métier. Je maitrise les langages Java, PHP et Python côté back-end ainsi que
-            React et Angular Js côté front-end.
-            Quant à la partie architecture, je peux intervenir sur du Docker, des applications REST ou simplement
-            des applications monolitiques.<br><br>
-            Ma société veut mettre l’humain au centre de son activité pour que tous les intervenants s’épanouissent,
-            chacun y trouve son compte.<br>
-          </p>
-        </div>
-      </section> -->
-  </article>
-
-  </div>
 
   <footer class="footer">
     <!-- <div class="grid-container">

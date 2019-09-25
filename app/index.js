@@ -30,7 +30,7 @@ module.exports = class extends Generator {
 		}, {
 			type: 'input',
 			name: 'lang',
-			message: 'Put the lag of your website'
+			message: 'Put the lang of your website'
 		}, {
 			type: 'input',
 			name: 'alt',

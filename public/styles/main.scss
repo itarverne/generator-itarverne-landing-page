@@ -21,6 +21,8 @@ $color-bg-light: #178095;
 $color-secondary-light: #D0E6E7;
 $color-gray: #6A93A2;
 $color-text-dark: #1F3C49;
+$color-bg-green-dark: #4E6A71;
+$color-green-light: #63AAB5;
 
 // /** 1 rem = 16px **/
 // $huge-font-size:  2.5rem; /* 40px; */
@@ -285,10 +287,10 @@ justify-content: center;
 //   top: 30px;
 // }
 
-// .g-scroll {
-//   scroll-behavior: smooth;
-//   overflow-y: scroll;
-// }
+.g-scroll {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
 
 // .g-rectangle{
 //   width: 404px;
@@ -483,33 +485,78 @@ justify-content: center;
 height: 100%;
 }
 
-// Referencies
-.references__grid{
+// Activities
+.activities__grid{
   margin-top: 5rem;
 }
-.references__header, .references__header{
+.activities__header{
   background-color: $color-bg-dark-hight;
 }
-.references__header-title, .references__header-title{
+.activities__header-title{
   font-size: $little-font-size;
   text-transform: uppercase;
   color: white;
   padding: 0.5rem;
 }
-.references__text, .references__text{
+.activities__text{
   background-color: white;
   padding: 1rem;
 }
-.references__button{
+.activities__button{
   padding:0;
 }
-.references__button-link{
+.activities__button-link{
   background-color: $color-gray;
   text-transform: uppercase;
   padding: 0.4rem;
 }
-.references__button--small{
+.activities__button--small{
   padding-top: 1.5rem;
+}
+
+// Company
+.company__text{
+  border-left: 6px solid $color-bg-dark-hight;
+}
+
+.company__title{
+  margin-top: 8rem;
+}
+
+// Values
+.values {
+  background-color: $color-bg-green-dark;
+  color:white;
+}
+.values__header{
+  margin-top: 8rem;
+  color:white;
+}
+.values__title{
+  color:white;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+.values__row{
+  background-color: $color-green-light;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+.values__gris-2{
+  margin-top: 7rem;
+}
+
+// Referenties
+.referencies {
+  padding-top: 5rem;
+}
+.referencies__header-title{
+  color: $color-bg-light;
+  margin-bottom: 8rem;
+}
+.referencies__row {
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 // .activities{
 //   background-color: $color-greenblue-light;
