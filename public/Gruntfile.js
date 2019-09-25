@@ -404,11 +404,11 @@ module.exports = function (grunt) {
     // Run some tasks in parallel to speed up build process
     concurrent: {
       app: [
+        'i18n',
+        'compressImages',
         'babel',
         'sass',
         'babel:jsx',
-        // 'compressImages',
-        // 'i18n'
       ]
     }
 
