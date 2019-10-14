@@ -1,8 +1,0 @@
-File from: [images/qualité.png]
-
-File to: [build/images/qualité.png]
-
-Compression algorithm: [pngquant]
-
-Description: Error: Command failed: C:\Users\FX29620\Documents\git\perso\public\node_modules\pngquant-bin\vendor\pngquant.exe --quality=20-50 -o build/images/qualité.png images/qualité.png
-  error: cannot open images\qualité.png for reading
