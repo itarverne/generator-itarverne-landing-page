@@ -545,6 +545,9 @@ height: 50%;
   background-color: $color-bg-green-dark;
   color:white;
 }
+.values__images{
+height: 100px;
+}
 .values__header{
   margin-top: 8rem;
   color:white;
@@ -558,6 +561,9 @@ height: 50%;
   background-color: $color-green-light;
   margin-left: 5rem;
   margin-right: 5rem;
+}
+.values__row-center{
+  height: 100%;
 }
 .values__gris-2{
   margin-top: 7rem;
