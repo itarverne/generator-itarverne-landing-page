@@ -501,6 +501,7 @@ height: 50%;
 }
 .grid__right-video{
   width:100%;
+  border:0;
 }
 // Activities
 .activities__grid{
@@ -588,6 +589,15 @@ height: 100px;
 .referencies__row {
   margin-left: 5rem;
   margin-right: 5rem;
+}
+
+// Footer
+.footer__text{
+  color: $color-text-dark;
+}  
+.footer__adresse{
+  color: $color-text-dark;
+margin-left: 3%;
 }
 // .activities{
 //   background-color: $color-greenblue-light;

@@ -15,10 +15,6 @@ if (bowser.msie) {
 $(document).ready(() => {
   new LazyLoad();
 
-  // const widthWindow = (window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) / 3;
-  // document.getElementById('js-video').innerWidth = widthWindow;
-
-
   if (document.cookie.indexOf('cookie_enabled') == -1) {
     $('.header__cookies').removeClass('hide');
   }
