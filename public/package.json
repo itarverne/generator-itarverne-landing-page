@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^6.0.2",
-    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
     "babel-plugin-transform-proto-to-assign": "^6.23.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-plugin-transform-runtime": "^6.23.0",
@@ -24,7 +24,7 @@
     "grunt": "^0.4.5",
     "grunt-babel": "^6.0.0",
     "grunt-browser-sync": "^2.2.0",
-    "grunt-browserify": "^5.0.0",
+    "grunt-browserify": "^5.3.0",
     "grunt-concurrent": "^1.0.0",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-copy": "^1.0.0",
@@ -44,7 +44,7 @@
     "grunt-strip-debug": "^1.1.0",
     "jit-grunt": "^0.9.1",
     "mocha": "^4.1.0",
-    "styled-components": "^3.2.5",
+    "styled-components": "^3.4.10",
     "time-grunt": "^1.1.0"
   },
   "engines": {
@@ -83,16 +83,16 @@
     "test": "mocha"
   },
   "dependencies": {
-    "bowser": "^1.9.3",
-    "current-device": "^0.7.2",
-    "grunt-compress-images": "^1.0.0",
-    "jquery": "^3.3.1",
+    "bowser": "^1.9.4",
+    "current-device": "^0.7.9",
+    "grunt-compress-images": "^1.0.4",
+    "jquery": "^3.4.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-facebook": "^4.2.1",
     "react-share-linkedin": "^1.0.0",
     "react-twitter-widgets": "^1.4.0",
     "tent-css": "^1.4.3",
-    "vanilla-lazyload": "^10.5.2"
+    "vanilla-lazyload": "^10.20.1"
   }
 }

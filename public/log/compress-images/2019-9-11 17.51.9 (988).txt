@@ -1,0 +1,7 @@
+File from: [images/favicon/favicon_114x114.png]
+
+File to: [build/images/favicon/favicon_114x114.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn /usr/src/app/node_modules/pngquant-bin/vendor/pngquant ENOENT

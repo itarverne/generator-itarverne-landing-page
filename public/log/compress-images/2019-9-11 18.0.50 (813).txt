@@ -1,0 +1,31 @@
+File from: [images/favicon/favicon.png]
+
+File to: [build/images/favicon/favicon.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn /usr/src/app/node_modules/pngquant-bin/vendor/pngquant ENOENTFile from: [images/lamontagne.png]
+
+File to: [build/images/lamontagne.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn /usr/src/app/node_modules/pngquant-bin/vendor/pngquant ENOENTFile from: [images/lalocalerie.png]
+
+File to: [build/images/lalocalerie.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn /usr/src/app/node_modules/pngquant-bin/vendor/pngquant ENOENTFile from: [images/ime.png]
+
+File to: [build/images/ime.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn /usr/src/app/node_modules/pngquant-bin/vendor/pngquant ENOENTFile from: [images/linkedin.png]
+
+File to: [build/images/linkedin.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn /usr/src/app/node_modules/pngquant-bin/vendor/pngquant ENOENT

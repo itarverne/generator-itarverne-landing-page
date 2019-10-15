@@ -1,0 +1,7 @@
+File from: [images/facebook.png]
+
+File to: [build/images/facebook.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn /usr/src/app/node_modules/pngquant-bin/vendor/pngquant ENOENT

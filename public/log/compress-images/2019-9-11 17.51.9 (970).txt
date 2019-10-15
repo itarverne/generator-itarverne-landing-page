@@ -1,0 +1,25 @@
+File from: [images/favicon/favicon_144x144.png]
+
+File to: [build/images/favicon/favicon_144x144.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn /usr/src/app/node_modules/pngquant-bin/vendor/pngquant ENOENTFile from: [images/expertise.png]
+
+File to: [build/images/expertise.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn /usr/src/app/node_modules/pngquant-bin/vendor/pngquant ENOENTFile from: [images/favicon/favicon_120x120.png]
+
+File to: [build/images/favicon/favicon_120x120.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn /usr/src/app/node_modules/pngquant-bin/vendor/pngquant ENOENTFile from: [images/favicon/favicon_128x128.png]
+
+File to: [build/images/favicon/favicon_128x128.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn /usr/src/app/node_modules/pngquant-bin/vendor/pngquant ENOENT

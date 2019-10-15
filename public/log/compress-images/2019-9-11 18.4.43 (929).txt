@@ -1,0 +1,79 @@
+File from: [images/lalocalerie.png]
+
+File to: [/usr/src/app/public/build/images/lalocalerie.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn /usr/src/app/node_modules/pngquant-bin/vendor/pngquant ENOENTFile from: [images/Michelin.png]
+
+File to: [/usr/src/app/public/build/images/Michelin.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn /usr/src/app/node_modules/pngquant-bin/vendor/pngquant ENOENTFile from: [images/logo.png]
+
+File to: [/usr/src/app/public/build/images/logo.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn /usr/src/app/node_modules/pngquant-bin/vendor/pngquant ENOENTFile from: [images/lamontagne.png]
+
+File to: [/usr/src/app/public/build/images/lamontagne.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn /usr/src/app/node_modules/pngquant-bin/vendor/pngquant ENOENTFile from: [images/linkedin.png]
+
+File to: [/usr/src/app/public/build/images/linkedin.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn /usr/src/app/node_modules/pngquant-bin/vendor/pngquant ENOENTFile from: [images/respect.png]
+
+File to: [/usr/src/app/public/build/images/respect.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn /usr/src/app/node_modules/pngquant-bin/vendor/pngquant ENOENTFile from: [images/twitter.png]
+
+File to: [/usr/src/app/public/build/images/twitter.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn /usr/src/app/node_modules/pngquant-bin/vendor/pngquant ENOENTFile from: [images/qualite.png]
+
+File to: [/usr/src/app/public/build/images/qualite.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn /usr/src/app/node_modules/pngquant-bin/vendor/pngquant ENOENTFile from: [images/St Hilaire.png]
+
+File to: [/usr/src/app/public/build/images/St Hilaire.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn /usr/src/app/node_modules/pngquant-bin/vendor/pngquant ENOENTFile from: [images/favicon/favicon_196x196.png]
+
+File to: [/usr/src/app/public/build/images/favicon/favicon_196x196.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn /usr/src/app/node_modules/pngquant-bin/vendor/pngquant ENOENTFile from: [images/valoriser.png]
+
+File to: [/usr/src/app/public/build/images/valoriser.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn /usr/src/app/node_modules/pngquant-bin/vendor/pngquant ENOENTFile from: [images/favicon/favicon_167x167.png]
+
+File to: [/usr/src/app/public/build/images/favicon/favicon_167x167.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn /usr/src/app/node_modules/pngquant-bin/vendor/pngquant ENOENTFile from: [images/favicon/favicon_152x152.png]
+
+File to: [/usr/src/app/public/build/images/favicon/favicon_152x152.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn /usr/src/app/node_modules/pngquant-bin/vendor/pngquant ENOENT

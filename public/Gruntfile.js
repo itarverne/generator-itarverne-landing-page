@@ -408,7 +408,7 @@ module.exports = function (grunt) {
         'compressImages',
         'babel',
         'sass',
-        'babel:jsx',
+        'babel:jsx'
       ]
     }
 

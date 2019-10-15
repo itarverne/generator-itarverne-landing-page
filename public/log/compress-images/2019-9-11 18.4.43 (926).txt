@@ -1,0 +1,7 @@
+File from: [images/ecoute.png]
+
+File to: [/usr/src/app/public/build/images/ecoute.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn /usr/src/app/node_modules/pngquant-bin/vendor/pngquant ENOENT
