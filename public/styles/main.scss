@@ -569,6 +569,14 @@ height: 100px;
   margin-top: 7rem;
 }
 
+@include breakpoint-max(lg) {
+  .values__gris-2{
+    margin-top: 0;
+  }
+  .values__row{
+    margin-top: 2%;
+  }
+}
 // Referenties
 .referencies {
   padding-top: 5rem;
