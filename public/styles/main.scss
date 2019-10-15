@@ -398,18 +398,22 @@ justify-content: center;
 //   animation: low-quality 1s;
 //   animation-delay: 1s;
 // }
-
+.header__cookies-title{
+font-size: $little-font-size;
+  text-transform: uppercase;
+  color:white;
+}
 .header__cookies{
   position: fixed;
+  z-index:1;
+  background: $color-bg-primary;
   @include style-header;
   width: 100%;
   padding-left: 10px;
-  margin-top: -32px;
 }
 .header__cookies--validate{
-  font-size: $little-font-size;
-}
-.header__cookies--more{
+  background-color: $color-gray;
+  border:none;
   font-size: $little-font-size;
 }
 .header__nav-list{
@@ -598,6 +602,14 @@ height: 100px;
 .footer__adresse{
   color: $color-text-dark;
 margin-left: 3%;
+}
+
+// Cookies
+.cookies__video{
+  border:0;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 100%;
 }
 // .activities{
 //   background-color: $color-greenblue-light;
