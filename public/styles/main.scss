@@ -292,79 +292,6 @@ justify-content: center;
   scroll-behavior: smooth;
   overflow-y: scroll;
 }
-
-// .g-rectangle{
-//   width: 404px;
-//   height: 230px;
-//   padding-left: 5px;
-//   padding-right: 5px;
-//   margin-top: 30px;
-//   margin-bottom: 10px;
-//   text-align: justify;
-//   border: 1px solid white;
-// }
-// .g-corner-right--hidden {
-//   width: 0;
-//   height: 0;
-//   position: relative;
-//   top: -30px;
-//   left: 378px;
-// }
-// .g-corner-right--hidden:after {
-//   content: "";
-//   width: 0;
-//   height: 0;
-//   border-bottom: 22px solid transparent;
-//   border-right: 22px solid $color-greenblue-dark;
-//   position: absolute;
-//   top: 27px;
-//   left: 0px;
-// }
-// .g-corner-right--line{
-//   width: 25px;
-//   top: 8px;
-//   left: 377px;
-//   position: relative;
-//   transform: rotate(45deg);
-//   border-bottom:1px solid white;
-// }
-
-// ::selection{
-//   background-color: white;
-//   color: $color-blue-dark;
-// }
-// .references div::selection, footer a::selection{
-//   background-color: $color-blue-dark;
-//   color: white;
-// }
-
-// .activities__wheel1{
-//   position: absolute;
-//   right: 0;
-//   margin-top: 120px;
-//   opacity: 0.3;
-// }
-// .activities__wheel2{
-//   position: absolute;
-//   right: 0;
-//   margin-top: 120px;
-//   opacity: 0.3;
-//   transform: scale(0.7) translate(-300px,-150px);
-// }
-// .activities__wheel3{
-//   position: absolute;
-//   left: 0;
-//   margin-top: 120px;
-//   opacity: 0.3;
-//   transform: scale(0.7) translate(250px,-200px);
-// }
-// .activities__wheel4{
-//   position: absolute;
-//   left: 0;
-//   margin-top: 120px;
-//   opacity: 0.3;
-//   transform: translate(50px,-200px);
-// }
 // /************/
 // /** Header **/
 // /************/
@@ -373,19 +300,14 @@ justify-content: center;
   // padding-top: 2%;
   vertical-align: middle;
   background-color: $color-bg-primary;
-
-//   @include breakpoint(small only) {
-//     background: url($path-header-img-small) no-repeat;
-//     background-size: 100vw 50vh;
-//     height: 50vh;
-//   }
-
-//   @include breakpoint(medium only) {
-//     background: url($path-header-img-medium) no-repeat;
-//     background-size: 100vw 100vh;
-//     height: 100vh;
-//   }
-
+}
+.browser__title{
+font-size: $header-font-size;
+color:$color-text-dark;
+}
+.browser__content{
+font-size: $little-font-size;
+color:$color-text-dark;
 }
 // .g-blur-header {
 //   filter: blur(20px);
