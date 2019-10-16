@@ -1,10 +1,17 @@
 {
+  "browser": {
+    "header": "Votre navigateur web est trop ancien!",
+    "content": "Il est important de mettre à jour votre navigateur web afin de vous protéger correctement et de profiter des dernières technologies pour rendre votre navigation intuitive.",
+    "more-1": "Il est très simple de",
+    "more-bt": "mettre à jour votre navigateur",
+    "more-2": "afin de profiter au mieux de ce site web."
+  },
   "cookie": {
     "header": "Usage des cookies",
     "content": "Ce site utilise des cookies afin d'améliorer l'expérience utilisateur. En aucun cas les données récoltées ne sont revendues à des tiers.",
     "more": "En savoir plus",
     "bt-valid": "Je comprend",
-    "title": "les Cookies",
+    "title": "Les Cookies",
     "content-detail": "Un cookie est une valeur stoquée dans votre navigateur pour l'utiliser sur notre site. Cette usage permet de personnaliser votre affichage et optimiser le temps de chargement du site. ITArverne utilise : <ul><li>Un cookie pour le suivi d'activité du site</li><li>Un cookie pour vous afficher un message d'usage relatif aux cookies comme l'exige la réglementation</li></ul>ITArverne ne fait pas un mauvais usage de ces cookies comme certains publicitaires, nous respectons la vie privée de nos clients, vous pouvez naviguer en sécurité sur notre site. Vous avez le choix de supprimer les cookies stoquées sur votre ordianteur, en effaçant les données de votre navigateur."
   },
   "header": {
@@ -13,66 +20,71 @@
     "link-references": "Références",
     "link-values": "Valeurs",
     "link-labs": "LABS",
-    "link-david": "Qui suis-je ?",
+    "link-company": "Société",
     "link-contact": "Contact",
     "link-blog": "Blog",
     "link-cgv": "CGV",
-    "main-text": "Votre expert en développement web",
-    "cookie-title": "Usage des cookies",
-    "cookie-content": "Ce site utilise des cookies afin d'améliorer l'expérience utilisateur. En aucun cas les données récoltées ne sont revendues à des tiers : ",
-    "cookie-link": "En savoir plus",
-    "cookie-bt": "Je comprend",
-    "browser-title": "Votre navigateur web est trop ancien!",
-    "browser-content": "Il est important de mettre à jour votre navigateur web afin de vous protéger correctement et de profiter des dernières technologies pour rendre votre navigation intuitive.",
-    "browser-desc-1": "Il est très simple de",
-    "browser-desc-2": "mettre à jour votre navigateur",
-    "browser-desc-3": "afin de profiter au mieux de ce site web."
+    "description": "ITArverne est une société spécialisé dans le développement d'application métier Web. Elle dispense aussi
+    des formations techniques et peut vous accompagner dans votre étude des besoins."
   },
-  "content-bloc-1": {
-    "title": "nos Activités",
-    "app-title": "Réalisation application métier",
-    "app-desc": "JAVA, Python et React, AngularJs",
-    "app-content": "Réalisation d’une nouvelle application web correspondant à votre business.",
-    "site-title": "Création site",
-    "site-desc": "CMS / Landing page",
-    "site-content": "Mise en place d’un site web pour vous apporter de la visibilité sur internet",
-    "pack-title": "Pack Startup",
-    "pack-content": "Mise en place d’un kit de démarrage : mail, site vitrine, partage document, CRM...",
+  "content-activities": {
+    "app-title": "Applications métier",
+    "app-content": "Nous réalisons des applications adaptées à votre métier afin d'automatiser certaines tâches pour vous libérer du temps.",
+    "app-link": "En savoir plus",
+    "pack-title": "Pack start-up",
+    "pack-content": "Le démarrage d'une nouvelle activitée ou la promotion d'un nouveau service nécessite de mettre en place des outils numériques. ITArverne vous accompagne dans ses démarches mais aussi dans la configuration de ces élements.",
+    "pack-link": "En savoir plus",
     "training-title": "Formation",
-    "training-content": "Développement basique/avancé, sécurité, découverte écosystème front...",
-    "bt-content": " Demandez votre devis"
+    "training-content": "Vous avez envi de découvrir le langague Python ou alors approfondir vos connaisances dans le développement Web, notre formateur met ses 15 ans d'expériences à votre service.",
+    "training-link": "En savoir plus"
   },
-  "content-bloc-2": {
-    "title": "nos Références"
+  "detail-activities": {
+    "app-title": "Applications métier web",
+    "app-content": "Cette prestation met à votre disposition un outil informatique adapté à votre business au travers un navigateur Web.<br><br>
+    Nous vous proposons exclusivement des techniques sur des technologies maitrisées. Notre volonté est de mettre nos équipes d'expert sur votre projet pour que l'outil corresponde parfaitement à vos besoins sans superflus.<br><br>
+    L'intégralité de nos outils sont open source et libre de droit, ainsi vous garder cette liberté après notre intervention.<br><br>
+    Vous avez également le choix de nous confier la maintenance de l'application pour que l'on effectue les mises à jour de sécurité.",
+    "app-link": "Votre devis applicatif",
+    "pack-title": "Pack start-up",
+    "pack-content": "Si vous démarrez une nouvelle activité ou souhaitez communiquer sur un nouveau service, il y a de forte chance que vous ayez besoin d'outils digitaux.<br><br>
+    En effet afin de communiquer avec vos client il sera nécessaire et rassurant pour ces derniers de s'informer de ce que vous proposez.<br><br>
+    Ces outils seront configurés et développé pour mettre en avant votre professionnalisme :<br>
+    &#959; Votre nom de domaine<br>",
+    "pack-link": "Devis de votre pack start-up",
+    "training-title": "Formation",
+    "training-content": "Que vous ayez envi de découvrir un langage de programmation comme le python ou alors comprendre le métier de développeur Full Stack, notre formateur met à votre service son savoir faire.<br><br>
+    Les formations sont dispensées dans notre centre de formation ou bien dans vos locaux.<br><br>
+    Le temps de formations dépend de vos besoin, de 1 journée à 7 jours.<br><br>
+    Rendez vous sur notre site dédié à nos formations pour personnaliser votre devis.",
+    "training-link": "Demande de devis formation",
+    "mobile-link": "Demande de devis"
   },
-  "content-bloc-3": {
-    "title": "nos Valeurs",
-    "text": "<b>ITArverne</b> se veut être une société humaine où les collaborateurs s’épanouissent dans un environnement agréable. Nous nous donnons les moyens de former efficacement nos collaborateurs afin qu’ils deviennent de véritable expert en technique.<br>Il est possible d’avoir une carrière entière dans la technique, les pépites évolueront vers des postes d’architecte.",
-    "value-1": "<b> &lt;Respect&gt;</b> de nos collaborateurs et clients.",
-    "value-2": " Etre à <b>&lt;l’écoute&gt;</b> des attentes de chaque personne aussi bien en interne que chez nos clients.",
-    "value-3": " <b>&lt;Engagement qualité&gt;</b> Nos clients ont le droit à des experts pour développer leur projet.",
-    "value-4": " Développer une <b>&lt;expertise pointue&gt;</b> en se donnant les moyens d’être réellement efficace.",
-    "value-5": " <b>&lt;Valoriser&gt;</b> le travail des «techos» qui nécessite un investissement important.",
-    "button": "Postulez"
+  "company": {
+    "title": "Notre expertise technique en développement",
+    "content-1": "Depuis 2 ans ITArverne propose ses services de développement d'applications afin de faciliter au quotidien le travail de nos clients.",
+    "content-2": "ITArverne a été concu autour de valeurs importantes auxquelles nous voulons faire adhérer nos partenaires etclients.
+    Notre société se veut humaine et souhaite mettre en avant le travail local Auvergnat qui recorge de pépittes.",
+    "content-3": "Nos références aussi bien auprès de grand compte que de startup montre notre capacité à s'adapter aux demandes de nos clients.",
+    "content-4": "Vous aussi, vous souhaitez mettre en place une application Web qui vous aidera dans votre activité alors n'hésitez pas à nous demander un devis",
+    "link": "Demande de devis"
   },
-  "content-bloc-4": {
-    "title": "Labs",
-    "desc": "<b>ITArverne</b> soutient l’Open Source en proposant des outils gratuits, librement accessibles avec un support technique.",
-    "bloc1-title": "GENERATEUR SITE STATIC",
-    "bloc1-desc": "Une application JS/HTML 5 qui permet de créer un site de type landing page avec le générateur yeoman.",
-    "bloc2-title": "REACT LinkedIn",
-    "bloc2-desc": "Une application React permettant de partager une page sur le réseau LinkedIn.",
-    "bloc3-title": "GRUNT plugin",
-    "bloc3-desc": "Un plugin Grunt pour la librairie npm compress-images afin d'adapter la taille des images pour le web.",
-    "processing": "en cours ...",
-    "more": "Et encore plein d'autres idées à vénir... "
+  "values": {
+    "title": "Nos valeurs",
+    "expert-title": "Une expertise pointue",
+    "expert-desc": "en se donnant les moyens d'être efficace",
+    "listening-title": "Être à l'écoute",
+    "listening-desc": "des attentes des personnes intervenant sur nos projets",
+    "quality-title": "Engagement qualité",
+    "quality-desc": "Nos clients ont toujours le droit à des experts",
+    "respect-title": "Respect",
+    "respect-desc": "de nos collaborateurs et de nos clients",
+    "valorize-title": "Valoriser",
+    "valorize-desc": "le travail de nos collaborateurs qui nécessite un investissement important",
   },
-  "content-bloc-5": {
-    "title": "Qui suis-je ?",
-    "text": "Je m’appelle David et je suis originaire d’Auvergne où j’ai décidé de lancer ma société. Auparavant, j’ai travaillé dans différents domaines d’activités mais toujours en lien avec le web.<br><br>Le métier de développeur me passionne et j’apprécie rencontrer mes clients afin de leur proposer la meilleure architecture avec un code maintenable toujours selon les respects du codage actuel.<br><br>Pendant ces 10 années d’expériences, j’ai pu enrichir mes connaissances dans le développement pur mais aussi dans les process métier. Je maitrise les langages Java, PHP et Python côté back-end ainsi que React et Angular Js côté front-end. Quant à la partie architecture, je peux intervenir sur du Docker, des applications REST ou simplement des applications monolitiques.<br><br> Ma société veut mettre l’humain au centre de son activité pour que tous les intervenants s’épanouissent, chacun y trouve son compte.<br>"
+  "customer": {
+    "title": "Ils nous font confiance",
   },
   "footer": {
-    "copyright": "Build with ❤ by ",
-    "top-link": "Haut"
+    "copyright": "Réaliser avec ❤ par "
   }
 }
