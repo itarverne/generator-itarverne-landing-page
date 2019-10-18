@@ -24,36 +24,36 @@
     "link-contact": "Contact",
     "link-blog": "Blog",
     "link-cgv": "CGV",
-    "description": "ITArverne est une société spécialisé dans le développement d'application métier Web. Elle dispense aussi des formations techniques et peut vous accompagner dans votre étude des besoins."
+    "description": "ITArverne est une société spécialisée dans le développement d'application métier Web. Elle dispense aussi des formations techniques et peut vous accompagner dans votre étude des besoins."
   },
   "content-activities": {
     "app-title": "Applications métier",
     "app-content": "Nous réalisons des applications adaptées à votre métier afin d'automatiser certaines tâches pour vous libérer du temps.",
     "app-link": "En savoir plus",
     "pack-title": "Pack start-up",
-    "pack-content": "Le démarrage d'une nouvelle activitée ou la promotion d'un nouveau service nécessite de mettre en place des outils numériques. ITArverne vous accompagne dans ses démarches mais aussi dans la configuration de ces élements.",
+    "pack-content": "Le démarrage d'une nouvelle activité ou la promotion d'un nouveau service nécessite de mettre en place des outils numériques. ITArverne vous accompagne dans ces démarches mais aussi dans la configuration de ces éléments.",
     "pack-link": "En savoir plus",
     "training-title": "Formation",
-    "training-content": "Vous avez envi de découvrir le langague Python ou alors approfondir vos connaisances dans le développement Web, notre formateur met ses 15 ans d'expériences à votre service.",
+    "training-content": "Vous avez envie de découvrir le langage Python ou alors approfondir vos connaissances dans le développement Web, notre formateur met ses 15 ans d'expériences à votre service.",
     "training-link": "En savoir plus"
   },
   "detail-activities": {
     "app-title": "Applications métier web",
-    "app-content": "Cette prestation met à votre disposition un outil informatique adapté à votre business au travers un navigateur Web.<br><br> Nous vous proposons exclusivement des techniques sur des technologies maitrisées. Notre volonté est de mettre nos équipes d'expert sur votre projet pour que l'outil corresponde parfaitement à vos besoins sans superflus.<br><br> L'intégralité de nos outils sont open source et libre de droit, ainsi vous garder cette liberté après notre intervention.<br><br> Vous avez également le choix de nous confier la maintenance de l'application pour que l'on effectue les mises à jour de sécurité.",
+    "app-content": "Cette prestation met à votre disposition un outil informatique adapté à votre business au travers un navigateur Web.<br><br> Nous vous proposons exclusivement des techniques sur des technologies maîtrisées. Notre volonté est de mettre nos équipes d'expert sur votre projet pour que l'outil corresponde parfaitement à vos besoins sans superflus.<br><br> L'intégralité de nos outils sont open source et libre de droit, ainsi vous garder cette liberté après notre intervention.<br><br> Vous avez également le choix de nous confier la maintenance de l'application pour que l'on effectue les mises à jour de sécurité.",
     "app-link": "Votre devis applicatif",
     "pack-title": "Pack start-up",
-    "pack-content": "Si vous démarrez une nouvelle activité ou souhaitez communiquer sur un nouveau service, il y a de forte chance que vous ayez besoin d'outils digitaux.<br><br> En effet afin de communiquer avec vos client il sera nécessaire et rassurant pour ces derniers de s'informer de ce que vous proposez.<br><br> Ces outils seront configurés et développé pour mettre en avant votre professionnalisme :<br> &#959; Votre nom de domaine<br>",
+    "pack-content": "Si vous démarrez une nouvelle activité ou souhaitez communiquer sur un nouveau service, il y a de fortes chances que vous ayez besoin d'outils digitaux.<br><br> En effet afin de communiquer avec vos clients il sera nécessaire et rassurant pour ces derniers de s'informer de ce que vous proposez.<br><br> Ces outils seront configurés et développé pour mettre en avant votre professionnalisme :<br> &#959; Votre nom de domaine<br>",
     "pack-link": "Devis de votre pack start-up",
     "training-title": "Formation",
-    "training-content": "Que vous ayez envi de découvrir un langage de programmation comme le python ou alors comprendre le métier de développeur Full Stack, notre formateur met à votre service son savoir faire.<br><br> Les formations sont dispensées dans notre centre de formation ou bien dans vos locaux.<br><br> Le temps de formations dépend de vos besoin, de 1 journée à 7 jours.<br><br> Rendez vous sur notre site dédié à nos formations pour personnaliser votre devis.",
+    "training-content": "Que vous ayez envie de découvrir un langage de programmation comme le python ou alors comprendre le métier de développeur Full Stack, notre formateur met à votre service son savoir faire.<br><br> Les formations sont dispensées dans notre centre de formation ou bien dans vos locaux.<br><br> Le temps de formations dépend de vos besoins, de 1 journée à 7 jours.<br><br> Rendez-vous sur notre site dédié à nos formations pour personnaliser votre devis.",
     "training-link": "Demande de devis formation",
     "mobile-link": "Demande de devis"
   },
   "company": {
     "title": "Notre expertise technique en développement",
     "content-1": "Depuis 2 ans ITArverne propose ses services de développement d'applications afin de faciliter au quotidien le travail de nos clients.",
-    "content-2": "ITArverne a été concu autour de valeurs importantes auxquelles nous voulons faire adhérer nos partenaires etclients. Notre société se veut humaine et souhaite mettre en avant le travail local Auvergnat qui recorge de pépittes.",
-    "content-3": "Nos références aussi bien auprès de grand compte que de startup montre notre capacité à s'adapter aux demandes de nos clients.",
+    "content-2": "ITArverne a été conçue autour de valeurs importantes auxquelles nous voulons faire adhérer nos partenaires et clients. Notre société se veut humaine et souhaite mettre en avant le travail local Auvergnat qui regorge de pépites.",
+    "content-3": "Nos références aussi bien auprès de grands comptes que de start-up montre notre capacité à s'adapter aux demandes de nos clients.",
     "content-4": "Vous aussi, vous souhaitez mettre en place une application Web qui vous aidera dans votre activité alors n'hésitez pas à nous demander un devis",
     "link": "Demande de devis"
   },

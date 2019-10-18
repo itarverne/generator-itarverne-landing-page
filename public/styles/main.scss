@@ -258,6 +258,15 @@ font-size: $little-font-size;
     padding-top: 0;
   }
 }
+/************************/
+/** Hack for Edge only **/
+/************************/
+@supports (-ms-ime-align: auto) {
+  .card__content-text{
+    padding-top: 0;
+  }
+}
+
 .card__content-bt{
   font-size: $little-font-size;
   text-align: center;
