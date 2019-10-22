@@ -13,6 +13,11 @@ $color-text-dark: #1F3C49;
 $color-bg-green-dark: #4E6A71;
 $color-green-light: #63AAB5;
 
+// $color-bg-primary: black;
+// $color-green-light: black;
+// $color-bg-dark: black;
+// $color-bg-dark-hight: black;
+
 // /** 1 rem = 16px **/
 $little-font-size:  1.5rem; /* 24px; */
 $micro-font-size:  1rem; /* 16px; */
@@ -227,7 +232,8 @@ font-size: $little-font-size;
 .card__content-header{
   background-color: $color-secondary-light;
   color: $color-text-dark;
-  height: 10vh;
+  height: 100%;
+  padding: 10px;
   font-size: $little-font-size;
 }
 .card__content {
@@ -301,6 +307,17 @@ height: 50%;
 }
 
 // Activities
+@include breakpoint-max(md) {
+  .activities{
+    padding-top: 10px;
+  }
+}
+
+.activities__logo{
+  position: absolute;
+  right: 10px;
+  top: 0px;
+}
 .activities__grid{
   margin-top: 5rem;
 }
