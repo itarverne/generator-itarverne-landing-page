@@ -241,6 +241,7 @@ font-size: $little-font-size;
 }
 .card__content-title{
   font-size: $little-font-size;
+  font-weight: bold;
   text-transform: uppercase;
   background-color: $color-bg-dark;
   padding: 10px;
@@ -349,6 +350,10 @@ height: 50%;
 // Company
 .company__text{
   border-left: 6px solid $color-bg-dark-hight;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .company__title{
@@ -359,12 +364,22 @@ height: 50%;
 .values {
   background-color: $color-bg-green-dark;
   color:white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.values__infos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .values__images{
 height: 100px;
+margin-top: 3px;
 }
 .values__header{
-  margin-top: 8rem;
   color:white;
 }
 .values__title{
@@ -376,6 +391,7 @@ height: 100px;
   background-color: $color-green-light;
   margin-left: 5rem;
   margin-right: 5rem;
+  min-width: 300px;
 }
 .values__row-center{
   height: 100%;
@@ -395,7 +411,11 @@ height: 100px;
 
 // Referenties
 .referencies {
-  padding-top: 5rem;
+  padding-top: 5rem;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .referencies__header-title{
   color: $color-bg-light;
