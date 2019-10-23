@@ -41,6 +41,8 @@ $header-font-size:  2.5rem;
 .g-scroll {
 scroll-behavior: smooth;
 overflow-y: scroll;
+// For Chrome in Mac
+-webkit-overflow-scrolling: touch;
 }
 
 /** Menu pur css **/
