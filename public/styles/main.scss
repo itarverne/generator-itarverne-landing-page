@@ -385,6 +385,10 @@ margin-top: 3px;
   color:white;
   margin-bottom: 100px;
 }
+@include breakpoint-max(sm) {
+  .values__header {margin-bottom: 10px;}
+}
+
 .values__title{
   color:white;
   text-transform: uppercase;
@@ -399,7 +403,7 @@ margin-top: 3px;
 
 @include breakpoint-min(lg) {
   .values__row{
-    height: 200px;
+    height: 230px;
   }
 }
 
