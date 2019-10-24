@@ -231,8 +231,6 @@ justify-content: center;
 
 @include breakpoint-min(md) {
   .hide-gt-sm {display: none;}
-
-
 }
 
 /************/
@@ -495,6 +493,46 @@ margin-top: 3px;
   margin-right: 5rem;
 }
 
+//Contact
+.contact {
+  background-color: $color-bg-green-dark;
+}
+.contact__header-title{
+  color:white;
+  margin-bottom: 80px;
+}
+.contact__let, .contact__liam{
+unicode-bidi: bidi-override;
+direction: rtl;
+margin-left: 5px;
+}
+.contact__david{
+  max-height:200px;
+}
+.contact__company{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact__company-img{
+  width: 500px;
+  margin-top: 20px;
+}
+.contact__company-text{
+  color: white;
+  margin-top: 40px;
+}
+.contact__company-text:hover, .contact__company-text:visited,
+.contact__let:hover, .contact__liam:hover,
+.contact__let:visited, .contact__liam:visited{
+  color: white;
+  text-decoration: underline;
+}
+
+@include breakpoint-max(md) {
+  .contact__picto {display: none;}
+}
 // Footer
 .footer__text{
   color: $color-text-dark;
