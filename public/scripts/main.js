@@ -12,7 +12,6 @@ if (bowser.msie) {
   $('.browser').removeClass('hide');
 }
 
-// $(document).ready(() => {
 new LazyLoad();
 
 var youtube = document.querySelectorAll(".youtube");
@@ -51,5 +50,3 @@ $('#js-cookie__validate').click(() => {
 });
 
 addFavicon();
-
-// });
