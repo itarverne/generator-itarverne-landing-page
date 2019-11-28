@@ -1,77 +1,105 @@
 {
+  "browser": {
+    "header": "Your web browser is too old!",
+    "content": "It's important to update your web browser to protect yourself properly and to take advantage of the latest technologies to make your navigation intuitive.",
+    "more-1": "It's very simple to",
+    "more-bt": "update your browser",
+    "more-2": "in order to make the most of this website."
+  },
   "cookie": {
-    "header": "Cookies usage",
-    "content": "This site uses cookies to improve the user’s experience. In no case will this data be sold to a third party.",
-    "more": "En savoir plus",
-    "bt-valid": "I understand.",
-    "title": "les Cookies",
-    "content-detail": "Un cookie est une valeur stoquée dans votre navigateur pour l'utiliser sur notre site. Cette usage permet de personnaliser votre affichage et optimiser le temps de chargement du site. ITArverne utilise : <ul><li>Un cookie pour le suivi d'activité du site</li><li>Un cookie pour vous afficher un message d'usage relatif aux cookies comme l'exige la réglementation</li></ul>ITArverne ne fait pas un mauvais usage de ces cookies comme certains publicitaires, nous respectons la vie privée de nos clients, vous pouvez naviguer en sécurité sur notre site. Vous avez le choix de supprimer les cookies stoquées sur votre ordianteur, en effaçant les données de votre navigateur."
+    "header": "Use of cookies",
+    "content": "This site uses cookies to improve the user experience. Under no circumstances are the data collected sold to third parties.",
+    "more": "To know more",
+    "bt-valid": "I understand",
+    "Title": "Cookies",
+    "content-detail": "A cookie is a value stored in your browser to use it on our site. This use allows you to customize your display and optimize the loading time of the site. ITArverne uses: <ul><li>>A cookie to track site activity</li><li>>A cookie to display a usage message related to cookies as required by regulations</li></ul>ITArverne does not misuse these cookies as some advertisers do, we respect the privacy of our customers, you can navigate safely on our site. You have the choice to delete the cookies stored on your computer, by deleting your browser data."
   },
   "header": {
     "menu": "menu",
     "link-activities": "Activities",
-    "link-references": "References",
+    "Link-references": "References",
     "link-values": "Values",
     "link-labs": "LABS",
-    "link-david": "Who am I ?",
-    "link-contact": "Get in touch",
+    "link-company": "Company",
+    "link-contact": "Contact",
     "link-blog": "Blog",
     "link-cgv": "CGV",
-    "main-text": "Our web development expert",
-    "cookie-title": "Usage des cookies",
-    "cookie-content": "Ce site utilise des cookies afin d'améliorer l'expérience utilisateur. En aucun cas les données récoltées ne sont revendues à des tiers : ",
-    "cookie-link": "En savoir plus",
-    "cookie-bt": "Je comprend",
-    "browser-content": "Il est important de mettre à jour votre navigateur web afin de vous protéger correctement et de profiter des dernières technologies pour rendre votre navigation intuitive.",
-    "browser-desc-1": "Il est très simple de",
-    "browser-desc-2": "mettre à jour votre navigateur",
-    "browser-desc-3": "afin de profiter au mieux de ce site web."
+    "description": "ITArverne is a company specialized in the development of Web business applications. It also provides for technical training and can assist you in your needs assessment."
   },
-  "content-bloc-1": {
-    "title": "our Activities",
-    "app-title": "Create business application",
-    "app-desc": "JAVA, Python and React, AngularJs",
-    "app-content": "Build new application matching with our business.",
-    "site-title": "Create website",
-    "site-desc": "CMS / Landing page",
-    "site-content": "Applicant website to increase our wev visibility",
-    "pack-title": "Pack Startup",
-    "pack-content": "Install startup toolkit : mail, landing page website, share document, CRM...",
-    "training-title": "Training",
-    "training-content": "Development newbie/expert, security, discover front end...",
-    "bt-content": " Ask your quote"
+  "content-activities": {
+    "app-title": "Business applications",
+    "app-content": "We create applications adapted to your business in order to automate certain tasks to free up your time.",
+    "app-link": "Learn more",
+    "pack-title": "Pack start-up",
+    "Pack-content": "The start of a new activity or the promotion of a new service requires the implementation of digital tools. ITArverne supports you in its steps but also in the configuration of these elements.",
+    "Pack-link": "Learn more",
+    "Training-title": "Training",
+    "training-content": "You want to discover the Python language or deepen your knowledge in Web development, our trainer puts his 15 years of experience at your service.",
+    "training-link": "Learn more"
   },
-  "content-bloc-2": {
-    "title": "our References"
+  "detail-activities": {
+    "app-title": "Web business applications",
+    "app-content": "This service provides you with an IT tool adapted to your business through a Web browser. <br><br> We offer you exclusively techniques on mastered technologies. Our will is to put our teams of experts on your project so that the tool perfectly matches your needs without any superfluous. <br><br> All our tools are open source and royalty-free, so you can keep this freedom after our intervention. <br><br You also have the choice of entrusting us with the maintenance of the application so that we can carry out security updates.",
+    "app-link": "Your application quote",
+    "pack-title": "Pack start-up",
+    "Pack-content": "If you start a new activity or want to communicate on a new service, there is a good chance that you will need digital tools. <br><br> Indeed, in order to communicate with your customers it will be necessary and reassuring for them to be informed of what you are offering. <br><br> These tools will be configured and developed to highlight your professionalism: <br> Your domain name<br>",
+    "Pack-link": "Quote from your start-up pack",
+    "Training-title": "Training",
+    "training-content": "Whether you want to discover a programming language like python or understand the profession of Full Stack developer, our trainer puts at your service his know-how. <br><br> Training is provided in our training centre or on your premises. <br><br><br>The training time depends on your needs, from 1 day to 7 days. <br><br><br>Go to our website dedicated to our training courses to personalize your quote.",
+    "training-link": "Request for a training quote",
+    "mobile-link": "Request for quotation"
   },
-  "content-bloc-3": {
-    "title": "our Values",
-    "text": "<b>ITArverne</b> wants to be a human society where employees thrive in a pleasant environment. We give ourselves the means to effectively train our employees so that they become true technical experts. <br> It is possible to have a full career in technology, the nuggets will evolve to positions of architect.",
-    "value-1": "<b> &lt;Respect&gt;</b> of our employees and customers.",
-    "value-2": " Being at <b>&lt;listening&gt;</ b> the expectations of each person both internally and at our customers.",
-    "value-3": " <b>&lt;Quality commitment&gt;</ b> Our clients have the right to experts to develop their project.",
-    "value-4": " Develop <b>&lt;sharp expertise&gt;</ b> with the means to be truly effective.",
-    "value-5": " <b>&lt;Valuing&gt;</b> the work of «techos» that requires a significant investment.",
-    "button": " Apply"
+  "company": {
+    "Title": "Our technical expertise in development",
+    "content-1": "For 2 years ITArverne has been offering its application development services to facilitate the daily work of our customers.",
+    "content-2": "ITArverne has been designed around important values to which we want our partners and customers to adhere. Our company wants to be human and wishes to highlight the local work of Auvergne, which is full of nuggets.",
+    "content-3": "Our references with both major accounts and startups show our ability to adapt to the demands of our customers.",
+    "content-4": "You too, you want to set up a web application that will help you in your business so don't hesitate to ask us for a quote",
+    "link": "request for quotation"
   },
-  "content-bloc-4": {
-    "title": "Labs",
-    "desc": "<b>ITArverne</b> soutient l’Open Source en proposant des outils gratuits, librement accessibles avec un support technique.",
-    "bloc1-title": "GENERATEUR SITE STATIC",
-    "bloc1-desc": "Une application JS/HTML 5 qui permet de créer un site de type landing page avec le générateur yeoman.",
-    "bloc2-title": "REACT LinkedIn",
-    "bloc2-desc": "Une application React permettant de partager une page sur le réseau LinkedIn.",
-    "bloc3-title": "GRUNT plugin",
-    "bloc3-desc": "Un plugin Grunt pour la librairie npm compress-images afin d'adapter la taille des images pour le web.",
-    "processing": "en cours ...",
-    "more": "Et encore plein d'autres idées à vénir... "
+  "values": {
+    "Title": "Our values",
+    "Expert": "A sharp expertise",
+    "expert-desc": "by providing the means to be effective",
+    "listening-title": "Listening",
+    "listening-desc": "the expectations of the people involved in our projects",
+    "quality-title": "Quality commitment",
+    "quality-desc": "Our customers always have the right to experts",
+    "Respect-title": "Respect",
+    "respect for": "our employees and customers",
+    "Valorizetitle": "Valorize",
+    "value-down": "the work of our employees that requires a significant investment"
   },
-  "content-bloc-5": {
-    "title": "Who am I ?",
-    "text": "My name is David and I am from Auvergne where I decided to start my company. At work, I worked in different fields of activity but always related to the web. <br> <br> The job of developer impassioned me and I appreciate meeting my customers in order to propose them the best architecture with a maintainable code always according to the respects of the current coding. <br> <br> During these 10 years of experience, I was able to enrich my knowledge in the development but also in the business process. I master the Java, PHP and Python languages ​​on the back end as well as Reaction and Angular Js on the front end. As for the architecture part, I can intervene on the Docker, applications or just monolithic applications. find his account. <br>"
+  "customer": {
+    "title": "They trust us"
+  },
+  "cgv": {
+    "title": "Our General Terms and Conditions of Sale",
+    "desc": "Between the Company ITArverne, 3 route de moulet, 63530 VOLVIC, with share capital of 1,000€, registered in the Clermont-Ferrand Trade and Companies Register under number 832 282 784, SIRET 832 282 784 00012, represented by Mr David RIGAUDIE, as manager, duly authorised for the purposes of hereinafter referred to as the 'Company', on the one hand, and the natural or legal person purchasing services of the company, hereinafter referred to as the 'Client', on the other hand, it has been explained and agreed as follows:",
+    "art-1-title": "Article 1 : Object",
+    "art-1-content": "These General Terms and Conditions of Sale determine the rights and obligations of the parties within the framework of the provision of services offered by the Company. The Company reserves the right to modify these terms and conditions at any time by publishing a new version on its website. The applicable GTCs then apply are those in force on the date of payment (or the first payment in the case of multiple payments) of the invoice. These General Terms and Conditions can be consulted on the Company's website at the following address: <a class='cgv__link' href='http://itarverne.com/cgv.html'>http://itarverne.com/cgv.html</a> . The Company also ensures that their acceptance is clear and unreserved by setting up a checkbox when signing the contract. The Customer declares that he has read all these General Terms and Conditions of Sale, and in this case of the Special Conditions of Sale related to a service, and accept them without restriction or reservation. The Client acknowledges that he has received the necessary advice and information to ensure that the adequacy of the offer to its needs. The Customer declares that he is in a position to enter into a legal contract pursuant to the French laws or validly represent the natural or legal person for whom it is committed. Except for proof to the contrary, the information recorded by the Company constitutes proof of all the transactions. The company can be reached by email by clicking on the contact form accessible via the website.",
+    "art-2-title": "Article 2 : Scope of application",
+    "art-2-content": "The Company provides IT services, offers IT development services, exempts training in the field of information technology and provides support to companies with a computer needs. The list and description of the services offered by the Company can be consulted on the Company <a class='cgv__link' href='http://itarverne.com'>http://itarverne.com</a>",
+    "art-3-title": "Article 3 : Order",
+    "art-3-content": "The Client may request the Company's services by signed return to a quotation provided or perform a request by email or post. All quotations submitted by the Company and signed with the date by the Client shall take effect on a contractual basis immediately, firmly and definitively. If a deposit has been requested, the order is only admissible after the receipt of the amount due.",
+    "art-4-title": "Article 4 : Prices",
+    "art-4-content": "The prices of the services displayed through the website are indicated in Euros excluding tax for a payment cash and without discount. They are also indicated in euros, all taxes included in the contract. When the service is provided within a radius of 30 kilometres greater than the head office, the The Company reserves the right to invoice the Customer for travel expenses on the basis of a rate of kilometre, as well as accommodation costs, based on actual expenses. The Company reserves the right to change its prices at any time in the future.",
+    "art-5-title": "Article 5 : Payment",
+    "art-5-content": "Payment will be made by cheque or bank transfer, in euros, to the Company's account in accordance with Customer preferences. Without any contrary stipulation a deposit of 30% can be claimed for the performance of the services provided by the Company.",
+    "art-6-title": "Article 6: Payment terms",
+    "art-6-content": "Payment for all services performed by the Company must be received within a maximum of ten days. days after receipt of the invoice. Any amount not paid within twenty days of the issuance of the invoice is likely to generate late payment penalties at a rate equal to 8% (bank-based rate European central office) in addition to a flat-rate indemnity of €40 for collection costs on each invoice unpaid (decree 2012-115 of 2/10/2012). These indemnities will be claimed the day after the date mentioned on the invoice without a reminder. necessary (Art L 441-6 of the French Commercial Code) The Company reserves the right to stop its services if the Client does not regularize the amounts due.",
+    "art-7-title": "Article 7: Intellectual property rights",
+    "art-7-content": "The work resulting from the Service provided by the Company remains its property until the end of its services and the non-payment of all invoices. Domain names, email address, website hosting in particular, and necessary for the creation of the website are created under the name of the Client but managed by the Company for 1 year. After this period it is the duty of the Client to renew these services either by these own means or by making the request to the company as stipulated in Article 3.",
+    "art-8-title": "Article 8: Use of reference",
+    "art-8-content": "The Client authorizes the Company to use his name as a reference for commercial use. The Company reserves the right to include in its achievements, including in a website, the name and address of the company.",
+    "art-9-title": "Article 9 : Force majeure",
+    "art-9-content": "The Company's responsibility cannot be implemented if the non-execution or delay in the performance of one of its obligations described in these general terms and conditions of sale results from a in case of force majeure. As such, force majeure refers to any external, unforeseeable and unforeseen event. irresistible within the meaning of Article 1148 of the Civil Code.",
+    "art-10-title": "Article 10: Nullity and amendment of the contract",
+    "art-10-content": "If one of the provisions of this contract is cancelled, this cancellation does not result in the cancellation of the other provisions stipulations that will remain in force between the parties. Any contractual amendment is not valid only after a written agreement signed by the parties.",
+    "art-11-title": "Article 11: Protection of personal data",
+    "art-11-content": "In accordance with the Data Protection Act of 6 January 1978, the Client has the following rights interrogation, access, modification, opposition and rectification of personal data on concerning. The Company reserves the right to use the Customer's e-mail address to send him various information, promotional offers or newsletters. The Customer can unsubscribe simply by clicking on the link at the end of our emails or send a mail to the Company by formulating the request."
   },
   "footer": {
-    "copyright": "Build with ❤ by ",
-    "top-link": "Top"
+    "copyright": "Build with ❤ by"
   }
 }
