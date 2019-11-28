@@ -1,0 +1,43 @@
+File from: [images/favicon/favicon_270x270.png]
+
+File to: [build/images/favicon/favicon_270x270.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn C:\Users\utilisateur\Documents\Informatique\Projects\generator-itarverne-landing-page\node_modules\pngquant-bin\vendor\pngquant.exe ENOENTFile from: [images/favicon/favicon_32x32.png]
+
+File to: [build/images/favicon/favicon_32x32.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn C:\Users\utilisateur\Documents\Informatique\Projects\generator-itarverne-landing-page\node_modules\pngquant-bin\vendor\pngquant.exe ENOENTFile from: [images/favicon/favicon_558x270.png]
+
+File to: [build/images/favicon/favicon_558x270.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn C:\Users\utilisateur\Documents\Informatique\Projects\generator-itarverne-landing-page\node_modules\pngquant-bin\vendor\pngquant.exe ENOENTFile from: [images/favicon/favicon_558x558.png]
+
+File to: [build/images/favicon/favicon_558x558.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn C:\Users\utilisateur\Documents\Informatique\Projects\generator-itarverne-landing-page\node_modules\pngquant-bin\vendor\pngquant.exe ENOENTFile from: [images/favicon/favicon_48x48.png]
+
+File to: [build/images/favicon/favicon_48x48.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn C:\Users\utilisateur\Documents\Informatique\Projects\generator-itarverne-landing-page\node_modules\pngquant-bin\vendor\pngquant.exe ENOENTFile from: [images/favicon/favicon_57x57.png]
+
+File to: [build/images/favicon/favicon_57x57.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn C:\Users\utilisateur\Documents\Informatique\Projects\generator-itarverne-landing-page\node_modules\pngquant-bin\vendor\pngquant.exe ENOENTFile from: [images/favicon/favicon_60x60.png]
+
+File to: [build/images/favicon/favicon_60x60.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn C:\Users\utilisateur\Documents\Informatique\Projects\generator-itarverne-landing-page\node_modules\pngquant-bin\vendor\pngquant.exe ENOENT

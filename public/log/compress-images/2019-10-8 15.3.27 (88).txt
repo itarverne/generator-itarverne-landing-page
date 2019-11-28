@@ -1,0 +1,19 @@
+File from: [images/mail/mouse.png]
+
+File to: [build/images/mail/mouse.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn C:\Users\utilisateur\Documents\Informatique\Projects\generator-itarverne-landing-page\node_modules\pngquant-bin\vendor\pngquant.exe ENOENTFile from: [images/Michelin.png]
+
+File to: [build/images/Michelin.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn C:\Users\utilisateur\Documents\Informatique\Projects\generator-itarverne-landing-page\node_modules\pngquant-bin\vendor\pngquant.exe ENOENTFile from: [images/qualite.png]
+
+File to: [build/images/qualite.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn C:\Users\utilisateur\Documents\Informatique\Projects\generator-itarverne-landing-page\node_modules\pngquant-bin\vendor\pngquant.exe ENOENT

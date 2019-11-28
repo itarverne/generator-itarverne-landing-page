@@ -26,9 +26,9 @@
     "compress-images": "^1.5.8",
     "grunt-compress-images": "^0.1.0",
     "mocha": "^4.1.0",
-    "sinon": "^4.4.8",
-    "yeoman-assert": "^3.1.0",
-    "yeoman-test": "^1.7.0"
+    "sinon": "^4.5.0",
+    "yeoman-assert": "^3.1.1",
+    "yeoman-test": "^1.9.1"
   },
   "scripts": {
     "test": "mocha"

@@ -1,0 +1,19 @@
+File from: [images/qualite.png]
+
+File to: [build/images/qualite.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn C:\Users\utilisateur\Documents\Informatique\Projects\generator-itarverne-landing-page\node_modules\pngquant-bin\vendor\pngquant.exe ENOENTFile from: [images/respect.png]
+
+File to: [build/images/respect.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn C:\Users\utilisateur\Documents\Informatique\Projects\generator-itarverne-landing-page\node_modules\pngquant-bin\vendor\pngquant.exe ENOENTFile from: [images/St Hilaire.png]
+
+File to: [build/images/St Hilaire.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn C:\Users\utilisateur\Documents\Informatique\Projects\generator-itarverne-landing-page\node_modules\pngquant-bin\vendor\pngquant.exe ENOENT

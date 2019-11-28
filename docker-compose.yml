@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  itarverne:
+    container_name: itarverne
+    build: ./public
+    command: bash -c "ls && npm install --force && npm link && cd public && ls && npm update --force && npm install babel-preset-env && grunt build"
+    ports:
+      - 9000:9000
+    volumes:
+      - .:/usr/src/app
+    environment:
+      # hot reloading react componenent in Docker
+      - CHOKIDAR_USEPOLLING=true

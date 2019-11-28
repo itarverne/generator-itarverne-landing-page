@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset	xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>http://itarverne.com/</loc>
-		<lastmod>2018-02-16T15:58:16+00:00</lastmod>
+		<loc>https://itarverne.fr/</loc>
+		<lastmod>2019-11-01T12:00:00+00:00</lastmod>
 		<priority>1</priority>
 	</url>
 	<url>
-		<loc>http://itarverne.com/cgv.html</loc>
-	  	<lastmod>2018-02-16T15:58:16+00:00</lastmod>
+		<loc>https://itarverne.fr/cgv.html</loc>
+	  	<lastmod>2019-11-01T12:00:00+00:00</lastmod>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>http://itarverne.com/cookies.html</loc>
-	  	<lastmod>2018-02-16T15:58:16+00:00</lastmod>
+		<loc>https://itarverne.fr/cookies.html</loc>
+	  	<lastmod>2019-11-01T12:00:00+00:00</lastmod>
 		<priority>0.8</priority>
 	</url>
 </urlset>

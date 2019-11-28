@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
-import FacebookProvider, { Like, Share as ShareFb} from 'react-facebook';
+import React from 'react';
+import FacebookProvider, { Like, Share as ShareFb } from 'react-facebook';
 import ReactLinkedIn from 'react-share-linkedin';
+import styled from 'styled-components';
 
 class SocialLinkedinShare extends React.Component {
   render() {
     return (
-      <ReactLinkedIn 
+      <ReactLinkedIn
         url="http://itarverne.com"
         title="The web developer expert in Auvergne"
         summary="The web developer expert in Auvergne"
@@ -15,10 +15,10 @@ class SocialLinkedinShare extends React.Component {
     );
   }
 }
-ReactDOM.render(
-  <SocialLinkedinShare />,
-  document.getElementById('js-in-share')
-);
+// ReactDOM.render(
+//   <SocialLinkedinShare />,
+//   document.getElementById('js-in-share')
+// );
 
 const ButtonFb = styled.button`
   border-radius: 3px;
@@ -45,10 +45,10 @@ class SocialFbLike extends React.Component {
   }
 }
 
-ReactDOM.render(
-  <SocialFbLike />,
-  document.getElementById('js-fb-like')
-);
+// ReactDOM.render(
+//   <SocialFbLike />,
+//   document.getElementById('js-fb-like')
+// );
 
 class SocialFbShare extends React.Component {
   render() {
@@ -62,30 +62,11 @@ class SocialFbShare extends React.Component {
   }
 }
 
-ReactDOM.render(
-  <SocialFbShare />,
-  document.getElementById('js-fb-share')
-);
 
-import { Share } from 'react-twitter-widgets'
- 
-ReactDOM.render((
-  <Share
-    url="itarverne.com"
-    options={{
-      text: '@itarverne est une société auvergnate spécialisée dans le développement web Python et Java',
-      lang: 'fr',
-      count: 'horizontal'
-    }}
-    onLoad={() => console.log('Share twitter is loaded!')}
-  />
-), document.getElementById('js-twitter-share'));
 
-import { Follow } from 'react-twitter-widgets'
- 
-ReactDOM.render((
-  <Follow
-    username="itarverne"
-    onLoad={() => console.log('Follow twitter is loaded!')}
-  />
-), document.getElementById('js-twitter-follow'));
+// ReactDOM.render((
+//   <Follow
+//     username="itarverne"
+//     onLoad={() => console.log('Follow twitter is loaded!')}
+//   />
+// ), document.getElementById('js-twitter-follow'));

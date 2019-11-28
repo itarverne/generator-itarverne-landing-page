@@ -1,0 +1,49 @@
+File from: [images/favicon/favicon_72x72.png]
+
+File to: [build/images/favicon/favicon_72x72.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn C:\Users\utilisateur\Documents\Informatique\Projects\generator-itarverne-landing-page\node_modules\pngquant-bin\vendor\pngquant.exe ENOENTFile from: [images/favicon/favicon_76x76.png]
+
+File to: [build/images/favicon/favicon_76x76.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn C:\Users\utilisateur\Documents\Informatique\Projects\generator-itarverne-landing-page\node_modules\pngquant-bin\vendor\pngquant.exe ENOENTFile from: [images/favicon/favicon_96x96.png]
+
+File to: [build/images/favicon/favicon_96x96.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn C:\Users\utilisateur\Documents\Informatique\Projects\generator-itarverne-landing-page\node_modules\pngquant-bin\vendor\pngquant.exe ENOENTFile from: [images/favicon/favicon.png]
+
+File to: [build/images/favicon/favicon.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn C:\Users\utilisateur\Documents\Informatique\Projects\generator-itarverne-landing-page\node_modules\pngquant-bin\vendor\pngquant.exe ENOENTFile from: [images/lamontagne.png]
+
+File to: [build/images/lamontagne.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn C:\Users\utilisateur\Documents\Informatique\Projects\generator-itarverne-landing-page\node_modules\pngquant-bin\vendor\pngquant.exe ENOENTFile from: [images/ime.png]
+
+File to: [build/images/ime.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn C:\Users\utilisateur\Documents\Informatique\Projects\generator-itarverne-landing-page\node_modules\pngquant-bin\vendor\pngquant.exe ENOENTFile from: [images/lalocalerie.png]
+
+File to: [build/images/lalocalerie.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn C:\Users\utilisateur\Documents\Informatique\Projects\generator-itarverne-landing-page\node_modules\pngquant-bin\vendor\pngquant.exe ENOENTFile from: [images/linkedin.png]
+
+File to: [build/images/linkedin.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn C:\Users\utilisateur\Documents\Informatique\Projects\generator-itarverne-landing-page\node_modules\pngquant-bin\vendor\pngquant.exe ENOENT

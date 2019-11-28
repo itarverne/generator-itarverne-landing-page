@@ -1,0 +1,7 @@
+File from: [images/ecoute.png]
+
+File to: [build/images/ecoute.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn C:\Users\utilisateur\Documents\Informatique\Projects\generator-itarverne-landing-page\node_modules\pngquant-bin\vendor\pngquant.exe ENOENT

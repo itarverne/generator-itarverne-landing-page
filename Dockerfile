@@ -1,7 +1,9 @@
 FROM node:8
 
+# RUN mkdir -p /usr/src/app/public/node_modules 
+
 # Create app directory
-WORKDIR /usr/src/app
+WORKDIR /usr/src/app/public
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
@@ -14,7 +16,7 @@ RUN npm install -g grunt-cli sass
 # RUN npm ci --only=production
 
 # Bundle app source
-COPY . .
+COPY . /usr/src/app
 
-EXPOSE 9000
-RUN cd public && npm install && grunt serve
+# EXPOSE 9000
+# RUN cd public && npm install && grunt serve

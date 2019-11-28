@@ -1,0 +1,7 @@
+File from: [images/mail/bandeau_bas.png]
+
+File to: [build/images/mail/bandeau_bas.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: spawn C:\Users\utilisateur\Documents\Informatique\Projects\generator-itarverne-landing-page\node_modules\pngquant-bin\vendor\pngquant.exe ENOENT
