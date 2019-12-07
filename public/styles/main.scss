@@ -13,11 +13,6 @@ $color-text-dark: #1F3C49;
 $color-bg-green-dark: #4E6A71;
 $color-green-light: #63AAB5;
 
-$color-bg-primary: black;
-$color-green-light: black;
-$color-bg-dark: black;
-$color-bg-dark-hight: black;
-
 // /** 1 rem = 16px **/
 $little-font-size:  1.5rem; /* 24px; */
 $micro-font-size:  1rem; /* 16px; */
@@ -348,6 +343,7 @@ height: 100%;
 height: 50%;
 }
 .grid__right-social-link{
+  color: $color-text-dark;
   display: inline-block;
   text-align: center;
   margin-right: 3%;
